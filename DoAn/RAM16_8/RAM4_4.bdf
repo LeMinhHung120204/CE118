@@ -1507,10 +1507,6 @@ applicable agreement for further details.
 	(pt 944 224)
 )
 (connector
-	(pt 944 224)
-	(pt 1296 224)
-)
-(connector
 	(pt 1464 144)
 	(pt 1464 352)
 )
@@ -1822,6 +1818,22 @@ applicable agreement for further details.
 	(pt 1784 1032)
 	(pt 1784 1192)
 )
+(connector
+	(pt 1640 176)
+	(pt 1624 176)
+)
+(connector
+	(pt 1624 176)
+	(pt 1624 224)
+)
+(connector
+	(pt 944 224)
+	(pt 1296 224)
+)
+(connector
+	(pt 1296 224)
+	(pt 1624 224)
+)
 (junction (pt 608 296))
 (junction (pt 112 848))
 (junction (pt 208 888))
@@ -1881,3 +1893,4 @@ applicable agreement for further details.
 (junction (pt 1600 552))
 (junction (pt 1784 760))
 (junction (pt 1464 760))
+(junction (pt 1296 224))

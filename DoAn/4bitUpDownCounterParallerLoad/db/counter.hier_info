@@ -1,0 +1,144 @@
+|BCDCounter
+Q3 <= counter:inst.Q3
+D => Mux2:inst1.S
+D => Mux2:inst2.S
+D => Mux2:inst3.S
+D => Mux2:inst4.S
+D => counter:inst.D
+D => inst8.IN0
+D => inst19.IN3
+E => counter:inst.E
+CLK => counter:inst.CLK
+Q2 <= counter:inst.Q2
+Q1 <= counter:inst.Q1
+Q0 <= counter:inst.Q0
+
+
+|BCDCounter|counter:inst
+Q3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+CLK => inst1.CLK
+CLK => inst2.CLK
+CLK => inst3.CLK
+D => HAS:inst4.D
+D => HAS:inst5.D
+D => HAS:inst6.D
+D => HAS:inst7.D
+I2 => Mux2:inst10.D1
+Load => Mux2:inst10.S
+Load => Mux2:inst11.S
+Load => Mux2:inst12.S
+Load => Mux2:inst9.S
+I1 => Mux2:inst11.D1
+I0 => Mux2:inst12.D1
+E => HAS:inst7.Ci
+I3 => Mux2:inst9.D1
+Q2 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Q1 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Q0 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BCDCounter|counter:inst|Mux2:inst9
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+D1 => inst1.IN0
+S => inst1.IN1
+S => inst3.IN0
+D0 => inst.IN0
+
+
+|BCDCounter|counter:inst|HAS:inst4
+Di <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Qi => inst1.IN0
+Qi => inst.IN1
+Ci => inst1.IN1
+Ci => inst2.IN1
+Cnext <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+D => inst.IN0
+
+
+|BCDCounter|counter:inst|HAS:inst5
+Di <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Qi => inst1.IN0
+Qi => inst.IN1
+Ci => inst1.IN1
+Ci => inst2.IN1
+Cnext <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+D => inst.IN0
+
+
+|BCDCounter|counter:inst|Mux2:inst10
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+D1 => inst1.IN0
+S => inst1.IN1
+S => inst3.IN0
+D0 => inst.IN0
+
+
+|BCDCounter|counter:inst|HAS:inst6
+Di <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Qi => inst1.IN0
+Qi => inst.IN1
+Ci => inst1.IN1
+Ci => inst2.IN1
+Cnext <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+D => inst.IN0
+
+
+|BCDCounter|counter:inst|Mux2:inst11
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+D1 => inst1.IN0
+S => inst1.IN1
+S => inst3.IN0
+D0 => inst.IN0
+
+
+|BCDCounter|counter:inst|HAS:inst7
+Di <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Qi => inst1.IN0
+Qi => inst.IN1
+Ci => inst1.IN1
+Ci => inst2.IN1
+Cnext <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+D => inst.IN0
+
+
+|BCDCounter|counter:inst|Mux2:inst12
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+D1 => inst1.IN0
+S => inst1.IN1
+S => inst3.IN0
+D0 => inst.IN0
+
+
+|BCDCounter|Mux2:inst1
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+D1 => inst1.IN0
+S => inst1.IN1
+S => inst3.IN0
+D0 => inst.IN0
+
+
+|BCDCounter|Mux2:inst2
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+D1 => inst1.IN0
+S => inst1.IN1
+S => inst3.IN0
+D0 => inst.IN0
+
+
+|BCDCounter|Mux2:inst3
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+D1 => inst1.IN0
+S => inst1.IN1
+S => inst3.IN0
+D0 => inst.IN0
+
+
+|BCDCounter|Mux2:inst4
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+D1 => inst1.IN0
+S => inst1.IN1
+S => inst3.IN0
+D0 => inst.IN0
+
+

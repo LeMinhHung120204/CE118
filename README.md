@@ -1,39 +1,23 @@
-# CE118
+<!-- Banner -->
+<p align="center">
+  <a href="https://www.uit.edu.vn/" title="Trường Đại học Công nghệ Thông tin" style="border: none;">
+    <img src="https://i.imgur.com/WmMnSRt.png" alt="Trường Đại học Công nghệ Thông tin | University of Information Technology">
+  </a>
+</p>
 
-from MHL with love
+<h1 align="center"><b>Thiết kế luận lý số - CE118 </b></h1>
 
-## Mục Lục
+# Thành viên nhóm
+| STT    | MSSV          | Họ và Tên              |Chức Vụ    | Github                                                  | Email                   |
+| ------ |:-------------:| ----------------------:|----------:|--------------------------------------------------------:|-------------------------:
+| 1      | 22520506      | Lê Minh Hùng        |Thành viên |[LeMinhHung120204](https://github.com/LeMinhHung120204)            |22520506@gm.uit.edu.vn   |
 
-- [Giới Thiệu](#giới-thiệu)
-- [Yêu Cầu](#yêu-cầu)
-- [Cài Đặt](#cài-đặt)
-- [Cách Sử Dụng](#cách-sử-dụng)
-- [Tính Năng](#tính-năng)
-- [Đóng Góp](#đóng-góp)
-- [Giấy Phép](#From-MHL)
+# GIỚI THIỆU MÔN HỌC
+* **Tên môn học:** Thiết kế luận lý số
+* **Mã môn học:** CE118
+* **Mã lớp:** CE118.P13
+* **Năm học:** HK1 (2024 - 2025)
+* **Giảng viên**: Lâm Đức Khải
 
-## Giới Thiệu
-
-Giới thiệu ngắn về mục đích của dự án và tại sao nó hữu ích.
-
-## Yêu Cầu
-
-Liệt kê các yêu cầu cần thiết để chạy dự án, ví dụ:
-
-- Quartus
-
-## Cài Đặt
-
-Hướng dẫn cài đặt dự án:
-
-1. Clone dự án về máy:
-   ```bash
-   git clone https://github.com/LeMinhHung120204/CE118.git
-
-## Đóng Góp
-
-MHL
-
-## Giấy Phép
-
-Được cấp bởi MHL
+# ĐỒ ÁN CUỐI KÌ
+* **Đề tài:** Tất cả cả bài trong slide

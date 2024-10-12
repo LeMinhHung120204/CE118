@@ -1,5 +1,9 @@
 |LIFO
 Empty <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+Q[0] <= CounterUp_Down:Top.Q0
+Q[1] <= CounterUp_Down:Top.Q1
+Q[2] <= CounterUp_Down:Top.Q2
+Q[3] <= CounterUp_Down:Top.Q3
 Push/Pop => inst3.IN0
 Push/Pop => inst.IN0
 Enable => inst3.IN1
@@ -11,18 +15,14 @@ Reset => CounterUp_Down_set:Top-1.Set
 CLK => CounterUp_Down:Top.CLK
 CLK => CounterUp_Down_set:Top-1.CLK
 Full <= inst7.DB_MAX_OUTPUT_PORT_TYPE
-pin_name1 <= CounterUp_Down:Top.Q0
-pin_name2 <= CounterUp_Down:Top.Q1
-pin_name3 <= CounterUp_Down:Top.Q2
-pin_name4 <= CounterUp_Down:Top.Q3
-IO7 <> RAM16_8:inst8.IO7
-IO6 <> RAM16_8:inst8.IO6
-IO5 <> RAM16_8:inst8.IO5
-IO4 <> RAM16_8:inst8.IO4
-IO3 <> RAM16_8:inst8.IO3
-IO2 <> RAM16_8:inst8.IO2
-IO1 <> RAM16_8:inst8.IO1
-IO0 <> RAM16_8:inst8.IO0
+IO[0] <> RAM16_8:inst8.IO0
+IO[1] <> RAM16_8:inst8.IO1
+IO[2] <> RAM16_8:inst8.IO2
+IO[3] <> RAM16_8:inst8.IO3
+IO[4] <> RAM16_8:inst8.IO4
+IO[5] <> RAM16_8:inst8.IO5
+IO[6] <> RAM16_8:inst8.IO6
+IO[7] <> RAM16_8:inst8.IO7
 
 
 |LIFO|CounterUp_Down:Top
@@ -47,54 +47,42 @@ Q0 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |LIFO|CounterUp_Down:Top|HAS:inst8
-Di <= inst17.DB_MAX_OUTPUT_PORT_TYPE
-Qi => inst17.IN0
-Qi => inst13.IN0
-Qi => inst14.IN1
-Ci => inst17.IN1
-Ci => inst15.IN2
-Ci => inst14.IN2
-Cnext <= inst16.DB_MAX_OUTPUT_PORT_TYPE
-D => inst15.IN0
+Di <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Qi => inst1.IN0
+Qi => inst.IN1
+Ci => inst1.IN1
+Ci => inst2.IN1
+Cnext <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 D => inst.IN0
 
 
 |LIFO|CounterUp_Down:Top|HAS:inst9
-Di <= inst17.DB_MAX_OUTPUT_PORT_TYPE
-Qi => inst17.IN0
-Qi => inst13.IN0
-Qi => inst14.IN1
-Ci => inst17.IN1
-Ci => inst15.IN2
-Ci => inst14.IN2
-Cnext <= inst16.DB_MAX_OUTPUT_PORT_TYPE
-D => inst15.IN0
+Di <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Qi => inst1.IN0
+Qi => inst.IN1
+Ci => inst1.IN1
+Ci => inst2.IN1
+Cnext <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 D => inst.IN0
 
 
 |LIFO|CounterUp_Down:Top|HAS:inst10
-Di <= inst17.DB_MAX_OUTPUT_PORT_TYPE
-Qi => inst17.IN0
-Qi => inst13.IN0
-Qi => inst14.IN1
-Ci => inst17.IN1
-Ci => inst15.IN2
-Ci => inst14.IN2
-Cnext <= inst16.DB_MAX_OUTPUT_PORT_TYPE
-D => inst15.IN0
+Di <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Qi => inst1.IN0
+Qi => inst.IN1
+Ci => inst1.IN1
+Ci => inst2.IN1
+Cnext <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 D => inst.IN0
 
 
 |LIFO|CounterUp_Down:Top|HAS:inst11
-Di <= inst17.DB_MAX_OUTPUT_PORT_TYPE
-Qi => inst17.IN0
-Qi => inst13.IN0
-Qi => inst14.IN1
-Ci => inst17.IN1
-Ci => inst15.IN2
-Ci => inst14.IN2
-Cnext <= inst16.DB_MAX_OUTPUT_PORT_TYPE
-D => inst15.IN0
+Di <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Qi => inst1.IN0
+Qi => inst.IN1
+Ci => inst1.IN1
+Ci => inst2.IN1
+Cnext <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 D => inst.IN0
 
 
@@ -1477,54 +1465,42 @@ Q0 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |LIFO|CounterUp_Down_set:Top-1|HAS:inst8
-Di <= inst17.DB_MAX_OUTPUT_PORT_TYPE
-Qi => inst17.IN0
-Qi => inst13.IN0
-Qi => inst14.IN1
-Ci => inst17.IN1
-Ci => inst15.IN2
-Ci => inst14.IN2
-Cnext <= inst16.DB_MAX_OUTPUT_PORT_TYPE
-D => inst15.IN0
+Di <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Qi => inst1.IN0
+Qi => inst.IN1
+Ci => inst1.IN1
+Ci => inst2.IN1
+Cnext <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 D => inst.IN0
 
 
 |LIFO|CounterUp_Down_set:Top-1|HAS:inst9
-Di <= inst17.DB_MAX_OUTPUT_PORT_TYPE
-Qi => inst17.IN0
-Qi => inst13.IN0
-Qi => inst14.IN1
-Ci => inst17.IN1
-Ci => inst15.IN2
-Ci => inst14.IN2
-Cnext <= inst16.DB_MAX_OUTPUT_PORT_TYPE
-D => inst15.IN0
+Di <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Qi => inst1.IN0
+Qi => inst.IN1
+Ci => inst1.IN1
+Ci => inst2.IN1
+Cnext <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 D => inst.IN0
 
 
 |LIFO|CounterUp_Down_set:Top-1|HAS:inst10
-Di <= inst17.DB_MAX_OUTPUT_PORT_TYPE
-Qi => inst17.IN0
-Qi => inst13.IN0
-Qi => inst14.IN1
-Ci => inst17.IN1
-Ci => inst15.IN2
-Ci => inst14.IN2
-Cnext <= inst16.DB_MAX_OUTPUT_PORT_TYPE
-D => inst15.IN0
+Di <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Qi => inst1.IN0
+Qi => inst.IN1
+Ci => inst1.IN1
+Ci => inst2.IN1
+Cnext <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 D => inst.IN0
 
 
 |LIFO|CounterUp_Down_set:Top-1|HAS:inst11
-Di <= inst17.DB_MAX_OUTPUT_PORT_TYPE
-Qi => inst17.IN0
-Qi => inst13.IN0
-Qi => inst14.IN1
-Ci => inst17.IN1
-Ci => inst15.IN2
-Ci => inst14.IN2
-Cnext <= inst16.DB_MAX_OUTPUT_PORT_TYPE
-D => inst15.IN0
+Di <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Qi => inst1.IN0
+Qi => inst.IN1
+Ci => inst1.IN1
+Ci => inst2.IN1
+Cnext <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 D => inst.IN0
 
 

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for LIFO
-Sat Oct 12 18:43:40 2024
+Sat Oct 12 21:58:55 2024
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -44,7 +44,7 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sat Oct 12 18:43:40 2024           ;
+; Analysis & Synthesis Status        ; Successful - Sat Oct 12 21:58:55 2024           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; LIFO                                            ;
 ; Top-level Entity Name              ; LIFO                                            ;
@@ -157,22 +157,22 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                              ;
-+----------------------------------+-----------------+------------------------------------------+-------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                                ; File Name with Absolute Path              ; Library ;
-+----------------------------------+-----------------+------------------------------------------+-------------------------------------------+---------+
-; LIFO.bdf                         ; yes             ; User Block Diagram/Schematic File        ; D:/CE118/DoAn/LIFO/LIFO.bdf               ;         ;
-; CounterUp_Down.bdf               ; yes             ; User Block Diagram/Schematic File        ; D:/CE118/DoAn/LIFO/CounterUp_Down.bdf     ;         ;
-; HAS.bdf                          ; yes             ; User Block Diagram/Schematic File        ; D:/CE118/DoAn/LIFO/HAS.bdf                ;         ;
-; CounterUp_Down_set.bdf           ; yes             ; User Block Diagram/Schematic File        ; D:/CE118/DoAn/LIFO/CounterUp_Down_set.bdf ;         ;
-; Selector.bdf                     ; yes             ; User Block Diagram/Schematic File        ; D:/CE118/DoAn/LIFO/Selector.bdf           ;         ;
-; RAM16_8.bdf                      ; yes             ; User Block Diagram/Schematic File        ; D:/CE118/DoAn/LIFO/RAM16_8.bdf            ;         ;
-; RAM4_4.bdf                       ; yes             ; User Block Diagram/Schematic File        ; D:/CE118/DoAn/LIFO/RAM4_4.bdf             ;         ;
-; mc.bdf                           ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/CE118/DoAn/LIFO/mc.bdf                 ;         ;
-; decoder2_4.bdf                   ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/CE118/DoAn/LIFO/decoder2_4.bdf         ;         ;
-; mux2.bdf                         ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/CE118/DoAn/LIFO/mux2.bdf               ;         ;
-+----------------------------------+-----------------+------------------------------------------+-------------------------------------------+---------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                ;
++----------------------------------+-----------------+------------------------------------------+-------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                                ; File Name with Absolute Path                                ; Library ;
++----------------------------------+-----------------+------------------------------------------+-------------------------------------------------------------+---------+
+; LIFO.bdf                         ; yes             ; User Block Diagram/Schematic File        ; D:/study/year3/TKLLS/CE118/DoAn/LIFO/LIFO.bdf               ;         ;
+; CounterUp_Down.bdf               ; yes             ; User Block Diagram/Schematic File        ; D:/study/year3/TKLLS/CE118/DoAn/LIFO/CounterUp_Down.bdf     ;         ;
+; HAS.bdf                          ; yes             ; User Block Diagram/Schematic File        ; D:/study/year3/TKLLS/CE118/DoAn/LIFO/HAS.bdf                ;         ;
+; CounterUp_Down_set.bdf           ; yes             ; User Block Diagram/Schematic File        ; D:/study/year3/TKLLS/CE118/DoAn/LIFO/CounterUp_Down_set.bdf ;         ;
+; Selector.bdf                     ; yes             ; User Block Diagram/Schematic File        ; D:/study/year3/TKLLS/CE118/DoAn/LIFO/Selector.bdf           ;         ;
+; RAM16_8.bdf                      ; yes             ; User Block Diagram/Schematic File        ; D:/study/year3/TKLLS/CE118/DoAn/LIFO/RAM16_8.bdf            ;         ;
+; RAM4_4.bdf                       ; yes             ; User Block Diagram/Schematic File        ; D:/study/year3/TKLLS/CE118/DoAn/LIFO/RAM4_4.bdf             ;         ;
+; mc.bdf                           ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/study/year3/TKLLS/CE118/DoAn/LIFO/mc.bdf                 ;         ;
+; decoder2_4.bdf                   ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/study/year3/TKLLS/CE118/DoAn/LIFO/decoder2_4.bdf         ;         ;
+; mux2.bdf                         ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/study/year3/TKLLS/CE118/DoAn/LIFO/mux2.bdf               ;         ;
++----------------------------------+-----------------+------------------------------------------+-------------------------------------------------------------+---------+
 
 
 +---------------------------------------------------------------------------------+
@@ -522,7 +522,7 @@ Table restricted to first 100 entries. Note: All latches listed above may not be
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Sat Oct 12 18:43:38 2024
+    Info: Processing started: Sat Oct 12 21:58:54 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off LIFO -c LIFO
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file lifo.bdf
@@ -600,8 +600,8 @@ Info (21057): Implemented 290 device resources after synthesis - the final resou
     Info (21061): Implemented 272 logic cells
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 38 warnings
     Info: Peak virtual memory: 4600 megabytes
-    Info: Processing ended: Sat Oct 12 18:43:40 2024
-    Info: Elapsed time: 00:00:02
+    Info: Processing ended: Sat Oct 12 21:58:55 2024
+    Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
 

@@ -29,3 +29,11 @@ Hướng dẫn cài đặt dự án:
 1. Clone dự án về máy:
    ```bash
    git clone https://github.com/LeMinhHung120204/CE118.git
+
+## Đóng Góp
+
+MHL
+
+## Giấy Phép
+
+Được cấp bởi MHL

@@ -1,0 +1,1568 @@
+|FIFO
+EMPTY <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst4.IN0
+CLK => inst3.IN1
+CLK => Counter:inst1.CLK
+CLK => Counter:inst.CLK
+READ_WRITE => inst10.IN0
+READ_WRITE => inst9.IN1
+ENABLE => inst8.IN1
+ENABLE => inst9.IN0
+RESET => Counter:inst1.RESET_1
+RESET => Counter:inst.RESET_1
+FULL <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+ADDRESS[0] <= A[0].DB_MAX_OUTPUT_PORT_TYPE
+ADDRESS[1] <= A[1].DB_MAX_OUTPUT_PORT_TYPE
+ADDRESS[2] <= A[2].DB_MAX_OUTPUT_PORT_TYPE
+ADDRESS[3] <= A[3].DB_MAX_OUTPUT_PORT_TYPE
+IO[0] <> RAM16_8:inst7.IO[0]
+IO[1] <> RAM16_8:inst7.IO[1]
+IO[2] <> RAM16_8:inst7.IO[2]
+IO[3] <> RAM16_8:inst7.IO[3]
+IO[4] <> RAM16_8:inst7.IO[4]
+IO[5] <> RAM16_8:inst7.IO[5]
+IO[6] <> RAM16_8:inst7.IO[6]
+IO[7] <> RAM16_8:inst7.IO[7]
+
+
+|FIFO|compare4:inst6
+compare4 <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+C[0] => inst3.IN0
+C[1] => inst2.IN0
+C[2] => inst1.IN0
+C[3] => inst.IN0
+D[0] => inst3.IN1
+D[1] => inst2.IN1
+D[2] => inst1.IN1
+D[3] => inst.IN1
+
+
+|FIFO|Counter:inst1
+Carry <= HAS:inst6.Cnext
+D => HAS:inst6.Din
+D => HAS:inst5.Din
+D => HAS:inst4.Din
+D => HAS:inst3.Din
+D => HAS:inst1.Din
+E => HAS:inst1.Cn
+Q[0] <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= inst17.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= inst18.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= inst19.DB_MAX_OUTPUT_PORT_TYPE
+Q[4] <= inst20.DB_MAX_OUTPUT_PORT_TYPE
+RESET_1 => inst2.IN0
+CLK => inst20.CLK
+CLK => inst19.CLK
+CLK => inst18.CLK
+CLK => inst17.CLK
+CLK => inst.CLK
+
+
+|FIFO|Counter:inst1|HAS:inst6
+D <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Q => inst.IN0
+Q => inst2.IN1
+Q => inst4.IN0
+Cn => inst.IN1
+Cn => inst2.IN0
+Cn => inst1.IN2
+Cnext <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Din => inst5.IN0
+Din => inst1.IN0
+
+
+|FIFO|Counter:inst1|HAS:inst5
+D <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Q => inst.IN0
+Q => inst2.IN1
+Q => inst4.IN0
+Cn => inst.IN1
+Cn => inst2.IN0
+Cn => inst1.IN2
+Cnext <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Din => inst5.IN0
+Din => inst1.IN0
+
+
+|FIFO|Counter:inst1|HAS:inst4
+D <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Q => inst.IN0
+Q => inst2.IN1
+Q => inst4.IN0
+Cn => inst.IN1
+Cn => inst2.IN0
+Cn => inst1.IN2
+Cnext <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Din => inst5.IN0
+Din => inst1.IN0
+
+
+|FIFO|Counter:inst1|HAS:inst3
+D <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Q => inst.IN0
+Q => inst2.IN1
+Q => inst4.IN0
+Cn => inst.IN1
+Cn => inst2.IN0
+Cn => inst1.IN2
+Cnext <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Din => inst5.IN0
+Din => inst1.IN0
+
+
+|FIFO|Counter:inst1|HAS:inst1
+D <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Q => inst.IN0
+Q => inst2.IN1
+Q => inst4.IN0
+Cn => inst.IN1
+Cn => inst2.IN0
+Cn => inst1.IN2
+Cnext <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Din => inst5.IN0
+Din => inst1.IN0
+
+
+|FIFO|Counter:inst
+Carry <= HAS:inst6.Cnext
+D => HAS:inst6.Din
+D => HAS:inst5.Din
+D => HAS:inst4.Din
+D => HAS:inst3.Din
+D => HAS:inst1.Din
+E => HAS:inst1.Cn
+Q[0] <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= inst17.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= inst18.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= inst19.DB_MAX_OUTPUT_PORT_TYPE
+Q[4] <= inst20.DB_MAX_OUTPUT_PORT_TYPE
+RESET_1 => inst2.IN0
+CLK => inst20.CLK
+CLK => inst19.CLK
+CLK => inst18.CLK
+CLK => inst17.CLK
+CLK => inst.CLK
+
+
+|FIFO|Counter:inst|HAS:inst6
+D <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Q => inst.IN0
+Q => inst2.IN1
+Q => inst4.IN0
+Cn => inst.IN1
+Cn => inst2.IN0
+Cn => inst1.IN2
+Cnext <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Din => inst5.IN0
+Din => inst1.IN0
+
+
+|FIFO|Counter:inst|HAS:inst5
+D <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Q => inst.IN0
+Q => inst2.IN1
+Q => inst4.IN0
+Cn => inst.IN1
+Cn => inst2.IN0
+Cn => inst1.IN2
+Cnext <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Din => inst5.IN0
+Din => inst1.IN0
+
+
+|FIFO|Counter:inst|HAS:inst4
+D <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Q => inst.IN0
+Q => inst2.IN1
+Q => inst4.IN0
+Cn => inst.IN1
+Cn => inst2.IN0
+Cn => inst1.IN2
+Cnext <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Din => inst5.IN0
+Din => inst1.IN0
+
+
+|FIFO|Counter:inst|HAS:inst3
+D <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Q => inst.IN0
+Q => inst2.IN1
+Q => inst4.IN0
+Cn => inst.IN1
+Cn => inst2.IN0
+Cn => inst1.IN2
+Cnext <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Din => inst5.IN0
+Din => inst1.IN0
+
+
+|FIFO|Counter:inst|HAS:inst1
+D <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Q => inst.IN0
+Q => inst2.IN1
+Q => inst4.IN0
+Cn => inst.IN1
+Cn => inst2.IN0
+Cn => inst1.IN2
+Cnext <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Din => inst5.IN0
+Din => inst1.IN0
+
+
+|FIFO|MUX_BUS_4:inst5
+OUT[0] <= 21mux:inst3.Y
+OUT[1] <= 21mux:inst2.Y
+OUT[2] <= 21mux:inst1.Y
+OUT[3] <= 21mux:inst.Y
+SLC => 21mux:inst.S
+SLC => 21mux:inst1.S
+SLC => 21mux:inst2.S
+SLC => 21mux:inst3.S
+Z[0] => 21mux:inst3.B
+Z[1] => 21mux:inst2.B
+Z[2] => 21mux:inst1.B
+Z[3] => 21mux:inst.B
+O[0] => 21mux:inst3.A
+O[1] => 21mux:inst2.A
+O[2] => 21mux:inst1.A
+O[3] => 21mux:inst.A
+
+
+|FIFO|MUX_BUS_4:inst5|21mux:inst
+Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
+A => 6.IN0
+S => 6.IN1
+S => 7.IN1
+B => 8.IN0
+
+
+|FIFO|MUX_BUS_4:inst5|21mux:inst1
+Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
+A => 6.IN0
+S => 6.IN1
+S => 7.IN1
+B => 8.IN0
+
+
+|FIFO|MUX_BUS_4:inst5|21mux:inst2
+Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
+A => 6.IN0
+S => 6.IN1
+S => 7.IN1
+B => 8.IN0
+
+
+|FIFO|MUX_BUS_4:inst5|21mux:inst3
+Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
+A => 6.IN0
+S => 6.IN1
+S => 7.IN1
+B => 8.IN0
+
+
+|FIFO|RAM16_8:inst7
+IO[0] <> RAM4_4:inst1.IO3
+IO[0] <> RAM4_4:inst7.IO3
+IO[0] <> RAM4_4:inst10.IO3
+IO[0] <> RAM4_4:inst3.IO3
+IO[1] <> RAM4_4:inst1.IO2
+IO[1] <> RAM4_4:inst7.IO2
+IO[1] <> RAM4_4:inst10.IO2
+IO[1] <> RAM4_4:inst3.IO2
+IO[2] <> RAM4_4:inst1.IO1
+IO[2] <> RAM4_4:inst7.IO1
+IO[2] <> RAM4_4:inst10.IO1
+IO[2] <> RAM4_4:inst3.IO1
+IO[3] <> RAM4_4:inst1.IO0
+IO[3] <> RAM4_4:inst7.IO0
+IO[3] <> RAM4_4:inst10.IO0
+IO[3] <> RAM4_4:inst3.IO0
+IO[4] <> RAM4_4:inst.IO0
+IO[4] <> RAM4_4:inst2.IO0
+IO[4] <> RAM4_4:inst4.IO0
+IO[4] <> RAM4_4:inst9.IO0
+IO[5] <> RAM4_4:inst.IO1
+IO[5] <> RAM4_4:inst2.IO1
+IO[5] <> RAM4_4:inst4.IO1
+IO[5] <> RAM4_4:inst9.IO1
+IO[6] <> RAM4_4:inst.IO2
+IO[6] <> RAM4_4:inst2.IO2
+IO[6] <> RAM4_4:inst4.IO2
+IO[6] <> RAM4_4:inst9.IO2
+IO[7] <> RAM4_4:inst.IO3
+IO[7] <> RAM4_4:inst2.IO3
+IO[7] <> RAM4_4:inst4.IO3
+IO[7] <> RAM4_4:inst9.IO3
+A[0] => RAM4_4:inst.A0
+A[0] => RAM4_4:inst2.A0
+A[0] => RAM4_4:inst4.A0
+A[0] => RAM4_4:inst9.A0
+A[0] => RAM4_4:inst1.A0
+A[0] => RAM4_4:inst7.A0
+A[0] => RAM4_4:inst10.A0
+A[0] => RAM4_4:inst3.A0
+A[1] => RAM4_4:inst.A1
+A[1] => RAM4_4:inst2.A1
+A[1] => RAM4_4:inst4.A1
+A[1] => RAM4_4:inst9.A1
+A[1] => RAM4_4:inst1.A1
+A[1] => RAM4_4:inst7.A1
+A[1] => RAM4_4:inst10.A1
+A[1] => RAM4_4:inst3.A1
+A[2] => Decoder2_4:inst27.A0
+A[3] => Decoder2_4:inst27.A1
+RWS => RAM4_4:inst.RWS
+RWS => RAM4_4:inst2.RWS
+RWS => RAM4_4:inst4.RWS
+RWS => RAM4_4:inst9.RWS
+RWS => RAM4_4:inst1.RWS
+RWS => RAM4_4:inst7.RWS
+RWS => RAM4_4:inst10.RWS
+RWS => RAM4_4:inst3.RWS
+
+
+|FIFO|RAM16_8:inst7|RAM4_4:inst
+IO3 <> inst25
+A1 => Decoder2_4:inst.A1
+A0 => Decoder2_4:inst.A0
+RWS => inst18.IN0
+RWS => inst19.IN0
+CS => inst18.IN1
+CS => inst17.IN0
+IO2 <> inst24
+IO1 <> inst22
+IO0 <> inst23
+
+
+|FIFO|RAM16_8:inst7|RAM4_4:inst|MC:inst1
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input => inst.DATAIN
+RS => inst1.IN0
+RS => inst3.OE
+WE => inst1.IN1
+
+
+|FIFO|RAM16_8:inst7|RAM4_4:inst|Decoder2_4:inst
+Y0 <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+A1 => inst1.IN0
+A1 => inst4.IN0
+A1 => inst2.IN1
+A0 => inst.IN0
+A0 => inst3.IN0
+A0 => inst2.IN0
+Y1 <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Y2 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Y3 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FIFO|RAM16_8:inst7|RAM4_4:inst|MC:inst5
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input => inst.DATAIN
+RS => inst1.IN0
+RS => inst3.OE
+WE => inst1.IN1
+
+
+|FIFO|RAM16_8:inst7|RAM4_4:inst|MC:inst9
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input => inst.DATAIN
+RS => inst1.IN0
+RS => inst3.OE
+WE => inst1.IN1
+
+
+|FIFO|RAM16_8:inst7|RAM4_4:inst|MC:inst13
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input => inst.DATAIN
+RS => inst1.IN0
+RS => inst3.OE
+WE => inst1.IN1
+
+
+|FIFO|RAM16_8:inst7|RAM4_4:inst|MC:inst2
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input => inst.DATAIN
+RS => inst1.IN0
+RS => inst3.OE
+WE => inst1.IN1
+
+
+|FIFO|RAM16_8:inst7|RAM4_4:inst|MC:inst6
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input => inst.DATAIN
+RS => inst1.IN0
+RS => inst3.OE
+WE => inst1.IN1
+
+
+|FIFO|RAM16_8:inst7|RAM4_4:inst|MC:inst12
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input => inst.DATAIN
+RS => inst1.IN0
+RS => inst3.OE
+WE => inst1.IN1
+
+
+|FIFO|RAM16_8:inst7|RAM4_4:inst|MC:inst14
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input => inst.DATAIN
+RS => inst1.IN0
+RS => inst3.OE
+WE => inst1.IN1
+
+
+|FIFO|RAM16_8:inst7|RAM4_4:inst|MC:inst3
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input => inst.DATAIN
+RS => inst1.IN0
+RS => inst3.OE
+WE => inst1.IN1
+
+
+|FIFO|RAM16_8:inst7|RAM4_4:inst|MC:inst7
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input => inst.DATAIN
+RS => inst1.IN0
+RS => inst3.OE
+WE => inst1.IN1
+
+
+|FIFO|RAM16_8:inst7|RAM4_4:inst|MC:inst10
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input => inst.DATAIN
+RS => inst1.IN0
+RS => inst3.OE
+WE => inst1.IN1
+
+
+|FIFO|RAM16_8:inst7|RAM4_4:inst|MC:inst15
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input => inst.DATAIN
+RS => inst1.IN0
+RS => inst3.OE
+WE => inst1.IN1
+
+
+|FIFO|RAM16_8:inst7|RAM4_4:inst|MC:inst4
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input => inst.DATAIN
+RS => inst1.IN0
+RS => inst3.OE
+WE => inst1.IN1
+
+
+|FIFO|RAM16_8:inst7|RAM4_4:inst|MC:inst16
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input => inst.DATAIN
+RS => inst1.IN0
+RS => inst3.OE
+WE => inst1.IN1
+
+
+|FIFO|RAM16_8:inst7|RAM4_4:inst|MC:inst11
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input => inst.DATAIN
+RS => inst1.IN0
+RS => inst3.OE
+WE => inst1.IN1
+
+
+|FIFO|RAM16_8:inst7|RAM4_4:inst|MC:inst8
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input => inst.DATAIN
+RS => inst1.IN0
+RS => inst3.OE
+WE => inst1.IN1
+
+
+|FIFO|RAM16_8:inst7|Decoder2_4:inst27
+Y0 <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+A1 => inst1.IN0
+A1 => inst4.IN0
+A1 => inst2.IN1
+A0 => inst.IN0
+A0 => inst3.IN0
+A0 => inst2.IN0
+Y1 <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Y2 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Y3 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FIFO|RAM16_8:inst7|RAM4_4:inst2
+IO3 <> inst25
+A1 => Decoder2_4:inst.A1
+A0 => Decoder2_4:inst.A0
+RWS => inst18.IN0
+RWS => inst19.IN0
+CS => inst18.IN1
+CS => inst17.IN0
+IO2 <> inst24
+IO1 <> inst22
+IO0 <> inst23
+
+
+|FIFO|RAM16_8:inst7|RAM4_4:inst2|MC:inst1
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input => inst.DATAIN
+RS => inst1.IN0
+RS => inst3.OE
+WE => inst1.IN1
+
+
+|FIFO|RAM16_8:inst7|RAM4_4:inst2|Decoder2_4:inst
+Y0 <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+A1 => inst1.IN0
+A1 => inst4.IN0
+A1 => inst2.IN1
+A0 => inst.IN0
+A0 => inst3.IN0
+A0 => inst2.IN0
+Y1 <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Y2 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Y3 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FIFO|RAM16_8:inst7|RAM4_4:inst2|MC:inst5
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input => inst.DATAIN
+RS => inst1.IN0
+RS => inst3.OE
+WE => inst1.IN1
+
+
+|FIFO|RAM16_8:inst7|RAM4_4:inst2|MC:inst9
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input => inst.DATAIN
+RS => inst1.IN0
+RS => inst3.OE
+WE => inst1.IN1
+
+
+|FIFO|RAM16_8:inst7|RAM4_4:inst2|MC:inst13
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input => inst.DATAIN
+RS => inst1.IN0
+RS => inst3.OE
+WE => inst1.IN1
+
+
+|FIFO|RAM16_8:inst7|RAM4_4:inst2|MC:inst2
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input => inst.DATAIN
+RS => inst1.IN0
+RS => inst3.OE
+WE => inst1.IN1
+
+
+|FIFO|RAM16_8:inst7|RAM4_4:inst2|MC:inst6
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input => inst.DATAIN
+RS => inst1.IN0
+RS => inst3.OE
+WE => inst1.IN1
+
+
+|FIFO|RAM16_8:inst7|RAM4_4:inst2|MC:inst12
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input => inst.DATAIN
+RS => inst1.IN0
+RS => inst3.OE
+WE => inst1.IN1
+
+
+|FIFO|RAM16_8:inst7|RAM4_4:inst2|MC:inst14
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input => inst.DATAIN
+RS => inst1.IN0
+RS => inst3.OE
+WE => inst1.IN1
+
+
+|FIFO|RAM16_8:inst7|RAM4_4:inst2|MC:inst3
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input => inst.DATAIN
+RS => inst1.IN0
+RS => inst3.OE
+WE => inst1.IN1
+
+
+|FIFO|RAM16_8:inst7|RAM4_4:inst2|MC:inst7
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input => inst.DATAIN
+RS => inst1.IN0
+RS => inst3.OE
+WE => inst1.IN1
+
+
+|FIFO|RAM16_8:inst7|RAM4_4:inst2|MC:inst10
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input => inst.DATAIN
+RS => inst1.IN0
+RS => inst3.OE
+WE => inst1.IN1
+
+
+|FIFO|RAM16_8:inst7|RAM4_4:inst2|MC:inst15
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input => inst.DATAIN
+RS => inst1.IN0
+RS => inst3.OE
+WE => inst1.IN1
+
+
+|FIFO|RAM16_8:inst7|RAM4_4:inst2|MC:inst4
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input => inst.DATAIN
+RS => inst1.IN0
+RS => inst3.OE
+WE => inst1.IN1
+
+
+|FIFO|RAM16_8:inst7|RAM4_4:inst2|MC:inst16
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input => inst.DATAIN
+RS => inst1.IN0
+RS => inst3.OE
+WE => inst1.IN1
+
+
+|FIFO|RAM16_8:inst7|RAM4_4:inst2|MC:inst11
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input => inst.DATAIN
+RS => inst1.IN0
+RS => inst3.OE
+WE => inst1.IN1
+
+
+|FIFO|RAM16_8:inst7|RAM4_4:inst2|MC:inst8
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input => inst.DATAIN
+RS => inst1.IN0
+RS => inst3.OE
+WE => inst1.IN1
+
+
+|FIFO|RAM16_8:inst7|RAM4_4:inst4
+IO3 <> inst25
+A1 => Decoder2_4:inst.A1
+A0 => Decoder2_4:inst.A0
+RWS => inst18.IN0
+RWS => inst19.IN0
+CS => inst18.IN1
+CS => inst17.IN0
+IO2 <> inst24
+IO1 <> inst22
+IO0 <> inst23
+
+
+|FIFO|RAM16_8:inst7|RAM4_4:inst4|MC:inst1
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input => inst.DATAIN
+RS => inst1.IN0
+RS => inst3.OE
+WE => inst1.IN1
+
+
+|FIFO|RAM16_8:inst7|RAM4_4:inst4|Decoder2_4:inst
+Y0 <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+A1 => inst1.IN0
+A1 => inst4.IN0
+A1 => inst2.IN1
+A0 => inst.IN0
+A0 => inst3.IN0
+A0 => inst2.IN0
+Y1 <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Y2 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Y3 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FIFO|RAM16_8:inst7|RAM4_4:inst4|MC:inst5
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input => inst.DATAIN
+RS => inst1.IN0
+RS => inst3.OE
+WE => inst1.IN1
+
+
+|FIFO|RAM16_8:inst7|RAM4_4:inst4|MC:inst9
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input => inst.DATAIN
+RS => inst1.IN0
+RS => inst3.OE
+WE => inst1.IN1
+
+
+|FIFO|RAM16_8:inst7|RAM4_4:inst4|MC:inst13
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input => inst.DATAIN
+RS => inst1.IN0
+RS => inst3.OE
+WE => inst1.IN1
+
+
+|FIFO|RAM16_8:inst7|RAM4_4:inst4|MC:inst2
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input => inst.DATAIN
+RS => inst1.IN0
+RS => inst3.OE
+WE => inst1.IN1
+
+
+|FIFO|RAM16_8:inst7|RAM4_4:inst4|MC:inst6
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input => inst.DATAIN
+RS => inst1.IN0
+RS => inst3.OE
+WE => inst1.IN1
+
+
+|FIFO|RAM16_8:inst7|RAM4_4:inst4|MC:inst12
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input => inst.DATAIN
+RS => inst1.IN0
+RS => inst3.OE
+WE => inst1.IN1
+
+
+|FIFO|RAM16_8:inst7|RAM4_4:inst4|MC:inst14
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input => inst.DATAIN
+RS => inst1.IN0
+RS => inst3.OE
+WE => inst1.IN1
+
+
+|FIFO|RAM16_8:inst7|RAM4_4:inst4|MC:inst3
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input => inst.DATAIN
+RS => inst1.IN0
+RS => inst3.OE
+WE => inst1.IN1
+
+
+|FIFO|RAM16_8:inst7|RAM4_4:inst4|MC:inst7
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input => inst.DATAIN
+RS => inst1.IN0
+RS => inst3.OE
+WE => inst1.IN1
+
+
+|FIFO|RAM16_8:inst7|RAM4_4:inst4|MC:inst10
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input => inst.DATAIN
+RS => inst1.IN0
+RS => inst3.OE
+WE => inst1.IN1
+
+
+|FIFO|RAM16_8:inst7|RAM4_4:inst4|MC:inst15
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input => inst.DATAIN
+RS => inst1.IN0
+RS => inst3.OE
+WE => inst1.IN1
+
+
+|FIFO|RAM16_8:inst7|RAM4_4:inst4|MC:inst4
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input => inst.DATAIN
+RS => inst1.IN0
+RS => inst3.OE
+WE => inst1.IN1
+
+
+|FIFO|RAM16_8:inst7|RAM4_4:inst4|MC:inst16
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input => inst.DATAIN
+RS => inst1.IN0
+RS => inst3.OE
+WE => inst1.IN1
+
+
+|FIFO|RAM16_8:inst7|RAM4_4:inst4|MC:inst11
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input => inst.DATAIN
+RS => inst1.IN0
+RS => inst3.OE
+WE => inst1.IN1
+
+
+|FIFO|RAM16_8:inst7|RAM4_4:inst4|MC:inst8
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input => inst.DATAIN
+RS => inst1.IN0
+RS => inst3.OE
+WE => inst1.IN1
+
+
+|FIFO|RAM16_8:inst7|RAM4_4:inst9
+IO3 <> inst25
+A1 => Decoder2_4:inst.A1
+A0 => Decoder2_4:inst.A0
+RWS => inst18.IN0
+RWS => inst19.IN0
+CS => inst18.IN1
+CS => inst17.IN0
+IO2 <> inst24
+IO1 <> inst22
+IO0 <> inst23
+
+
+|FIFO|RAM16_8:inst7|RAM4_4:inst9|MC:inst1
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input => inst.DATAIN
+RS => inst1.IN0
+RS => inst3.OE
+WE => inst1.IN1
+
+
+|FIFO|RAM16_8:inst7|RAM4_4:inst9|Decoder2_4:inst
+Y0 <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+A1 => inst1.IN0
+A1 => inst4.IN0
+A1 => inst2.IN1
+A0 => inst.IN0
+A0 => inst3.IN0
+A0 => inst2.IN0
+Y1 <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Y2 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Y3 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FIFO|RAM16_8:inst7|RAM4_4:inst9|MC:inst5
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input => inst.DATAIN
+RS => inst1.IN0
+RS => inst3.OE
+WE => inst1.IN1
+
+
+|FIFO|RAM16_8:inst7|RAM4_4:inst9|MC:inst9
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input => inst.DATAIN
+RS => inst1.IN0
+RS => inst3.OE
+WE => inst1.IN1
+
+
+|FIFO|RAM16_8:inst7|RAM4_4:inst9|MC:inst13
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input => inst.DATAIN
+RS => inst1.IN0
+RS => inst3.OE
+WE => inst1.IN1
+
+
+|FIFO|RAM16_8:inst7|RAM4_4:inst9|MC:inst2
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input => inst.DATAIN
+RS => inst1.IN0
+RS => inst3.OE
+WE => inst1.IN1
+
+
+|FIFO|RAM16_8:inst7|RAM4_4:inst9|MC:inst6
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input => inst.DATAIN
+RS => inst1.IN0
+RS => inst3.OE
+WE => inst1.IN1
+
+
+|FIFO|RAM16_8:inst7|RAM4_4:inst9|MC:inst12
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input => inst.DATAIN
+RS => inst1.IN0
+RS => inst3.OE
+WE => inst1.IN1
+
+
+|FIFO|RAM16_8:inst7|RAM4_4:inst9|MC:inst14
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input => inst.DATAIN
+RS => inst1.IN0
+RS => inst3.OE
+WE => inst1.IN1
+
+
+|FIFO|RAM16_8:inst7|RAM4_4:inst9|MC:inst3
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input => inst.DATAIN
+RS => inst1.IN0
+RS => inst3.OE
+WE => inst1.IN1
+
+
+|FIFO|RAM16_8:inst7|RAM4_4:inst9|MC:inst7
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input => inst.DATAIN
+RS => inst1.IN0
+RS => inst3.OE
+WE => inst1.IN1
+
+
+|FIFO|RAM16_8:inst7|RAM4_4:inst9|MC:inst10
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input => inst.DATAIN
+RS => inst1.IN0
+RS => inst3.OE
+WE => inst1.IN1
+
+
+|FIFO|RAM16_8:inst7|RAM4_4:inst9|MC:inst15
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input => inst.DATAIN
+RS => inst1.IN0
+RS => inst3.OE
+WE => inst1.IN1
+
+
+|FIFO|RAM16_8:inst7|RAM4_4:inst9|MC:inst4
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input => inst.DATAIN
+RS => inst1.IN0
+RS => inst3.OE
+WE => inst1.IN1
+
+
+|FIFO|RAM16_8:inst7|RAM4_4:inst9|MC:inst16
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input => inst.DATAIN
+RS => inst1.IN0
+RS => inst3.OE
+WE => inst1.IN1
+
+
+|FIFO|RAM16_8:inst7|RAM4_4:inst9|MC:inst11
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input => inst.DATAIN
+RS => inst1.IN0
+RS => inst3.OE
+WE => inst1.IN1
+
+
+|FIFO|RAM16_8:inst7|RAM4_4:inst9|MC:inst8
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input => inst.DATAIN
+RS => inst1.IN0
+RS => inst3.OE
+WE => inst1.IN1
+
+
+|FIFO|RAM16_8:inst7|RAM4_4:inst1
+IO3 <> inst25
+A1 => Decoder2_4:inst.A1
+A0 => Decoder2_4:inst.A0
+RWS => inst18.IN0
+RWS => inst19.IN0
+CS => inst18.IN1
+CS => inst17.IN0
+IO2 <> inst24
+IO1 <> inst22
+IO0 <> inst23
+
+
+|FIFO|RAM16_8:inst7|RAM4_4:inst1|MC:inst1
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input => inst.DATAIN
+RS => inst1.IN0
+RS => inst3.OE
+WE => inst1.IN1
+
+
+|FIFO|RAM16_8:inst7|RAM4_4:inst1|Decoder2_4:inst
+Y0 <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+A1 => inst1.IN0
+A1 => inst4.IN0
+A1 => inst2.IN1
+A0 => inst.IN0
+A0 => inst3.IN0
+A0 => inst2.IN0
+Y1 <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Y2 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Y3 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FIFO|RAM16_8:inst7|RAM4_4:inst1|MC:inst5
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input => inst.DATAIN
+RS => inst1.IN0
+RS => inst3.OE
+WE => inst1.IN1
+
+
+|FIFO|RAM16_8:inst7|RAM4_4:inst1|MC:inst9
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input => inst.DATAIN
+RS => inst1.IN0
+RS => inst3.OE
+WE => inst1.IN1
+
+
+|FIFO|RAM16_8:inst7|RAM4_4:inst1|MC:inst13
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input => inst.DATAIN
+RS => inst1.IN0
+RS => inst3.OE
+WE => inst1.IN1
+
+
+|FIFO|RAM16_8:inst7|RAM4_4:inst1|MC:inst2
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input => inst.DATAIN
+RS => inst1.IN0
+RS => inst3.OE
+WE => inst1.IN1
+
+
+|FIFO|RAM16_8:inst7|RAM4_4:inst1|MC:inst6
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input => inst.DATAIN
+RS => inst1.IN0
+RS => inst3.OE
+WE => inst1.IN1
+
+
+|FIFO|RAM16_8:inst7|RAM4_4:inst1|MC:inst12
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input => inst.DATAIN
+RS => inst1.IN0
+RS => inst3.OE
+WE => inst1.IN1
+
+
+|FIFO|RAM16_8:inst7|RAM4_4:inst1|MC:inst14
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input => inst.DATAIN
+RS => inst1.IN0
+RS => inst3.OE
+WE => inst1.IN1
+
+
+|FIFO|RAM16_8:inst7|RAM4_4:inst1|MC:inst3
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input => inst.DATAIN
+RS => inst1.IN0
+RS => inst3.OE
+WE => inst1.IN1
+
+
+|FIFO|RAM16_8:inst7|RAM4_4:inst1|MC:inst7
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input => inst.DATAIN
+RS => inst1.IN0
+RS => inst3.OE
+WE => inst1.IN1
+
+
+|FIFO|RAM16_8:inst7|RAM4_4:inst1|MC:inst10
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input => inst.DATAIN
+RS => inst1.IN0
+RS => inst3.OE
+WE => inst1.IN1
+
+
+|FIFO|RAM16_8:inst7|RAM4_4:inst1|MC:inst15
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input => inst.DATAIN
+RS => inst1.IN0
+RS => inst3.OE
+WE => inst1.IN1
+
+
+|FIFO|RAM16_8:inst7|RAM4_4:inst1|MC:inst4
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input => inst.DATAIN
+RS => inst1.IN0
+RS => inst3.OE
+WE => inst1.IN1
+
+
+|FIFO|RAM16_8:inst7|RAM4_4:inst1|MC:inst16
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input => inst.DATAIN
+RS => inst1.IN0
+RS => inst3.OE
+WE => inst1.IN1
+
+
+|FIFO|RAM16_8:inst7|RAM4_4:inst1|MC:inst11
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input => inst.DATAIN
+RS => inst1.IN0
+RS => inst3.OE
+WE => inst1.IN1
+
+
+|FIFO|RAM16_8:inst7|RAM4_4:inst1|MC:inst8
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input => inst.DATAIN
+RS => inst1.IN0
+RS => inst3.OE
+WE => inst1.IN1
+
+
+|FIFO|RAM16_8:inst7|RAM4_4:inst7
+IO3 <> inst25
+A1 => Decoder2_4:inst.A1
+A0 => Decoder2_4:inst.A0
+RWS => inst18.IN0
+RWS => inst19.IN0
+CS => inst18.IN1
+CS => inst17.IN0
+IO2 <> inst24
+IO1 <> inst22
+IO0 <> inst23
+
+
+|FIFO|RAM16_8:inst7|RAM4_4:inst7|MC:inst1
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input => inst.DATAIN
+RS => inst1.IN0
+RS => inst3.OE
+WE => inst1.IN1
+
+
+|FIFO|RAM16_8:inst7|RAM4_4:inst7|Decoder2_4:inst
+Y0 <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+A1 => inst1.IN0
+A1 => inst4.IN0
+A1 => inst2.IN1
+A0 => inst.IN0
+A0 => inst3.IN0
+A0 => inst2.IN0
+Y1 <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Y2 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Y3 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FIFO|RAM16_8:inst7|RAM4_4:inst7|MC:inst5
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input => inst.DATAIN
+RS => inst1.IN0
+RS => inst3.OE
+WE => inst1.IN1
+
+
+|FIFO|RAM16_8:inst7|RAM4_4:inst7|MC:inst9
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input => inst.DATAIN
+RS => inst1.IN0
+RS => inst3.OE
+WE => inst1.IN1
+
+
+|FIFO|RAM16_8:inst7|RAM4_4:inst7|MC:inst13
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input => inst.DATAIN
+RS => inst1.IN0
+RS => inst3.OE
+WE => inst1.IN1
+
+
+|FIFO|RAM16_8:inst7|RAM4_4:inst7|MC:inst2
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input => inst.DATAIN
+RS => inst1.IN0
+RS => inst3.OE
+WE => inst1.IN1
+
+
+|FIFO|RAM16_8:inst7|RAM4_4:inst7|MC:inst6
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input => inst.DATAIN
+RS => inst1.IN0
+RS => inst3.OE
+WE => inst1.IN1
+
+
+|FIFO|RAM16_8:inst7|RAM4_4:inst7|MC:inst12
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input => inst.DATAIN
+RS => inst1.IN0
+RS => inst3.OE
+WE => inst1.IN1
+
+
+|FIFO|RAM16_8:inst7|RAM4_4:inst7|MC:inst14
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input => inst.DATAIN
+RS => inst1.IN0
+RS => inst3.OE
+WE => inst1.IN1
+
+
+|FIFO|RAM16_8:inst7|RAM4_4:inst7|MC:inst3
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input => inst.DATAIN
+RS => inst1.IN0
+RS => inst3.OE
+WE => inst1.IN1
+
+
+|FIFO|RAM16_8:inst7|RAM4_4:inst7|MC:inst7
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input => inst.DATAIN
+RS => inst1.IN0
+RS => inst3.OE
+WE => inst1.IN1
+
+
+|FIFO|RAM16_8:inst7|RAM4_4:inst7|MC:inst10
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input => inst.DATAIN
+RS => inst1.IN0
+RS => inst3.OE
+WE => inst1.IN1
+
+
+|FIFO|RAM16_8:inst7|RAM4_4:inst7|MC:inst15
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input => inst.DATAIN
+RS => inst1.IN0
+RS => inst3.OE
+WE => inst1.IN1
+
+
+|FIFO|RAM16_8:inst7|RAM4_4:inst7|MC:inst4
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input => inst.DATAIN
+RS => inst1.IN0
+RS => inst3.OE
+WE => inst1.IN1
+
+
+|FIFO|RAM16_8:inst7|RAM4_4:inst7|MC:inst16
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input => inst.DATAIN
+RS => inst1.IN0
+RS => inst3.OE
+WE => inst1.IN1
+
+
+|FIFO|RAM16_8:inst7|RAM4_4:inst7|MC:inst11
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input => inst.DATAIN
+RS => inst1.IN0
+RS => inst3.OE
+WE => inst1.IN1
+
+
+|FIFO|RAM16_8:inst7|RAM4_4:inst7|MC:inst8
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input => inst.DATAIN
+RS => inst1.IN0
+RS => inst3.OE
+WE => inst1.IN1
+
+
+|FIFO|RAM16_8:inst7|RAM4_4:inst10
+IO3 <> inst25
+A1 => Decoder2_4:inst.A1
+A0 => Decoder2_4:inst.A0
+RWS => inst18.IN0
+RWS => inst19.IN0
+CS => inst18.IN1
+CS => inst17.IN0
+IO2 <> inst24
+IO1 <> inst22
+IO0 <> inst23
+
+
+|FIFO|RAM16_8:inst7|RAM4_4:inst10|MC:inst1
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input => inst.DATAIN
+RS => inst1.IN0
+RS => inst3.OE
+WE => inst1.IN1
+
+
+|FIFO|RAM16_8:inst7|RAM4_4:inst10|Decoder2_4:inst
+Y0 <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+A1 => inst1.IN0
+A1 => inst4.IN0
+A1 => inst2.IN1
+A0 => inst.IN0
+A0 => inst3.IN0
+A0 => inst2.IN0
+Y1 <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Y2 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Y3 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FIFO|RAM16_8:inst7|RAM4_4:inst10|MC:inst5
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input => inst.DATAIN
+RS => inst1.IN0
+RS => inst3.OE
+WE => inst1.IN1
+
+
+|FIFO|RAM16_8:inst7|RAM4_4:inst10|MC:inst9
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input => inst.DATAIN
+RS => inst1.IN0
+RS => inst3.OE
+WE => inst1.IN1
+
+
+|FIFO|RAM16_8:inst7|RAM4_4:inst10|MC:inst13
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input => inst.DATAIN
+RS => inst1.IN0
+RS => inst3.OE
+WE => inst1.IN1
+
+
+|FIFO|RAM16_8:inst7|RAM4_4:inst10|MC:inst2
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input => inst.DATAIN
+RS => inst1.IN0
+RS => inst3.OE
+WE => inst1.IN1
+
+
+|FIFO|RAM16_8:inst7|RAM4_4:inst10|MC:inst6
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input => inst.DATAIN
+RS => inst1.IN0
+RS => inst3.OE
+WE => inst1.IN1
+
+
+|FIFO|RAM16_8:inst7|RAM4_4:inst10|MC:inst12
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input => inst.DATAIN
+RS => inst1.IN0
+RS => inst3.OE
+WE => inst1.IN1
+
+
+|FIFO|RAM16_8:inst7|RAM4_4:inst10|MC:inst14
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input => inst.DATAIN
+RS => inst1.IN0
+RS => inst3.OE
+WE => inst1.IN1
+
+
+|FIFO|RAM16_8:inst7|RAM4_4:inst10|MC:inst3
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input => inst.DATAIN
+RS => inst1.IN0
+RS => inst3.OE
+WE => inst1.IN1
+
+
+|FIFO|RAM16_8:inst7|RAM4_4:inst10|MC:inst7
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input => inst.DATAIN
+RS => inst1.IN0
+RS => inst3.OE
+WE => inst1.IN1
+
+
+|FIFO|RAM16_8:inst7|RAM4_4:inst10|MC:inst10
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input => inst.DATAIN
+RS => inst1.IN0
+RS => inst3.OE
+WE => inst1.IN1
+
+
+|FIFO|RAM16_8:inst7|RAM4_4:inst10|MC:inst15
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input => inst.DATAIN
+RS => inst1.IN0
+RS => inst3.OE
+WE => inst1.IN1
+
+
+|FIFO|RAM16_8:inst7|RAM4_4:inst10|MC:inst4
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input => inst.DATAIN
+RS => inst1.IN0
+RS => inst3.OE
+WE => inst1.IN1
+
+
+|FIFO|RAM16_8:inst7|RAM4_4:inst10|MC:inst16
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input => inst.DATAIN
+RS => inst1.IN0
+RS => inst3.OE
+WE => inst1.IN1
+
+
+|FIFO|RAM16_8:inst7|RAM4_4:inst10|MC:inst11
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input => inst.DATAIN
+RS => inst1.IN0
+RS => inst3.OE
+WE => inst1.IN1
+
+
+|FIFO|RAM16_8:inst7|RAM4_4:inst10|MC:inst8
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input => inst.DATAIN
+RS => inst1.IN0
+RS => inst3.OE
+WE => inst1.IN1
+
+
+|FIFO|RAM16_8:inst7|RAM4_4:inst3
+IO3 <> inst25
+A1 => Decoder2_4:inst.A1
+A0 => Decoder2_4:inst.A0
+RWS => inst18.IN0
+RWS => inst19.IN0
+CS => inst18.IN1
+CS => inst17.IN0
+IO2 <> inst24
+IO1 <> inst22
+IO0 <> inst23
+
+
+|FIFO|RAM16_8:inst7|RAM4_4:inst3|MC:inst1
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input => inst.DATAIN
+RS => inst1.IN0
+RS => inst3.OE
+WE => inst1.IN1
+
+
+|FIFO|RAM16_8:inst7|RAM4_4:inst3|Decoder2_4:inst
+Y0 <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+A1 => inst1.IN0
+A1 => inst4.IN0
+A1 => inst2.IN1
+A0 => inst.IN0
+A0 => inst3.IN0
+A0 => inst2.IN0
+Y1 <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Y2 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Y3 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FIFO|RAM16_8:inst7|RAM4_4:inst3|MC:inst5
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input => inst.DATAIN
+RS => inst1.IN0
+RS => inst3.OE
+WE => inst1.IN1
+
+
+|FIFO|RAM16_8:inst7|RAM4_4:inst3|MC:inst9
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input => inst.DATAIN
+RS => inst1.IN0
+RS => inst3.OE
+WE => inst1.IN1
+
+
+|FIFO|RAM16_8:inst7|RAM4_4:inst3|MC:inst13
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input => inst.DATAIN
+RS => inst1.IN0
+RS => inst3.OE
+WE => inst1.IN1
+
+
+|FIFO|RAM16_8:inst7|RAM4_4:inst3|MC:inst2
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input => inst.DATAIN
+RS => inst1.IN0
+RS => inst3.OE
+WE => inst1.IN1
+
+
+|FIFO|RAM16_8:inst7|RAM4_4:inst3|MC:inst6
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input => inst.DATAIN
+RS => inst1.IN0
+RS => inst3.OE
+WE => inst1.IN1
+
+
+|FIFO|RAM16_8:inst7|RAM4_4:inst3|MC:inst12
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input => inst.DATAIN
+RS => inst1.IN0
+RS => inst3.OE
+WE => inst1.IN1
+
+
+|FIFO|RAM16_8:inst7|RAM4_4:inst3|MC:inst14
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input => inst.DATAIN
+RS => inst1.IN0
+RS => inst3.OE
+WE => inst1.IN1
+
+
+|FIFO|RAM16_8:inst7|RAM4_4:inst3|MC:inst3
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input => inst.DATAIN
+RS => inst1.IN0
+RS => inst3.OE
+WE => inst1.IN1
+
+
+|FIFO|RAM16_8:inst7|RAM4_4:inst3|MC:inst7
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input => inst.DATAIN
+RS => inst1.IN0
+RS => inst3.OE
+WE => inst1.IN1
+
+
+|FIFO|RAM16_8:inst7|RAM4_4:inst3|MC:inst10
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input => inst.DATAIN
+RS => inst1.IN0
+RS => inst3.OE
+WE => inst1.IN1
+
+
+|FIFO|RAM16_8:inst7|RAM4_4:inst3|MC:inst15
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input => inst.DATAIN
+RS => inst1.IN0
+RS => inst3.OE
+WE => inst1.IN1
+
+
+|FIFO|RAM16_8:inst7|RAM4_4:inst3|MC:inst4
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input => inst.DATAIN
+RS => inst1.IN0
+RS => inst3.OE
+WE => inst1.IN1
+
+
+|FIFO|RAM16_8:inst7|RAM4_4:inst3|MC:inst16
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input => inst.DATAIN
+RS => inst1.IN0
+RS => inst3.OE
+WE => inst1.IN1
+
+
+|FIFO|RAM16_8:inst7|RAM4_4:inst3|MC:inst11
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input => inst.DATAIN
+RS => inst1.IN0
+RS => inst3.OE
+WE => inst1.IN1
+
+
+|FIFO|RAM16_8:inst7|RAM4_4:inst3|MC:inst8
+output <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+input => inst.DATAIN
+RS => inst1.IN0
+RS => inst3.OE
+WE => inst1.IN1
+
+

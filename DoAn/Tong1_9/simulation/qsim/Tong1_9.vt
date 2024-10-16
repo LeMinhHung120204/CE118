@@ -18,7 +18,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "10/12/2024 18:26:57"
+// Generated on "10/15/2024 01:10:14"
                                                                         
 // Verilog Self-Checking Test Bench (with test vectors) for design :    Tong1_9
 // 
@@ -28,14 +28,12 @@
 `timescale 1 ps/ 1 ps
 module Tong1_9_vlg_sample_tst(
 	CLK,
-	E,
 	Load,
 	S,
 	WA,
 	sampler_tx
 );
 input  CLK;
-input  E;
 input  Load;
 input  S;
 input [1:0] WA;
@@ -43,7 +41,7 @@ output sampler_tx;
 
 reg sample;
 time current_time;
-always @(CLK or E or Load or S or WA)
+always @(CLK or Load or S or WA)
                                                                                 
 begin                                                 
  if ($realtime > 0)                                   
@@ -277,7 +275,6 @@ module Tong1_9_vlg_vec_tst();
 // constants                                           
 // general purpose registers
 reg CLK;
-reg E;
 reg Load;
 reg S;
 reg [1:0] WA;
@@ -291,7 +288,6 @@ wire sampler;
 Tong1_9 i1 (
 // port map - connection between master ports and signals/registers   
 	.CLK(CLK),
-	.E(E),
 	.Load(Load),
 	.S(S),
 	.Valid(Valid),
@@ -305,12 +301,6 @@ begin
 	CLK = 1'b0;
 	CLK = #5000 1'b1;
 	#5000;
-end 
-
-// E
-initial
-begin
-	E = 1'b1;
 end 
 
 // Load
@@ -339,7 +329,6 @@ end
 
 Tong1_9_vlg_sample_tst tb_sample (
 	.CLK(CLK),
-	.E(E),
 	.Load(Load),
 	.S(S),
 	.WA(WA),

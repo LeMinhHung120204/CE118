@@ -1,16 +1,15 @@
 |Tong1_9
 Valid <= check_9:inst31.Y
-E => counter:inst10.E
-Load => inst6.IN1
+START => counter:inst10.Load
+START => Mux2_6bit:inst45.S
 CLK => counter:inst10.CLK
 CLK => Register_4x8:inst13.CLK
-Y[0] <= Cut7_5:inst34.Y[0]
-Y[1] <= Cut7_5:inst34.Y[1]
-Y[2] <= Cut7_5:inst34.Y[2]
-Y[3] <= Cut7_5:inst34.Y[3]
-Y[4] <= Cut7_5:inst34.Y[4]
-Y[5] <= Cut7_5:inst34.Y[5]
-S => inst5.IN1
+Y[0] <= Register_4x8:inst13.A[0]
+Y[1] <= Register_4x8:inst13.A[1]
+Y[2] <= Register_4x8:inst13.A[2]
+Y[3] <= Register_4x8:inst13.A[3]
+Y[4] <= Register_4x8:inst13.A[4]
+Y[5] <= Register_4x8:inst13.A[5]
 WA[0] => Register_4x8:inst13.RAA[1]
 WA[0] => Register_4x8:inst13.WA[1]
 WA[1] => Register_4x8:inst13.RAA[0]
@@ -129,25 +128,6 @@ Y[2] <= <GND>
 Y[3] <= <GND>
 
 
-|Tong1_9|Cut7_5:inst34
-Y[0] <= A[0].DB_MAX_OUTPUT_PORT_TYPE
-Y[1] <= A[1].DB_MAX_OUTPUT_PORT_TYPE
-Y[2] <= A[2].DB_MAX_OUTPUT_PORT_TYPE
-Y[3] <= A[3].DB_MAX_OUTPUT_PORT_TYPE
-Y[4] <= A[4].DB_MAX_OUTPUT_PORT_TYPE
-Y[5] <= A[5].DB_MAX_OUTPUT_PORT_TYPE
-Y[6] <= A[6].DB_MAX_OUTPUT_PORT_TYPE
-Y[7] <= A[7].DB_MAX_OUTPUT_PORT_TYPE
-A[0] => Y[0].DATAIN
-A[1] => Y[1].DATAIN
-A[2] => Y[2].DATAIN
-A[3] => Y[3].DATAIN
-A[4] => Y[4].DATAIN
-A[5] => Y[5].DATAIN
-A[6] => Y[6].DATAIN
-A[7] => Y[7].DATAIN
-
-
 |Tong1_9|Register_4x8:inst13
 A[0] <= register:inst1.A[0]
 A[1] <= register:inst1.A[1]
@@ -196,10 +176,10 @@ B[7] <= register:inst.B[3]
 
 
 |Tong1_9|Register_4x8:inst13|register:inst
-A[0] <= A.DB_MAX_OUTPUT_PORT_TYPE
-A[1] <= A.DB_MAX_OUTPUT_PORT_TYPE
-A[2] <= A.DB_MAX_OUTPUT_PORT_TYPE
-A[3] <= A.DB_MAX_OUTPUT_PORT_TYPE
+A[0] <= A~3.DB_MAX_OUTPUT_PORT_TYPE
+A[1] <= A~2.DB_MAX_OUTPUT_PORT_TYPE
+A[2] <= A~1.DB_MAX_OUTPUT_PORT_TYPE
+A[3] <= A~0.DB_MAX_OUTPUT_PORT_TYPE
 RAA[1] => Decoder2_4:inst.A1
 RAA[0] => Decoder2_4:inst.A0
 REA => Decoder2_4:inst.E
@@ -241,10 +221,10 @@ CLK => RFC:inst10.CLK
 CLK => RFC:inst14.CLK
 CLK => RFC:inst18.CLK
 CLK => RFC:inst6.CLK
-B[0] <= B.DB_MAX_OUTPUT_PORT_TYPE
-B[1] <= B.DB_MAX_OUTPUT_PORT_TYPE
-B[2] <= B.DB_MAX_OUTPUT_PORT_TYPE
-B[3] <= B.DB_MAX_OUTPUT_PORT_TYPE
+B[0] <= B~3.DB_MAX_OUTPUT_PORT_TYPE
+B[1] <= B~2.DB_MAX_OUTPUT_PORT_TYPE
+B[2] <= B~1.DB_MAX_OUTPUT_PORT_TYPE
+B[3] <= B~0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |Tong1_9|Register_4x8:inst13|register:inst|RFC:inst3
@@ -475,10 +455,10 @@ RSB => inst6.OE
 
 
 |Tong1_9|Register_4x8:inst13|register:inst1
-A[0] <= A.DB_MAX_OUTPUT_PORT_TYPE
-A[1] <= A.DB_MAX_OUTPUT_PORT_TYPE
-A[2] <= A.DB_MAX_OUTPUT_PORT_TYPE
-A[3] <= A.DB_MAX_OUTPUT_PORT_TYPE
+A[0] <= A~3.DB_MAX_OUTPUT_PORT_TYPE
+A[1] <= A~2.DB_MAX_OUTPUT_PORT_TYPE
+A[2] <= A~1.DB_MAX_OUTPUT_PORT_TYPE
+A[3] <= A~0.DB_MAX_OUTPUT_PORT_TYPE
 RAA[1] => Decoder2_4:inst.A1
 RAA[0] => Decoder2_4:inst.A0
 REA => Decoder2_4:inst.E
@@ -520,10 +500,10 @@ CLK => RFC:inst10.CLK
 CLK => RFC:inst14.CLK
 CLK => RFC:inst18.CLK
 CLK => RFC:inst6.CLK
-B[0] <= B.DB_MAX_OUTPUT_PORT_TYPE
-B[1] <= B.DB_MAX_OUTPUT_PORT_TYPE
-B[2] <= B.DB_MAX_OUTPUT_PORT_TYPE
-B[3] <= B.DB_MAX_OUTPUT_PORT_TYPE
+B[0] <= B~3.DB_MAX_OUTPUT_PORT_TYPE
+B[1] <= B~2.DB_MAX_OUTPUT_PORT_TYPE
+B[2] <= B~1.DB_MAX_OUTPUT_PORT_TYPE
+B[3] <= B~0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |Tong1_9|Register_4x8:inst13|register:inst1|RFC:inst3
@@ -753,23 +733,6 @@ OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
 RSB => inst6.OE
 
 
-|Tong1_9|extend5_7:inst29
-Y[0] <= A[0].DB_MAX_OUTPUT_PORT_TYPE
-Y[1] <= A[1].DB_MAX_OUTPUT_PORT_TYPE
-Y[2] <= A[2].DB_MAX_OUTPUT_PORT_TYPE
-Y[3] <= A[3].DB_MAX_OUTPUT_PORT_TYPE
-Y[4] <= A[4].DB_MAX_OUTPUT_PORT_TYPE
-Y[5] <= A[5].DB_MAX_OUTPUT_PORT_TYPE
-Y[6] <= <GND>
-Y[7] <= <GND>
-A[0] => Y[0].DATAIN
-A[1] => Y[1].DATAIN
-A[2] => Y[2].DATAIN
-A[3] => Y[3].DATAIN
-A[4] => Y[4].DATAIN
-A[5] => Y[5].DATAIN
-
-
 |Tong1_9|Mux2_6bit:inst45
 Y[0] <= Mux2:inst.Y
 Y[1] <= Mux2:inst1.Y
@@ -949,46 +912,5 @@ C => inst1.IN1
 C => inst4.IN1
 C => inst5.IN0
 Cnext <= inst2.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|Tong1_9|Cut7_5:inst27
-Y[0] <= A[0].DB_MAX_OUTPUT_PORT_TYPE
-Y[1] <= A[1].DB_MAX_OUTPUT_PORT_TYPE
-Y[2] <= A[2].DB_MAX_OUTPUT_PORT_TYPE
-Y[3] <= A[3].DB_MAX_OUTPUT_PORT_TYPE
-Y[4] <= A[4].DB_MAX_OUTPUT_PORT_TYPE
-Y[5] <= A[5].DB_MAX_OUTPUT_PORT_TYPE
-Y[6] <= A[6].DB_MAX_OUTPUT_PORT_TYPE
-Y[7] <= A[7].DB_MAX_OUTPUT_PORT_TYPE
-A[0] => Y[0].DATAIN
-A[1] => Y[1].DATAIN
-A[2] => Y[2].DATAIN
-A[3] => Y[3].DATAIN
-A[4] => Y[4].DATAIN
-A[5] => Y[5].DATAIN
-A[6] => Y[6].DATAIN
-A[7] => Y[7].DATAIN
-
-
-|Tong1_9|extend:inst26
-Y[0] <= A[0].DB_MAX_OUTPUT_PORT_TYPE
-Y[1] <= A[1].DB_MAX_OUTPUT_PORT_TYPE
-Y[2] <= A[2].DB_MAX_OUTPUT_PORT_TYPE
-Y[3] <= A[3].DB_MAX_OUTPUT_PORT_TYPE
-Y[4] <= <GND>
-Y[5] <= <GND>
-A[0] => Y[0].DATAIN
-A[1] => Y[1].DATAIN
-A[2] => Y[2].DATAIN
-A[3] => Y[3].DATAIN
-
-
-|Tong1_9|Const_0_5bit:inst
-Y[0] <= <GND>
-Y[1] <= <GND>
-Y[2] <= <GND>
-Y[3] <= <GND>
-Y[4] <= <GND>
-Y[5] <= <GND>
 
 

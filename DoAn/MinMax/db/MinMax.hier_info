@@ -1,0 +1,259 @@
+|MinMax
+Y[0] <= Mux21_8bit:inst.Y[0]
+Y[1] <= Mux21_8bit:inst.Y[1]
+Y[2] <= Mux21_8bit:inst.Y[2]
+Y[3] <= Mux21_8bit:inst.Y[3]
+Y[4] <= Mux21_8bit:inst.Y[4]
+Y[5] <= Mux21_8bit:inst.Y[5]
+Y[6] <= Mux21_8bit:inst.Y[6]
+Y[7] <= Mux21_8bit:inst.Y[7]
+A[0] => SubnBit:inst1.A[0]
+A[0] => Mux21_8bit:inst.A[0]
+A[1] => SubnBit:inst1.A[1]
+A[1] => Mux21_8bit:inst.A[1]
+A[2] => SubnBit:inst1.A[2]
+A[2] => Mux21_8bit:inst.A[2]
+A[3] => SubnBit:inst1.A[3]
+A[3] => Mux21_8bit:inst.A[3]
+A[4] => SubnBit:inst1.A[4]
+A[4] => Mux21_8bit:inst.A[4]
+A[5] => SubnBit:inst1.A[5]
+A[5] => Mux21_8bit:inst.A[5]
+A[6] => SubnBit:inst1.A[6]
+A[6] => Mux21_8bit:inst.A[6]
+A[7] => SubnBit:inst1.A[7]
+A[7] => Mux21_8bit:inst.A[7]
+B[0] => SubnBit:inst1.B[0]
+B[0] => Mux21_8bit:inst.B[0]
+B[1] => SubnBit:inst1.B[1]
+B[1] => Mux21_8bit:inst.B[1]
+B[2] => SubnBit:inst1.B[2]
+B[2] => Mux21_8bit:inst.B[2]
+B[3] => SubnBit:inst1.B[3]
+B[3] => Mux21_8bit:inst.B[3]
+B[4] => SubnBit:inst1.B[4]
+B[4] => Mux21_8bit:inst.B[4]
+B[5] => SubnBit:inst1.B[5]
+B[5] => Mux21_8bit:inst.B[5]
+B[6] => SubnBit:inst1.B[6]
+B[6] => Mux21_8bit:inst.B[6]
+B[7] => SubnBit:inst1.B[7]
+B[7] => Mux21_8bit:inst.B[7]
+Control => inst2.IN1
+
+
+|MinMax|Mux21_8bit:inst
+Y[0] <= 21mux:inst6.Y
+Y[1] <= 21mux:inst5.Y
+Y[2] <= 21mux:inst4.Y
+Y[3] <= 21mux:inst7.Y
+Y[4] <= 21mux:inst3.Y
+Y[5] <= 21mux:inst2.Y
+Y[6] <= 21mux:inst1.Y
+Y[7] <= 21mux:inst.Y
+S => 21mux:inst.S
+S => 21mux:inst1.S
+S => 21mux:inst2.S
+S => 21mux:inst3.S
+S => 21mux:inst7.S
+S => 21mux:inst4.S
+S => 21mux:inst5.S
+S => 21mux:inst6.S
+B[0] => 21mux:inst6.B
+B[1] => 21mux:inst5.B
+B[2] => 21mux:inst4.B
+B[3] => 21mux:inst7.B
+B[4] => 21mux:inst3.B
+B[5] => 21mux:inst2.B
+B[6] => 21mux:inst1.B
+B[7] => 21mux:inst.B
+A[0] => 21mux:inst6.A
+A[1] => 21mux:inst5.A
+A[2] => 21mux:inst4.A
+A[3] => 21mux:inst7.A
+A[4] => 21mux:inst3.A
+A[5] => 21mux:inst2.A
+A[6] => 21mux:inst1.A
+A[7] => 21mux:inst.A
+
+
+|MinMax|Mux21_8bit:inst|21mux:inst
+Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
+A => 6.IN0
+S => 6.IN1
+S => 7.IN1
+B => 8.IN0
+
+
+|MinMax|Mux21_8bit:inst|21mux:inst1
+Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
+A => 6.IN0
+S => 6.IN1
+S => 7.IN1
+B => 8.IN0
+
+
+|MinMax|Mux21_8bit:inst|21mux:inst2
+Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
+A => 6.IN0
+S => 6.IN1
+S => 7.IN1
+B => 8.IN0
+
+
+|MinMax|Mux21_8bit:inst|21mux:inst3
+Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
+A => 6.IN0
+S => 6.IN1
+S => 7.IN1
+B => 8.IN0
+
+
+|MinMax|Mux21_8bit:inst|21mux:inst7
+Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
+A => 6.IN0
+S => 6.IN1
+S => 7.IN1
+B => 8.IN0
+
+
+|MinMax|Mux21_8bit:inst|21mux:inst4
+Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
+A => 6.IN0
+S => 6.IN1
+S => 7.IN1
+B => 8.IN0
+
+
+|MinMax|Mux21_8bit:inst|21mux:inst5
+Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
+A => 6.IN0
+S => 6.IN1
+S => 7.IN1
+B => 8.IN0
+
+
+|MinMax|Mux21_8bit:inst|21mux:inst6
+Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
+A => 6.IN0
+S => 6.IN1
+S => 7.IN1
+B => 8.IN0
+
+
+|MinMax|SubnBit:inst1
+Rn <= R[7].DB_MAX_OUTPUT_PORT_TYPE
+A[0] => Sub1Bit:inst4.A
+A[1] => Sub1Bit:inst5.A
+A[2] => Sub1Bit:inst6.A
+A[3] => Sub1Bit:inst7.A
+A[4] => Sub1Bit:inst3.A
+A[5] => Sub1Bit:inst2.A
+A[6] => Sub1Bit:inst1.A
+A[7] => Sub1Bit:inst.A
+B[0] => Sub1Bit:inst4.B
+B[1] => Sub1Bit:inst5.B
+B[2] => Sub1Bit:inst6.B
+B[3] => Sub1Bit:inst7.B
+B[4] => Sub1Bit:inst3.B
+B[5] => Sub1Bit:inst2.B
+B[6] => Sub1Bit:inst1.B
+B[7] => Sub1Bit:inst.B
+D[0] <= Sub1Bit:inst4.D
+D[1] <= Sub1Bit:inst5.D
+D[2] <= Sub1Bit:inst6.D
+D[3] <= Sub1Bit:inst7.D
+D[4] <= Sub1Bit:inst3.D
+D[5] <= Sub1Bit:inst2.D
+D[6] <= Sub1Bit:inst1.D
+D[7] <= Sub1Bit:inst.D
+
+
+|MinMax|SubnBit:inst1|Sub1Bit:inst
+D <= inst.DB_MAX_OUTPUT_PORT_TYPE
+R => inst.IN0
+R => inst11.IN0
+A => inst7.IN0
+A => inst9.IN0
+B => inst7.IN1
+B => inst10.IN1
+Rn <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MinMax|SubnBit:inst1|Sub1Bit:inst1
+D <= inst.DB_MAX_OUTPUT_PORT_TYPE
+R => inst.IN0
+R => inst11.IN0
+A => inst7.IN0
+A => inst9.IN0
+B => inst7.IN1
+B => inst10.IN1
+Rn <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MinMax|SubnBit:inst1|Sub1Bit:inst2
+D <= inst.DB_MAX_OUTPUT_PORT_TYPE
+R => inst.IN0
+R => inst11.IN0
+A => inst7.IN0
+A => inst9.IN0
+B => inst7.IN1
+B => inst10.IN1
+Rn <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MinMax|SubnBit:inst1|Sub1Bit:inst3
+D <= inst.DB_MAX_OUTPUT_PORT_TYPE
+R => inst.IN0
+R => inst11.IN0
+A => inst7.IN0
+A => inst9.IN0
+B => inst7.IN1
+B => inst10.IN1
+Rn <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MinMax|SubnBit:inst1|Sub1Bit:inst7
+D <= inst.DB_MAX_OUTPUT_PORT_TYPE
+R => inst.IN0
+R => inst11.IN0
+A => inst7.IN0
+A => inst9.IN0
+B => inst7.IN1
+B => inst10.IN1
+Rn <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MinMax|SubnBit:inst1|Sub1Bit:inst6
+D <= inst.DB_MAX_OUTPUT_PORT_TYPE
+R => inst.IN0
+R => inst11.IN0
+A => inst7.IN0
+A => inst9.IN0
+B => inst7.IN1
+B => inst10.IN1
+Rn <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MinMax|SubnBit:inst1|Sub1Bit:inst5
+D <= inst.DB_MAX_OUTPUT_PORT_TYPE
+R => inst.IN0
+R => inst11.IN0
+A => inst7.IN0
+A => inst9.IN0
+B => inst7.IN1
+B => inst10.IN1
+Rn <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MinMax|SubnBit:inst1|Sub1Bit:inst4
+D <= inst.DB_MAX_OUTPUT_PORT_TYPE
+R => inst.IN0
+R => inst11.IN0
+A => inst7.IN0
+A => inst9.IN0
+B => inst7.IN1
+B => inst10.IN1
+Rn <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -23,7 +23,7 @@ applicable agreement for further details.
 	(input)
 	(rect 128 144 296 160)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "A1" (rect 5 0 18 12)(font "Arial" ))
+	(text "A1" (rect 5 0 17 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -39,7 +39,7 @@ applicable agreement for further details.
 	(input)
 	(rect 128 224 296 240)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "A0" (rect 5 0 18 12)(font "Arial" ))
+	(text "A0" (rect 5 0 17 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -55,7 +55,7 @@ applicable agreement for further details.
 	(input)
 	(rect 136 520 304 536)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "E" (rect 5 0 13 12)(font "Arial" ))
+	(text "E" (rect 5 0 12 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -470,10 +470,6 @@ applicable agreement for further details.
 	(pt 1320 264)
 )
 (connector
-	(pt 824 400)
-	(pt 1304 400)
-)
-(connector
 	(pt 1304 400)
 	(pt 1304 224)
 )
@@ -482,20 +478,12 @@ applicable agreement for further details.
 	(pt 1304 224)
 )
 (connector
-	(pt 824 480)
-	(pt 1288 480)
-)
-(connector
 	(pt 1288 480)
 	(pt 1288 192)
 )
 (connector
 	(pt 1328 192)
 	(pt 1288 192)
-)
-(connector
-	(pt 824 232)
-	(pt 1216 232)
 )
 (connector
 	(pt 1216 232)
@@ -510,10 +498,6 @@ applicable agreement for further details.
 	(pt 1320 312)
 )
 (connector
-	(pt 832 312)
-	(pt 1320 312)
-)
-(connector
 	(pt 688 528)
 	(pt 304 528)
 )
@@ -524,6 +508,26 @@ applicable agreement for further details.
 (connector
 	(pt 688 488)
 	(pt 688 528)
+)
+(connector
+	(text "Q[3]" (rect 910 216 931 228)(font "Arial" ))
+	(pt 824 232)
+	(pt 1216 232)
+)
+(connector
+	(text "Q[2]" (rect 893 296 914 308)(font "Arial" ))
+	(pt 832 312)
+	(pt 1320 312)
+)
+(connector
+	(text "Q[1]" (rect 882 384 903 396)(font "Arial" ))
+	(pt 824 400)
+	(pt 1304 400)
+)
+(connector
+	(text "Q[0]" (rect 904 464 925 476)(font "Arial" ))
+	(pt 824 480)
+	(pt 1288 480)
 )
 (junction (pt 688 320))
 (junction (pt 688 408))

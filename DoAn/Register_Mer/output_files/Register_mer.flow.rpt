@@ -1,5 +1,5 @@
 Flow report for Register_mer
-Mon Nov 11 21:20:38 2024
+Tue Nov 12 04:08:25 2024
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -40,18 +40,18 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Flow Summary                                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Flow Status                        ; Successful - Mon Nov 11 21:20:38 2024           ;
+; Flow Status                        ; Successful - Tue Nov 12 04:08:25 2024           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; Register_mer                                    ;
-; Top-level Entity Name              ; Datapath                                        ;
+; Top-level Entity Name              ; Register_mer                                    ;
 ; Family                             ; Cyclone II                                      ;
 ; Device                             ; EP2C35F672C6                                    ;
 ; Timing Models                      ; Final                                           ;
-; Total logic elements               ; 289                                             ;
-;     Total combinational functions  ; 209                                             ;
-;     Dedicated logic registers      ; 96                                              ;
-; Total registers                    ; 96                                              ;
-; Total pins                         ; 81                                              ;
+; Total logic elements               ; 238                                             ;
+;     Total combinational functions  ; 170                                             ;
+;     Dedicated logic registers      ; 87                                              ;
+; Total registers                    ; 87                                              ;
+; Total pins                         ; 27                                              ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0                                               ;
 ; Embedded Multiplier 9-bit elements ; 0                                               ;
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 11/11/2024 21:20:37 ;
+; Start date & time ; 11/12/2024 04:08:24 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Register_mer        ;
 +-------------------+---------------------+
@@ -75,14 +75,13 @@ applicable agreement for further details.
 +-------------------------------------+-------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                         ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+-------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 9413549329963.173133483718572 ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 9413549329963.173135930424448 ; --            ; --          ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                            ; --            ; --          ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                             ; --            ; --          ; --         ;
-; PARTITION_COLOR                     ; 16764057                      ; --            ; Datapath    ; Top        ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING         ; --            ; Datapath    ; Top        ;
-; PARTITION_NETLIST_TYPE              ; SOURCE                        ; --            ; Datapath    ; Top        ;
+; PARTITION_COLOR                     ; 16764057                      ; --            ; --          ; Top        ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING         ; --            ; --          ; Top        ;
+; PARTITION_NETLIST_TYPE              ; SOURCE                        ; --            ; --          ; Top        ;
 ; PROJECT_OUTPUT_DIRECTORY            ; output_files                  ; --            ; --          ; --         ;
-; TOP_LEVEL_ENTITY                    ; Datapath                      ; Register_mer  ; --          ; --         ;
 +-------------------------------------+-------------------------------+---------------+-------------+------------+
 
 
@@ -91,8 +90,8 @@ applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:01     ; 1.0                     ; 4607 MB             ; 00:00:01                           ;
-; Total                ; 00:00:01     ; --                      ; --                  ; 00:00:01                           ;
+; Analysis & Synthesis ; 00:00:02     ; 1.0                     ; 4609 MB             ; 00:00:01                           ;
+; Total                ; 00:00:02     ; --                      ; --                  ; 00:00:01                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

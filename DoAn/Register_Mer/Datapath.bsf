@@ -20,7 +20,7 @@ applicable agreement for further details.
 */
 (header "symbol" (version "1.2"))
 (symbol
-	(rect 16 16 232 400)
+	(rect 16 16 256 400)
 	(text "Datapath" (rect 5 0 55 14)(font "Arial" (font_size 8)))
 	(text "inst" (rect 8 368 25 380)(font "Arial" ))
 	(port
@@ -47,15 +47,15 @@ applicable agreement for further details.
 	(port
 		(pt 0 80)
 		(input)
-		(text "WA1[1..0]" (rect 0 0 56 14)(font "Arial" (font_size 8)))
-		(text "WA1[1..0]" (rect 21 75 77 89)(font "Arial" (font_size 8)))
+		(text "WA1[2..0]" (rect 0 0 56 14)(font "Arial" (font_size 8)))
+		(text "WA1[2..0]" (rect 21 75 77 89)(font "Arial" (font_size 8)))
 		(line (pt 0 80)(pt 16 80)(line_width 3))
 	)
 	(port
 		(pt 0 96)
 		(input)
-		(text "RAA1[1..0]" (rect 0 0 62 14)(font "Arial" (font_size 8)))
-		(text "RAA1[1..0]" (rect 21 91 83 105)(font "Arial" (font_size 8)))
+		(text "RAA1[2..0]" (rect 0 0 62 14)(font "Arial" (font_size 8)))
+		(text "RAA1[2..0]" (rect 21 91 83 105)(font "Arial" (font_size 8)))
 		(line (pt 0 96)(pt 16 96)(line_width 3))
 	)
 	(port
@@ -75,15 +75,15 @@ applicable agreement for further details.
 	(port
 		(pt 0 144)
 		(input)
-		(text "WA2[1..0]" (rect 0 0 56 14)(font "Arial" (font_size 8)))
-		(text "WA2[1..0]" (rect 21 139 77 153)(font "Arial" (font_size 8)))
+		(text "WA2[2..0]" (rect 0 0 56 14)(font "Arial" (font_size 8)))
+		(text "WA2[2..0]" (rect 21 139 77 153)(font "Arial" (font_size 8)))
 		(line (pt 0 144)(pt 16 144)(line_width 3))
 	)
 	(port
 		(pt 0 160)
 		(input)
-		(text "RAA2[1..0]" (rect 0 0 62 14)(font "Arial" (font_size 8)))
-		(text "RAA2[1..0]" (rect 21 155 83 169)(font "Arial" (font_size 8)))
+		(text "RAA2[2..0]" (rect 0 0 62 14)(font "Arial" (font_size 8)))
+		(text "RAA2[2..0]" (rect 21 155 83 169)(font "Arial" (font_size 8)))
 		(line (pt 0 160)(pt 16 160)(line_width 3))
 	)
 	(port
@@ -164,13 +164,41 @@ applicable agreement for further details.
 		(line (pt 0 336)(pt 16 336))
 	)
 	(port
-		(pt 216 32)
+		(pt 240 32)
+		(output)
+		(text "Bus1[7..0]" (rect 0 0 57 14)(font "Arial" (font_size 8)))
+		(text "Bus1[7..0]" (rect 162 27 219 41)(font "Arial" (font_size 8)))
+		(line (pt 240 32)(pt 224 32)(line_width 3))
+	)
+	(port
+		(pt 240 48)
+		(output)
+		(text "Bus2[7..0]" (rect 0 0 57 14)(font "Arial" (font_size 8)))
+		(text "Bus2[7..0]" (rect 162 43 219 57)(font "Arial" (font_size 8)))
+		(line (pt 240 48)(pt 224 48)(line_width 3))
+	)
+	(port
+		(pt 240 64)
+		(output)
+		(text "Bus3[7..0]" (rect 0 0 57 14)(font "Arial" (font_size 8)))
+		(text "Bus3[7..0]" (rect 162 59 219 73)(font "Arial" (font_size 8)))
+		(line (pt 240 64)(pt 224 64)(line_width 3))
+	)
+	(port
+		(pt 240 80)
 		(output)
 		(text "Y[7..0]" (rect 0 0 37 14)(font "Arial" (font_size 8)))
-		(text "Y[7..0]" (rect 158 27 195 41)(font "Arial" (font_size 8)))
-		(line (pt 216 32)(pt 200 32)(line_width 3))
+		(text "Y[7..0]" (rect 182 75 219 89)(font "Arial" (font_size 8)))
+		(line (pt 240 80)(pt 224 80)(line_width 3))
+	)
+	(port
+		(pt 240 96)
+		(output)
+		(text "Bus4[7..0]" (rect 0 0 57 14)(font "Arial" (font_size 8)))
+		(text "Bus4[7..0]" (rect 162 91 219 105)(font "Arial" (font_size 8)))
+		(line (pt 240 96)(pt 224 96)(line_width 3))
 	)
 	(drawing
-		(rectangle (rect 16 16 200 368))
+		(rectangle (rect 16 16 224 368))
 	)
 )

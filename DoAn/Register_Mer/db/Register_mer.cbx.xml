@@ -1,10 +1,7 @@
 <?xml version="1.0" ?>
 <LOG_ROOT>
 	<PROJECT NAME="Register_mer">
-		<CBX_INST_ENTRY INSTANCE_NAME="|Datapath|AbsMax:inst|BUSMUX:inst10|lpm_mux:$00000" CBX_FILE_NAME="mux_smc.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|Datapath|AbsMax:inst|BUSMUX:inst12|lpm_mux:$00000" CBX_FILE_NAME="mux_smc.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|Datapath|AbsMinAddSub:inst8|BUSMUX:inst24|lpm_mux:$00000" CBX_FILE_NAME="mux_smc.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|Datapath|AbsMax:inst|BUSMUX:inst11|lpm_mux:$00000" CBX_FILE_NAME="mux_smc.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|Datapath|AbsMinAddSub:inst8|BUSMUX:inst25|lpm_mux:$00000" CBX_FILE_NAME="mux_smc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|AbsMinAddSub|BUSMUX:inst24|lpm_mux:$00000" CBX_FILE_NAME="mux_smc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|AbsMinAddSub|BUSMUX:inst25|lpm_mux:$00000" CBX_FILE_NAME="mux_smc.tdf"/>
 	</PROJECT>
 </LOG_ROOT>

@@ -794,3 +794,8 @@ applicable agreement for further details.
 	(pt 912 528)
 )
 (junction (pt 456 264))
+(text "S1 S0" (rect 1264 368 1298 382)(font "Arial" (font_size 8)))
+(text "0 0 Add" (rect 1264 384 1308 398)(font "Arial" (font_size 8)))
+(text "0 1 Abs" (rect 1264 400 1308 414)(font "Arial" (font_size 8)))
+(text "1 0 Sub" (rect 1264 416 1307 430)(font "Arial" (font_size 8)))
+(text "1 1 Min" (rect 1264 432 1304 446)(font "Arial" (font_size 8)))

@@ -37,57 +37,9 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect -392 -272 -224 -256)
+	(rect -504 -272 -336 -256)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "A3" (rect 5 0 17 12)(font "Arial" ))
-	(pt 168 8)
-	(drawing
-		(line (pt 84 12)(pt 109 12))
-		(line (pt 84 4)(pt 109 4))
-		(line (pt 113 8)(pt 168 8))
-		(line (pt 84 12)(pt 84 4))
-		(line (pt 109 4)(pt 113 8))
-		(line (pt 109 12)(pt 113 8))
-	)
-	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
-)
-(pin
-	(input)
-	(rect -392 -256 -224 -240)
-	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "A2" (rect 5 0 17 12)(font "Arial" ))
-	(pt 168 8)
-	(drawing
-		(line (pt 84 12)(pt 109 12))
-		(line (pt 84 4)(pt 109 4))
-		(line (pt 113 8)(pt 168 8))
-		(line (pt 84 12)(pt 84 4))
-		(line (pt 109 4)(pt 113 8))
-		(line (pt 109 12)(pt 113 8))
-	)
-	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
-)
-(pin
-	(input)
-	(rect -416 -152 -248 -136)
-	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "A1" (rect 5 0 17 12)(font "Arial" ))
-	(pt 168 8)
-	(drawing
-		(line (pt 84 12)(pt 109 12))
-		(line (pt 84 4)(pt 109 4))
-		(line (pt 113 8)(pt 168 8))
-		(line (pt 84 12)(pt 84 4))
-		(line (pt 109 4)(pt 113 8))
-		(line (pt 109 12)(pt 113 8))
-	)
-	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
-)
-(pin
-	(input)
-	(rect -416 -136 -248 -120)
-	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "A0" (rect 5 0 17 12)(font "Arial" ))
+	(text "A[3..0]" (rect 5 0 39 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -755,14 +707,6 @@ applicable agreement for further details.
 	(pt 264 632)
 )
 (connector
-	(pt -224 -264)
-	(pt -176 -264)
-)
-(connector
-	(pt -224 -248)
-	(pt -176 -248)
-)
-(connector
 	(pt 240 -32)
 	(pt 312 -32)
 )
@@ -837,10 +781,6 @@ applicable agreement for further details.
 (connector
 	(pt 288 -264)
 	(pt 720 -264)
-)
-(connector
-	(pt -248 -144)
-	(pt 240 -144)
 )
 (connector
 	(pt 240 -144)
@@ -1263,10 +1203,6 @@ applicable agreement for further details.
 	(pt 696 -88)
 )
 (connector
-	(pt -248 -128)
-	(pt 216 -128)
-)
-(connector
 	(pt 216 -128)
 	(pt 648 -128)
 )
@@ -1322,6 +1258,32 @@ applicable agreement for further details.
 	(text "IO[0]" (rect 1055 792 1079 804)(font "Arial" ))
 	(pt 1112 808)
 	(pt 952 808)
+)
+(connector
+	(text "A[3..0]" (rect -335 -280 -302 -268)(font "Arial" ))
+	(pt -336 -264)
+	(pt -296 -264)
+	(bus)
+)
+(connector
+	(text "A[3]" (rect -204 -280 -184 -268)(font "Arial" ))
+	(pt -224 -264)
+	(pt -176 -264)
+)
+(connector
+	(text "A[2]" (rect -199 -264 -179 -252)(font "Arial" ))
+	(pt -224 -248)
+	(pt -176 -248)
+)
+(connector
+	(text "A[1]" (rect -232 -160 -212 -148)(font "Arial" ))
+	(pt -248 -144)
+	(pt 240 -144)
+)
+(connector
+	(text "A[0]" (rect -226 -144 -206 -132)(font "Arial" ))
+	(pt -248 -128)
+	(pt 216 -128)
 )
 (junction (pt 296 320))
 (junction (pt 288 112))

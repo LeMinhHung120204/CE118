@@ -1,53 +1,53 @@
 |register
-B3 <= B3.DB_MAX_OUTPUT_PORT_TYPE
-RAA1 => Decoder2_4:inst.A1
-RAA0 => Decoder2_4:inst.A0
+A[0] <= A.DB_MAX_OUTPUT_PORT_TYPE
+A[1] <= A.DB_MAX_OUTPUT_PORT_TYPE
+A[2] <= A.DB_MAX_OUTPUT_PORT_TYPE
+A[3] <= A.DB_MAX_OUTPUT_PORT_TYPE
+RAA[0] => Decoder2_4:inst.A0
+RAA[1] => Decoder2_4:inst.A1
 REA => Decoder2_4:inst.E
-RAB1 => Decoder2_4:inst19.A1
-RAB0 => Decoder2_4:inst19.A0
+RAB[0] => Decoder2_4:inst19.A0
+RAB[1] => Decoder2_4:inst19.A1
 REB => Decoder2_4:inst19.E
-WA1 => Decoder2_4:inst20.A1
-WA0 => Decoder2_4:inst20.A0
+WA[0] => Decoder2_4:inst20.A0
+WA[1] => Decoder2_4:inst20.A1
 WE => Decoder2_4:inst20.E
-I3 => RFC:inst3.input
-I3 => RFC:inst7.input
-I3 => RFC:inst11.input
-I3 => RFC:inst15.input
+I[0] => RFC:inst6.input
+I[0] => RFC:inst10.input
+I[0] => RFC:inst14.input
+I[0] => RFC:inst18.input
+I[1] => RFC:inst5.input
+I[1] => RFC:inst9.input
+I[1] => RFC:inst13.input
+I[1] => RFC:inst17.input
+I[2] => RFC:inst4.input
+I[2] => RFC:inst16.input
+I[2] => RFC:inst12.input
+I[2] => RFC:inst8.input
+I[3] => RFC:inst3.input
+I[3] => RFC:inst7.input
+I[3] => RFC:inst11.input
+I[3] => RFC:inst15.input
 CLK => RFC:inst3.CLK
 CLK => RFC:inst7.CLK
 CLK => RFC:inst11.CLK
 CLK => RFC:inst15.CLK
+CLK => RFC:inst4.CLK
 CLK => RFC:inst16.CLK
 CLK => RFC:inst12.CLK
 CLK => RFC:inst8.CLK
-CLK => RFC:inst4.CLK
+CLK => RFC:inst5.CLK
 CLK => RFC:inst9.CLK
 CLK => RFC:inst13.CLK
 CLK => RFC:inst17.CLK
-CLK => RFC:inst5.CLK
+CLK => RFC:inst6.CLK
 CLK => RFC:inst10.CLK
 CLK => RFC:inst14.CLK
 CLK => RFC:inst18.CLK
-CLK => RFC:inst6.CLK
-A3 <= A3.DB_MAX_OUTPUT_PORT_TYPE
-B2 <= B2.DB_MAX_OUTPUT_PORT_TYPE
-I2 => RFC:inst16.input
-I2 => RFC:inst12.input
-I2 => RFC:inst8.input
-I2 => RFC:inst4.input
-A2 <= A2.DB_MAX_OUTPUT_PORT_TYPE
-B1 <= B1.DB_MAX_OUTPUT_PORT_TYPE
-I1 => RFC:inst9.input
-I1 => RFC:inst13.input
-I1 => RFC:inst17.input
-I1 => RFC:inst5.input
-A1 <= A1.DB_MAX_OUTPUT_PORT_TYPE
-B0 <= B0.DB_MAX_OUTPUT_PORT_TYPE
-I0 => RFC:inst10.input
-I0 => RFC:inst14.input
-I0 => RFC:inst18.input
-I0 => RFC:inst6.input
-A0 <= A0.DB_MAX_OUTPUT_PORT_TYPE
+B[0] <= B.DB_MAX_OUTPUT_PORT_TYPE
+B[1] <= B.DB_MAX_OUTPUT_PORT_TYPE
+B[2] <= B.DB_MAX_OUTPUT_PORT_TYPE
+B[3] <= B.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |register|RFC:inst3
@@ -145,6 +145,17 @@ OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
 RSB => inst6.OE
 
 
+|register|RFC:inst4
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
 |register|RFC:inst16
 OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 CLK => inst.CLK
@@ -178,7 +189,7 @@ OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
 RSB => inst6.OE
 
 
-|register|RFC:inst4
+|register|RFC:inst5
 OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 CLK => inst.CLK
 input => inst3.IN0
@@ -222,7 +233,7 @@ OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
 RSB => inst6.OE
 
 
-|register|RFC:inst5
+|register|RFC:inst6
 OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 CLK => inst.CLK
 input => inst3.IN0
@@ -256,17 +267,6 @@ RSB => inst6.OE
 
 
 |register|RFC:inst18
-OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-CLK => inst.CLK
-input => inst3.IN0
-WS => inst3.IN1
-WS => inst5.IN0
-RSA => inst1.OE
-OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
-RSB => inst6.OE
-
-
-|register|RFC:inst6
 OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 CLK => inst.CLK
 input => inst3.IN0

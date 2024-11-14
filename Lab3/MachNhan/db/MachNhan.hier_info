@@ -1,0 +1,321 @@
+|MachNhan
+C <= Sum8Bit:inst2.Cnext
+A[0] => Shift2:inst.A[0]
+A[0] => Sum8Bit:inst1.B[0]
+A[0] => Sum8Bit:inst2.B[0]
+A[1] => Shift2:inst.A[1]
+A[1] => Sum8Bit:inst1.B[1]
+A[1] => Sum8Bit:inst2.B[1]
+A[2] => Shift2:inst.A[2]
+A[2] => Sum8Bit:inst1.B[2]
+A[2] => Sum8Bit:inst2.B[2]
+A[3] => Shift2:inst.A[3]
+A[3] => Sum8Bit:inst1.B[3]
+A[3] => Sum8Bit:inst2.B[3]
+Y[0] <= Sum8Bit:inst2.Y[0]
+Y[1] <= Sum8Bit:inst2.Y[1]
+Y[2] <= Sum8Bit:inst2.Y[2]
+Y[3] <= Sum8Bit:inst2.Y[3]
+Y[4] <= Sum8Bit:inst2.Y[4]
+Y[5] <= Sum8Bit:inst2.Y[5]
+Y[6] <= Sum8Bit:inst2.Y[6]
+Y[7] <= Sum8Bit:inst2.Y[7]
+
+
+|MachNhan|Sum8Bit:inst2
+Cnext <= Cnext7.DB_MAX_OUTPUT_PORT_TYPE
+A[0] => Sum:inst6.A
+A[1] => Sum:inst7.A
+A[2] => Sum:inst3.A
+A[3] => Sum:inst5.A
+A[4] => Sum:inst4.A
+A[5] => Sum:inst2.A
+A[6] => Sum:inst1.A
+A[7] => Sum:inst.A
+B[0] => Sum:inst6.B
+B[1] => Sum:inst7.B
+B[2] => Sum:inst3.B
+B[3] => Sum:inst5.B
+B[4] => Sum:inst4.B
+B[5] => Sum:inst2.B
+B[6] => Sum:inst1.B
+B[7] => Sum:inst.B
+C => Sum:inst6.C
+Y[0] <= Sum:inst6.Y
+Y[1] <= Sum:inst7.Y
+Y[2] <= Sum:inst3.Y
+Y[3] <= Sum:inst5.Y
+Y[4] <= Sum:inst4.Y
+Y[5] <= Sum:inst2.Y
+Y[6] <= Sum:inst1.Y
+Y[7] <= Sum:inst.Y
+
+
+|MachNhan|Sum8Bit:inst2|Sum:inst
+Y <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst5.IN1
+A => inst3.IN0
+B => inst.IN1
+B => inst4.IN0
+B => inst3.IN1
+C => inst1.IN1
+C => inst4.IN1
+C => inst5.IN0
+Cnext <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MachNhan|Sum8Bit:inst2|Sum:inst1
+Y <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst5.IN1
+A => inst3.IN0
+B => inst.IN1
+B => inst4.IN0
+B => inst3.IN1
+C => inst1.IN1
+C => inst4.IN1
+C => inst5.IN0
+Cnext <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MachNhan|Sum8Bit:inst2|Sum:inst2
+Y <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst5.IN1
+A => inst3.IN0
+B => inst.IN1
+B => inst4.IN0
+B => inst3.IN1
+C => inst1.IN1
+C => inst4.IN1
+C => inst5.IN0
+Cnext <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MachNhan|Sum8Bit:inst2|Sum:inst4
+Y <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst5.IN1
+A => inst3.IN0
+B => inst.IN1
+B => inst4.IN0
+B => inst3.IN1
+C => inst1.IN1
+C => inst4.IN1
+C => inst5.IN0
+Cnext <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MachNhan|Sum8Bit:inst2|Sum:inst5
+Y <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst5.IN1
+A => inst3.IN0
+B => inst.IN1
+B => inst4.IN0
+B => inst3.IN1
+C => inst1.IN1
+C => inst4.IN1
+C => inst5.IN0
+Cnext <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MachNhan|Sum8Bit:inst2|Sum:inst3
+Y <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst5.IN1
+A => inst3.IN0
+B => inst.IN1
+B => inst4.IN0
+B => inst3.IN1
+C => inst1.IN1
+C => inst4.IN1
+C => inst5.IN0
+Cnext <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MachNhan|Sum8Bit:inst2|Sum:inst7
+Y <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst5.IN1
+A => inst3.IN0
+B => inst.IN1
+B => inst4.IN0
+B => inst3.IN1
+C => inst1.IN1
+C => inst4.IN1
+C => inst5.IN0
+Cnext <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MachNhan|Sum8Bit:inst2|Sum:inst6
+Y <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst5.IN1
+A => inst3.IN0
+B => inst.IN1
+B => inst4.IN0
+B => inst3.IN1
+C => inst1.IN1
+C => inst4.IN1
+C => inst5.IN0
+Cnext <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MachNhan|Sum8Bit:inst1
+Cnext <= Cnext7.DB_MAX_OUTPUT_PORT_TYPE
+A[0] => Sum:inst6.A
+A[1] => Sum:inst7.A
+A[2] => Sum:inst3.A
+A[3] => Sum:inst5.A
+A[4] => Sum:inst4.A
+A[5] => Sum:inst2.A
+A[6] => Sum:inst1.A
+A[7] => Sum:inst.A
+B[0] => Sum:inst6.B
+B[1] => Sum:inst7.B
+B[2] => Sum:inst3.B
+B[3] => Sum:inst5.B
+B[4] => Sum:inst4.B
+B[5] => Sum:inst2.B
+B[6] => Sum:inst1.B
+B[7] => Sum:inst.B
+C => Sum:inst6.C
+Y[0] <= Sum:inst6.Y
+Y[1] <= Sum:inst7.Y
+Y[2] <= Sum:inst3.Y
+Y[3] <= Sum:inst5.Y
+Y[4] <= Sum:inst4.Y
+Y[5] <= Sum:inst2.Y
+Y[6] <= Sum:inst1.Y
+Y[7] <= Sum:inst.Y
+
+
+|MachNhan|Sum8Bit:inst1|Sum:inst
+Y <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst5.IN1
+A => inst3.IN0
+B => inst.IN1
+B => inst4.IN0
+B => inst3.IN1
+C => inst1.IN1
+C => inst4.IN1
+C => inst5.IN0
+Cnext <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MachNhan|Sum8Bit:inst1|Sum:inst1
+Y <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst5.IN1
+A => inst3.IN0
+B => inst.IN1
+B => inst4.IN0
+B => inst3.IN1
+C => inst1.IN1
+C => inst4.IN1
+C => inst5.IN0
+Cnext <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MachNhan|Sum8Bit:inst1|Sum:inst2
+Y <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst5.IN1
+A => inst3.IN0
+B => inst.IN1
+B => inst4.IN0
+B => inst3.IN1
+C => inst1.IN1
+C => inst4.IN1
+C => inst5.IN0
+Cnext <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MachNhan|Sum8Bit:inst1|Sum:inst4
+Y <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst5.IN1
+A => inst3.IN0
+B => inst.IN1
+B => inst4.IN0
+B => inst3.IN1
+C => inst1.IN1
+C => inst4.IN1
+C => inst5.IN0
+Cnext <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MachNhan|Sum8Bit:inst1|Sum:inst5
+Y <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst5.IN1
+A => inst3.IN0
+B => inst.IN1
+B => inst4.IN0
+B => inst3.IN1
+C => inst1.IN1
+C => inst4.IN1
+C => inst5.IN0
+Cnext <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MachNhan|Sum8Bit:inst1|Sum:inst3
+Y <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst5.IN1
+A => inst3.IN0
+B => inst.IN1
+B => inst4.IN0
+B => inst3.IN1
+C => inst1.IN1
+C => inst4.IN1
+C => inst5.IN0
+Cnext <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MachNhan|Sum8Bit:inst1|Sum:inst7
+Y <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst5.IN1
+A => inst3.IN0
+B => inst.IN1
+B => inst4.IN0
+B => inst3.IN1
+C => inst1.IN1
+C => inst4.IN1
+C => inst5.IN0
+Cnext <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MachNhan|Sum8Bit:inst1|Sum:inst6
+Y <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst5.IN1
+A => inst3.IN0
+B => inst.IN1
+B => inst4.IN0
+B => inst3.IN1
+C => inst1.IN1
+C => inst4.IN1
+C => inst5.IN0
+Cnext <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MachNhan|Shift2:inst
+Y[0] <= <GND>
+Y[1] <= <GND>
+Y[2] <= A[0].DB_MAX_OUTPUT_PORT_TYPE
+Y[3] <= A[1].DB_MAX_OUTPUT_PORT_TYPE
+Y[4] <= A[2].DB_MAX_OUTPUT_PORT_TYPE
+Y[5] <= A[3].DB_MAX_OUTPUT_PORT_TYPE
+Y[6] <= <GND>
+Y[7] <= <GND>
+A[0] => Y[2].DATAIN
+A[1] => Y[3].DATAIN
+A[2] => Y[4].DATAIN
+A[3] => Y[5].DATAIN
+
+

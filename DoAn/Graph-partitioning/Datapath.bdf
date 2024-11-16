@@ -1021,6 +1021,23 @@ applicable agreement for further details.
 	)
 	(rotate270)
 )
+(symbol
+	(rect 1824 760 1856 792)
+	(text "GND" (rect 8 16 29 26)(font "Arial" (font_size 6)))
+	(text "inst30" (rect 3 21 32 33)(font "Arial" )(invisible))
+	(port
+		(pt 16 0)
+		(output)
+		(text "1" (rect 18 0 23 12)(font "Courier New" (bold))(invisible))
+		(text "1" (rect 18 0 23 12)(font "Courier New" (bold))(invisible))
+		(line (pt 16 8)(pt 16 0))
+	)
+	(drawing
+		(line (pt 8 8)(pt 16 16))
+		(line (pt 16 16)(pt 24 8))
+		(line (pt 8 8)(pt 24 8))
+	)
+)
 (connector
 	(pt 824 696)
 	(pt 808 696)
@@ -1573,11 +1590,6 @@ applicable agreement for further details.
 	(pt 1600 416)
 )
 (connector
-	(pt 2072 632)
-	(pt 2344 632)
-	(bus)
-)
-(connector
 	(pt 1088 168)
 	(pt 1088 184)
 	(bus)
@@ -1733,6 +1745,19 @@ applicable agreement for further details.
 	(pt 1840 496)
 	(pt 1840 352)
 	(bus)
+)
+(connector
+	(pt 2072 632)
+	(pt 2344 632)
+	(bus)
+)
+(connector
+	(pt 1864 736)
+	(pt 1840 736)
+)
+(connector
+	(pt 1840 736)
+	(pt 1840 760)
 )
 (junction (pt 1824 632))
 (junction (pt 2072 632))

@@ -1,12 +1,12 @@
-Analysis & Synthesis Status : Successful - Wed Nov 13 14:38:37 2024
+Analysis & Synthesis Status : Successful - Sat Nov 16 11:20:55 2024
 Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
 Revision Name : Bai1
 Top-level Entity Name : Bai1
 Family : Cyclone II
-Total logic elements : 237
-    Total combinational functions : 184
-    Dedicated logic registers : 79
-Total registers : 79
+Total logic elements : 242
+    Total combinational functions : 181
+    Dedicated logic registers : 87
+Total registers : 87
 Total pins : 27
 Total virtual pins : 0
 Total memory bits : 0

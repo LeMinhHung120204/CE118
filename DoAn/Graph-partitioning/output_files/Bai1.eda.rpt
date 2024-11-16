@@ -1,5 +1,5 @@
 EDA Netlist Writer report for Bai1
-Wed Nov 13 14:37:51 2024
+Sat Nov 16 11:18:21 2024
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -36,9 +36,9 @@ applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Wed Nov 13 14:37:51 2024 ;
+; EDA Netlist Writer Status ; Successful - Sat Nov 16 11:18:21 2024 ;
 ; Revision Name             ; Bai1                                  ;
-; Top-level Entity Name     ; Bai1                                  ;
+; Top-level Entity Name     ; Datapath                              ;
 ; Family                    ; Cyclone II                            ;
 ; Simulation Files Creation ; Successful                            ;
 +---------------------------+---------------------------------------+
@@ -80,14 +80,14 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit EDA Netlist Writer
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Wed Nov 13 14:37:51 2024
+    Info: Processing started: Sat Nov 16 11:18:20 2024
 Info: Command: quartus_eda --functional=on --simulation=on --tool=modelsim_oem --format=verilog Bai1 -c Bai1
 Info (119006): Selected device EP2C35F672C6 for design "Bai1"
 Info (204019): Generated file Bai1.vo in folder "D:/study/year3/TKLLS/CE118/DoAn/Graph-partitioning/simulation/modelsim/" for EDA simulation tool
 Info: Quartus II 64-Bit EDA Netlist Writer was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 4519 megabytes
-    Info: Processing ended: Wed Nov 13 14:37:51 2024
-    Info: Elapsed time: 00:00:00
+    Info: Processing ended: Sat Nov 16 11:18:21 2024
+    Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:00
 
 

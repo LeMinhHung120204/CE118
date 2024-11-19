@@ -1,0 +1,211 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "symbol" (version "1.2"))
+(symbol
+	(rect 16 16 232 464)
+	(text "DC_Controller" (rect 5 0 82 14)(font "Arial" (font_size 8)))
+	(text "inst" (rect 8 432 25 444)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "CLK" (rect 0 0 23 14)(font "Arial" (font_size 8)))
+		(text "CLK" (rect 21 27 44 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "START" (rect 0 0 40 14)(font "Arial" (font_size 8)))
+		(text "START" (rect 21 43 61 57)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 216 32)
+		(output)
+		(text "SL1[1]" (rect 0 0 36 14)(font "Arial" (font_size 8)))
+		(text "SL1[1]" (rect 159 27 195 41)(font "Arial" (font_size 8)))
+		(line (pt 216 32)(pt 200 32))
+	)
+	(port
+		(pt 216 48)
+		(output)
+		(text "SL1[0]" (rect 0 0 36 14)(font "Arial" (font_size 8)))
+		(text "SL1[0]" (rect 159 43 195 57)(font "Arial" (font_size 8)))
+		(line (pt 216 48)(pt 200 48))
+	)
+	(port
+		(pt 216 64)
+		(output)
+		(text "SL2[1..0]" (rect 0 0 50 14)(font "Arial" (font_size 8)))
+		(text "SL2[1..0]" (rect 145 59 195 73)(font "Arial" (font_size 8)))
+		(line (pt 216 64)(pt 200 64)(line_width 3))
+	)
+	(port
+		(pt 216 80)
+		(output)
+		(text "SL3" (rect 0 0 22 14)(font "Arial" (font_size 8)))
+		(text "SL3" (rect 173 75 195 89)(font "Arial" (font_size 8)))
+		(line (pt 216 80)(pt 200 80))
+	)
+	(port
+		(pt 216 96)
+		(output)
+		(text "WA1[1]\n" (rect 0 0 42 28)(font "Arial" (font_size 8)))
+		(text "WA1[1]\n" (rect 153 91 195 119)(font "Arial" (font_size 8)))
+		(line (pt 216 96)(pt 200 96))
+	)
+	(port
+		(pt 216 112)
+		(output)
+		(text "WA1[0]\n" (rect 0 0 42 28)(font "Arial" (font_size 8)))
+		(text "WA1[0]\n" (rect 153 107 195 135)(font "Arial" (font_size 8)))
+		(line (pt 216 112)(pt 200 112))
+	)
+	(port
+		(pt 216 128)
+		(output)
+		(text "RA1[1..0]" (rect 0 0 53 14)(font "Arial" (font_size 8)))
+		(text "RA1[1..0]" (rect 142 123 195 137)(font "Arial" (font_size 8)))
+		(line (pt 216 128)(pt 200 128)(line_width 3))
+	)
+	(port
+		(pt 216 144)
+		(output)
+		(text "WE1\n" (rect 0 0 25 28)(font "Arial" (font_size 8)))
+		(text "WE1\n" (rect 170 139 195 167)(font "Arial" (font_size 8)))
+		(line (pt 216 144)(pt 200 144))
+	)
+	(port
+		(pt 216 160)
+		(output)
+		(text "RE1\n" (rect 0 0 22 28)(font "Arial" (font_size 8)))
+		(text "RE1\n" (rect 173 155 195 183)(font "Arial" (font_size 8)))
+		(line (pt 216 160)(pt 200 160))
+	)
+	(port
+		(pt 216 176)
+		(output)
+		(text "WA2[2]\n" (rect 0 0 42 28)(font "Arial" (font_size 8)))
+		(text "WA2[2]\n" (rect 153 171 195 199)(font "Arial" (font_size 8)))
+		(line (pt 216 176)(pt 200 176))
+	)
+	(port
+		(pt 216 192)
+		(output)
+		(text "WA2[1]\n" (rect 0 0 42 28)(font "Arial" (font_size 8)))
+		(text "WA2[1]\n" (rect 153 187 195 215)(font "Arial" (font_size 8)))
+		(line (pt 216 192)(pt 200 192))
+	)
+	(port
+		(pt 216 208)
+		(output)
+		(text "WA2[0]\n" (rect 0 0 42 28)(font "Arial" (font_size 8)))
+		(text "WA2[0]\n" (rect 153 203 195 231)(font "Arial" (font_size 8)))
+		(line (pt 216 208)(pt 200 208))
+	)
+	(port
+		(pt 216 224)
+		(output)
+		(text "RA2[2]\n" (rect 0 0 38 28)(font "Arial" (font_size 8)))
+		(text "RA2[2]\n" (rect 157 219 195 247)(font "Arial" (font_size 8)))
+		(line (pt 216 224)(pt 200 224))
+	)
+	(port
+		(pt 216 240)
+		(output)
+		(text "RA2[1]\n" (rect 0 0 38 28)(font "Arial" (font_size 8)))
+		(text "RA2[1]\n" (rect 157 235 195 263)(font "Arial" (font_size 8)))
+		(line (pt 216 240)(pt 200 240))
+	)
+	(port
+		(pt 216 256)
+		(output)
+		(text "RA2[0]\n" (rect 0 0 38 28)(font "Arial" (font_size 8)))
+		(text "RA2[0]\n" (rect 157 251 195 279)(font "Arial" (font_size 8)))
+		(line (pt 216 256)(pt 200 256))
+	)
+	(port
+		(pt 216 272)
+		(output)
+		(text "WE2\n" (rect 0 0 25 28)(font "Arial" (font_size 8)))
+		(text "WE2\n" (rect 170 267 195 295)(font "Arial" (font_size 8)))
+		(line (pt 216 272)(pt 200 272))
+	)
+	(port
+		(pt 216 288)
+		(output)
+		(text "RE2\n" (rect 0 0 22 28)(font "Arial" (font_size 8)))
+		(text "RE2\n" (rect 173 283 195 311)(font "Arial" (font_size 8)))
+		(line (pt 216 288)(pt 200 288))
+	)
+	(port
+		(pt 216 304)
+		(output)
+		(text "WA3[1..0]" (rect 0 0 56 14)(font "Arial" (font_size 8)))
+		(text "WA3[1..0]" (rect 139 299 195 313)(font "Arial" (font_size 8)))
+		(line (pt 216 304)(pt 200 304)(line_width 3))
+	)
+	(port
+		(pt 216 320)
+		(output)
+		(text "RA3[1..0]" (rect 0 0 53 14)(font "Arial" (font_size 8)))
+		(text "RA3[1..0]" (rect 142 315 195 329)(font "Arial" (font_size 8)))
+		(line (pt 216 320)(pt 200 320)(line_width 3))
+	)
+	(port
+		(pt 216 336)
+		(output)
+		(text "WE3\n" (rect 0 0 25 28)(font "Arial" (font_size 8)))
+		(text "WE3\n" (rect 170 331 195 359)(font "Arial" (font_size 8)))
+		(line (pt 216 336)(pt 200 336))
+	)
+	(port
+		(pt 216 352)
+		(output)
+		(text "RE3\n" (rect 0 0 22 28)(font "Arial" (font_size 8)))
+		(text "RE3\n" (rect 173 347 195 375)(font "Arial" (font_size 8)))
+		(line (pt 216 352)(pt 200 352))
+	)
+	(port
+		(pt 216 368)
+		(output)
+		(text "AbsMin\n" (rect 0 0 42 28)(font "Arial" (font_size 8)))
+		(text "AbsMin\n" (rect 153 363 195 391)(font "Arial" (font_size 8)))
+		(line (pt 216 368)(pt 200 368))
+	)
+	(port
+		(pt 216 384)
+		(output)
+		(text "AddAbsSubMax[1..0]" (rect 0 0 121 14)(font "Arial" (font_size 8)))
+		(text "AddAbsSubMax[1..0]" (rect 74 379 195 393)(font "Arial" (font_size 8)))
+		(line (pt 216 384)(pt 200 384)(line_width 3))
+	)
+	(port
+		(pt 216 400)
+		(output)
+		(text "OUT_ENABLE" (rect 0 0 79 14)(font "Arial" (font_size 8)))
+		(text "OUT_ENABLE" (rect 116 395 195 409)(font "Arial" (font_size 8)))
+		(line (pt 216 400)(pt 200 400))
+	)
+	(drawing
+		(rectangle (rect 16 16 200 432))
+	)
+)

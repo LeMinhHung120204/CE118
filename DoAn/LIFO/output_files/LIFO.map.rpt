@@ -1,5 +1,5 @@
 Analysis & Synthesis report for LIFO
-Sat Oct 12 21:58:55 2024
+Wed Nov 20 17:44:17 2024
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -17,8 +17,9 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
   9. Registers Removed During Synthesis
  10. General Register Statistics
  11. Inverted Register Statistics
- 12. Elapsed Time Per Partition
- 13. Analysis & Synthesis Messages
+ 12. Parameter Settings for User Entity Instance: BUSMUX:inst2
+ 13. Elapsed Time Per Partition
+ 14. Analysis & Synthesis Messages
 
 
 
@@ -44,7 +45,7 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sat Oct 12 21:58:55 2024           ;
+; Analysis & Synthesis Status        ; Successful - Wed Nov 20 17:44:17 2024           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; LIFO                                            ;
 ; Top-level Entity Name              ; LIFO                                            ;
@@ -53,7 +54,7 @@ applicable agreement for further details.
 ;     Total combinational functions  ; 272                                             ;
 ;     Dedicated logic registers      ; 7                                               ;
 ; Total registers                    ; 7                                               ;
-; Total pins                         ; 18                                              ;
+; Total pins                         ; 14                                              ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0                                               ;
 ; Embedded Multiplier 9-bit elements ; 0                                               ;
@@ -157,327 +158,331 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                ;
-+----------------------------------+-----------------+------------------------------------------+-------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                                ; File Name with Absolute Path                                ; Library ;
-+----------------------------------+-----------------+------------------------------------------+-------------------------------------------------------------+---------+
-; LIFO.bdf                         ; yes             ; User Block Diagram/Schematic File        ; D:/study/year3/TKLLS/CE118/DoAn/LIFO/LIFO.bdf               ;         ;
-; CounterUp_Down.bdf               ; yes             ; User Block Diagram/Schematic File        ; D:/study/year3/TKLLS/CE118/DoAn/LIFO/CounterUp_Down.bdf     ;         ;
-; HAS.bdf                          ; yes             ; User Block Diagram/Schematic File        ; D:/study/year3/TKLLS/CE118/DoAn/LIFO/HAS.bdf                ;         ;
-; CounterUp_Down_set.bdf           ; yes             ; User Block Diagram/Schematic File        ; D:/study/year3/TKLLS/CE118/DoAn/LIFO/CounterUp_Down_set.bdf ;         ;
-; Selector.bdf                     ; yes             ; User Block Diagram/Schematic File        ; D:/study/year3/TKLLS/CE118/DoAn/LIFO/Selector.bdf           ;         ;
-; RAM16_8.bdf                      ; yes             ; User Block Diagram/Schematic File        ; D:/study/year3/TKLLS/CE118/DoAn/LIFO/RAM16_8.bdf            ;         ;
-; RAM4_4.bdf                       ; yes             ; User Block Diagram/Schematic File        ; D:/study/year3/TKLLS/CE118/DoAn/LIFO/RAM4_4.bdf             ;         ;
-; mc.bdf                           ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/study/year3/TKLLS/CE118/DoAn/LIFO/mc.bdf                 ;         ;
-; decoder2_4.bdf                   ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/study/year3/TKLLS/CE118/DoAn/LIFO/decoder2_4.bdf         ;         ;
-; mux2.bdf                         ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/study/year3/TKLLS/CE118/DoAn/LIFO/mux2.bdf               ;         ;
-+----------------------------------+-----------------+------------------------------------------+-------------------------------------------------------------+---------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                     ;
++----------------------------------+-----------------+------------------------------------------+------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                                ; File Name with Absolute Path                                     ; Library ;
++----------------------------------+-----------------+------------------------------------------+------------------------------------------------------------------+---------+
+; LIFO.bdf                         ; yes             ; User Block Diagram/Schematic File        ; D:/study/year3/TKLLS/CE118/DoAn/LIFO/LIFO.bdf                    ;         ;
+; CounterUp_Down.bdf               ; yes             ; User Block Diagram/Schematic File        ; D:/study/year3/TKLLS/CE118/DoAn/LIFO/CounterUp_Down.bdf          ;         ;
+; HAS.bdf                          ; yes             ; User Block Diagram/Schematic File        ; D:/study/year3/TKLLS/CE118/DoAn/LIFO/HAS.bdf                     ;         ;
+; RAM16_8.bdf                      ; yes             ; User Block Diagram/Schematic File        ; D:/study/year3/TKLLS/CE118/DoAn/LIFO/RAM16_8.bdf                 ;         ;
+; RAM4_4.bdf                       ; yes             ; User Block Diagram/Schematic File        ; D:/study/year3/TKLLS/CE118/DoAn/LIFO/RAM4_4.bdf                  ;         ;
+; Decoder2_4.bdf                   ; yes             ; User Block Diagram/Schematic File        ; D:/study/year3/TKLLS/CE118/DoAn/LIFO/Decoder2_4.bdf              ;         ;
+; mc.bdf                           ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/study/year3/TKLLS/CE118/DoAn/LIFO/mc.bdf                      ;         ;
+; busmux.tdf                       ; yes             ; Megafunction                             ; c:/altera/13.0sp1/quartus/libraries/megafunctions/busmux.tdf     ;         ;
+; lpm_mux.inc                      ; yes             ; Megafunction                             ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_mux.inc    ;         ;
+; lpm_mux.tdf                      ; yes             ; Megafunction                             ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_mux.tdf    ;         ;
+; aglobal130.inc                   ; yes             ; Megafunction                             ; c:/altera/13.0sp1/quartus/libraries/megafunctions/aglobal130.inc ;         ;
+; muxlut.inc                       ; yes             ; Megafunction                             ; c:/altera/13.0sp1/quartus/libraries/megafunctions/muxlut.inc     ;         ;
+; bypassff.inc                     ; yes             ; Megafunction                             ; c:/altera/13.0sp1/quartus/libraries/megafunctions/bypassff.inc   ;         ;
+; altshift.inc                     ; yes             ; Megafunction                             ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altshift.inc   ;         ;
+; db/mux_omc.tdf                   ; yes             ; Auto-Generated Megafunction              ; D:/study/year3/TKLLS/CE118/DoAn/LIFO/db/mux_omc.tdf              ;         ;
++----------------------------------+-----------------+------------------------------------------+------------------------------------------------------------------+---------+
 
 
-+---------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                                     ;
-+---------------------------------------------+-----------------------------------+
-; Resource                                    ; Usage                             ;
-+---------------------------------------------+-----------------------------------+
-; Estimated Total logic elements              ; 272                               ;
-;                                             ;                                   ;
-; Total combinational functions               ; 272                               ;
-; Logic element usage by number of LUT inputs ;                                   ;
-;     -- 4 input functions                    ; 90                                ;
-;     -- 3 input functions                    ; 177                               ;
-;     -- <=2 input functions                  ; 5                                 ;
-;                                             ;                                   ;
-; Logic elements by mode                      ;                                   ;
-;     -- normal mode                          ; 272                               ;
-;     -- arithmetic mode                      ; 0                                 ;
-;                                             ;                                   ;
-; Total registers                             ; 7                                 ;
-;     -- Dedicated logic registers            ; 7                                 ;
-;     -- I/O registers                        ; 0                                 ;
-;                                             ;                                   ;
-; I/O pins                                    ; 18                                ;
-; Embedded Multiplier 9-bit elements          ; 0                                 ;
-; Maximum fan-out node                        ; Selector:inst5|Mux2:inst3|inst2~0 ;
-; Maximum fan-out                             ; 80                                ;
-; Total fan-out                               ; 944                               ;
-; Average fan-out                             ; 3.18                              ;
-+---------------------------------------------+-----------------------------------+
++-------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                                                                       ;
++---------------------------------------------+---------------------------------------------------------------------+
+; Resource                                    ; Usage                                                               ;
++---------------------------------------------+---------------------------------------------------------------------+
+; Estimated Total logic elements              ; 272                                                                 ;
+;                                             ;                                                                     ;
+; Total combinational functions               ; 272                                                                 ;
+; Logic element usage by number of LUT inputs ;                                                                     ;
+;     -- 4 input functions                    ; 90                                                                  ;
+;     -- 3 input functions                    ; 177                                                                 ;
+;     -- <=2 input functions                  ; 5                                                                   ;
+;                                             ;                                                                     ;
+; Logic elements by mode                      ;                                                                     ;
+;     -- normal mode                          ; 272                                                                 ;
+;     -- arithmetic mode                      ; 0                                                                   ;
+;                                             ;                                                                     ;
+; Total registers                             ; 7                                                                   ;
+;     -- Dedicated logic registers            ; 7                                                                   ;
+;     -- I/O registers                        ; 0                                                                   ;
+;                                             ;                                                                     ;
+; I/O pins                                    ; 14                                                                  ;
+; Embedded Multiplier 9-bit elements          ; 0                                                                   ;
+; Maximum fan-out node                        ; busmux:inst2|lpm_mux:$00000|mux_omc:auto_generated|result_node[1]~0 ;
+; Maximum fan-out                             ; 80                                                                  ;
+; Total fan-out                               ; 940                                                                 ;
+; Average fan-out                             ; 3.21                                                                ;
++---------------------------------------------+---------------------------------------------------------------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                    ;
-+-------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------+--------------+
-; Compilation Hierarchy Node    ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                         ; Library Name ;
-+-------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------+--------------+
-; |LIFO                         ; 272 (4)           ; 7 (0)        ; 0           ; 0            ; 0       ; 0         ; 18   ; 0            ; |LIFO                                       ; work         ;
-;    |CounterUp_Down:Top|       ; 5 (4)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|CounterUp_Down:Top                    ; work         ;
-;       |HAS:inst10|            ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|CounterUp_Down:Top|HAS:inst10         ; work         ;
-;    |CounterUp_Down_set:Top-1| ; 4 (3)             ; 3 (3)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|CounterUp_Down_set:Top-1              ; work         ;
-;       |HAS:inst10|            ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|CounterUp_Down_set:Top-1|HAS:inst10   ; work         ;
-;    |RAM16_8:inst8|            ; 256 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst8                         ; work         ;
-;       |RAM4_4:inst10|         ; 34 (13)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst8|RAM4_4:inst10           ; work         ;
-;          |MC:inst10|          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst8|RAM4_4:inst10|MC:inst10 ; work         ;
-;          |MC:inst11|          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst8|RAM4_4:inst10|MC:inst11 ; work         ;
-;          |MC:inst12|          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst8|RAM4_4:inst10|MC:inst12 ; work         ;
-;          |MC:inst13|          ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst8|RAM4_4:inst10|MC:inst13 ; work         ;
-;          |MC:inst14|          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst8|RAM4_4:inst10|MC:inst14 ; work         ;
-;          |MC:inst15|          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst8|RAM4_4:inst10|MC:inst15 ; work         ;
-;          |MC:inst16|          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst8|RAM4_4:inst10|MC:inst16 ; work         ;
-;          |MC:inst1|           ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst8|RAM4_4:inst10|MC:inst1  ; work         ;
-;          |MC:inst2|           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst8|RAM4_4:inst10|MC:inst2  ; work         ;
-;          |MC:inst3|           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst8|RAM4_4:inst10|MC:inst3  ; work         ;
-;          |MC:inst4|           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst8|RAM4_4:inst10|MC:inst4  ; work         ;
-;          |MC:inst5|           ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst8|RAM4_4:inst10|MC:inst5  ; work         ;
-;          |MC:inst6|           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst8|RAM4_4:inst10|MC:inst6  ; work         ;
-;          |MC:inst7|           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst8|RAM4_4:inst10|MC:inst7  ; work         ;
-;          |MC:inst8|           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst8|RAM4_4:inst10|MC:inst8  ; work         ;
-;          |MC:inst9|           ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst8|RAM4_4:inst10|MC:inst9  ; work         ;
-;       |RAM4_4:inst13|         ; 28 (12)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst8|RAM4_4:inst13           ; work         ;
-;          |MC:inst10|          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst8|RAM4_4:inst13|MC:inst10 ; work         ;
-;          |MC:inst11|          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst8|RAM4_4:inst13|MC:inst11 ; work         ;
-;          |MC:inst12|          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst8|RAM4_4:inst13|MC:inst12 ; work         ;
-;          |MC:inst13|          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst8|RAM4_4:inst13|MC:inst13 ; work         ;
-;          |MC:inst14|          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst8|RAM4_4:inst13|MC:inst14 ; work         ;
-;          |MC:inst15|          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst8|RAM4_4:inst13|MC:inst15 ; work         ;
-;          |MC:inst16|          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst8|RAM4_4:inst13|MC:inst16 ; work         ;
-;          |MC:inst1|           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst8|RAM4_4:inst13|MC:inst1  ; work         ;
-;          |MC:inst2|           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst8|RAM4_4:inst13|MC:inst2  ; work         ;
-;          |MC:inst3|           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst8|RAM4_4:inst13|MC:inst3  ; work         ;
-;          |MC:inst4|           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst8|RAM4_4:inst13|MC:inst4  ; work         ;
-;          |MC:inst5|           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst8|RAM4_4:inst13|MC:inst5  ; work         ;
-;          |MC:inst6|           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst8|RAM4_4:inst13|MC:inst6  ; work         ;
-;          |MC:inst7|           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst8|RAM4_4:inst13|MC:inst7  ; work         ;
-;          |MC:inst8|           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst8|RAM4_4:inst13|MC:inst8  ; work         ;
-;          |MC:inst9|           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst8|RAM4_4:inst13|MC:inst9  ; work         ;
-;       |RAM4_4:inst1|          ; 37 (16)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst8|RAM4_4:inst1            ; work         ;
-;          |MC:inst10|          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst8|RAM4_4:inst1|MC:inst10  ; work         ;
-;          |MC:inst11|          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst8|RAM4_4:inst1|MC:inst11  ; work         ;
-;          |MC:inst12|          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst8|RAM4_4:inst1|MC:inst12  ; work         ;
-;          |MC:inst13|          ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst8|RAM4_4:inst1|MC:inst13  ; work         ;
-;          |MC:inst14|          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst8|RAM4_4:inst1|MC:inst14  ; work         ;
-;          |MC:inst15|          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst8|RAM4_4:inst1|MC:inst15  ; work         ;
-;          |MC:inst16|          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst8|RAM4_4:inst1|MC:inst16  ; work         ;
-;          |MC:inst1|           ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst8|RAM4_4:inst1|MC:inst1   ; work         ;
-;          |MC:inst2|           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst8|RAM4_4:inst1|MC:inst2   ; work         ;
-;          |MC:inst3|           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst8|RAM4_4:inst1|MC:inst3   ; work         ;
-;          |MC:inst4|           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst8|RAM4_4:inst1|MC:inst4   ; work         ;
-;          |MC:inst5|           ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst8|RAM4_4:inst1|MC:inst5   ; work         ;
-;          |MC:inst6|           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst8|RAM4_4:inst1|MC:inst6   ; work         ;
-;          |MC:inst7|           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst8|RAM4_4:inst1|MC:inst7   ; work         ;
-;          |MC:inst8|           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst8|RAM4_4:inst1|MC:inst8   ; work         ;
-;          |MC:inst9|           ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst8|RAM4_4:inst1|MC:inst9   ; work         ;
-;       |RAM4_4:inst3|          ; 33 (17)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst8|RAM4_4:inst3            ; work         ;
-;          |MC:inst10|          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst8|RAM4_4:inst3|MC:inst10  ; work         ;
-;          |MC:inst11|          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst8|RAM4_4:inst3|MC:inst11  ; work         ;
-;          |MC:inst12|          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst8|RAM4_4:inst3|MC:inst12  ; work         ;
-;          |MC:inst13|          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst8|RAM4_4:inst3|MC:inst13  ; work         ;
-;          |MC:inst14|          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst8|RAM4_4:inst3|MC:inst14  ; work         ;
-;          |MC:inst15|          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst8|RAM4_4:inst3|MC:inst15  ; work         ;
-;          |MC:inst16|          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst8|RAM4_4:inst3|MC:inst16  ; work         ;
-;          |MC:inst1|           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst8|RAM4_4:inst3|MC:inst1   ; work         ;
-;          |MC:inst2|           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst8|RAM4_4:inst3|MC:inst2   ; work         ;
-;          |MC:inst3|           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst8|RAM4_4:inst3|MC:inst3   ; work         ;
-;          |MC:inst4|           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst8|RAM4_4:inst3|MC:inst4   ; work         ;
-;          |MC:inst5|           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst8|RAM4_4:inst3|MC:inst5   ; work         ;
-;          |MC:inst6|           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst8|RAM4_4:inst3|MC:inst6   ; work         ;
-;          |MC:inst7|           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst8|RAM4_4:inst3|MC:inst7   ; work         ;
-;          |MC:inst8|           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst8|RAM4_4:inst3|MC:inst8   ; work         ;
-;          |MC:inst9|           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst8|RAM4_4:inst3|MC:inst9   ; work         ;
-;       |RAM4_4:inst4|          ; 34 (13)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst8|RAM4_4:inst4            ; work         ;
-;          |MC:inst10|          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst8|RAM4_4:inst4|MC:inst10  ; work         ;
-;          |MC:inst11|          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst8|RAM4_4:inst4|MC:inst11  ; work         ;
-;          |MC:inst12|          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst8|RAM4_4:inst4|MC:inst12  ; work         ;
-;          |MC:inst13|          ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst8|RAM4_4:inst4|MC:inst13  ; work         ;
-;          |MC:inst14|          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst8|RAM4_4:inst4|MC:inst14  ; work         ;
-;          |MC:inst15|          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst8|RAM4_4:inst4|MC:inst15  ; work         ;
-;          |MC:inst16|          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst8|RAM4_4:inst4|MC:inst16  ; work         ;
-;          |MC:inst1|           ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst8|RAM4_4:inst4|MC:inst1   ; work         ;
-;          |MC:inst2|           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst8|RAM4_4:inst4|MC:inst2   ; work         ;
-;          |MC:inst3|           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst8|RAM4_4:inst4|MC:inst3   ; work         ;
-;          |MC:inst4|           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst8|RAM4_4:inst4|MC:inst4   ; work         ;
-;          |MC:inst5|           ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst8|RAM4_4:inst4|MC:inst5   ; work         ;
-;          |MC:inst6|           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst8|RAM4_4:inst4|MC:inst6   ; work         ;
-;          |MC:inst7|           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst8|RAM4_4:inst4|MC:inst7   ; work         ;
-;          |MC:inst8|           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst8|RAM4_4:inst4|MC:inst8   ; work         ;
-;          |MC:inst9|           ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst8|RAM4_4:inst4|MC:inst9   ; work         ;
-;       |RAM4_4:inst6|          ; 28 (12)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst8|RAM4_4:inst6            ; work         ;
-;          |MC:inst10|          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst8|RAM4_4:inst6|MC:inst10  ; work         ;
-;          |MC:inst11|          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst8|RAM4_4:inst6|MC:inst11  ; work         ;
-;          |MC:inst12|          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst8|RAM4_4:inst6|MC:inst12  ; work         ;
-;          |MC:inst13|          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst8|RAM4_4:inst6|MC:inst13  ; work         ;
-;          |MC:inst14|          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst8|RAM4_4:inst6|MC:inst14  ; work         ;
-;          |MC:inst15|          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst8|RAM4_4:inst6|MC:inst15  ; work         ;
-;          |MC:inst16|          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst8|RAM4_4:inst6|MC:inst16  ; work         ;
-;          |MC:inst1|           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst8|RAM4_4:inst6|MC:inst1   ; work         ;
-;          |MC:inst2|           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst8|RAM4_4:inst6|MC:inst2   ; work         ;
-;          |MC:inst3|           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst8|RAM4_4:inst6|MC:inst3   ; work         ;
-;          |MC:inst4|           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst8|RAM4_4:inst6|MC:inst4   ; work         ;
-;          |MC:inst5|           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst8|RAM4_4:inst6|MC:inst5   ; work         ;
-;          |MC:inst6|           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst8|RAM4_4:inst6|MC:inst6   ; work         ;
-;          |MC:inst7|           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst8|RAM4_4:inst6|MC:inst7   ; work         ;
-;          |MC:inst8|           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst8|RAM4_4:inst6|MC:inst8   ; work         ;
-;          |MC:inst9|           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst8|RAM4_4:inst6|MC:inst9   ; work         ;
-;       |RAM4_4:inst8|          ; 34 (13)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst8|RAM4_4:inst8            ; work         ;
-;          |MC:inst10|          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst8|RAM4_4:inst8|MC:inst10  ; work         ;
-;          |MC:inst11|          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst8|RAM4_4:inst8|MC:inst11  ; work         ;
-;          |MC:inst12|          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst8|RAM4_4:inst8|MC:inst12  ; work         ;
-;          |MC:inst13|          ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst8|RAM4_4:inst8|MC:inst13  ; work         ;
-;          |MC:inst14|          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst8|RAM4_4:inst8|MC:inst14  ; work         ;
-;          |MC:inst15|          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst8|RAM4_4:inst8|MC:inst15  ; work         ;
-;          |MC:inst16|          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst8|RAM4_4:inst8|MC:inst16  ; work         ;
-;          |MC:inst1|           ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst8|RAM4_4:inst8|MC:inst1   ; work         ;
-;          |MC:inst2|           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst8|RAM4_4:inst8|MC:inst2   ; work         ;
-;          |MC:inst3|           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst8|RAM4_4:inst8|MC:inst3   ; work         ;
-;          |MC:inst4|           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst8|RAM4_4:inst8|MC:inst4   ; work         ;
-;          |MC:inst5|           ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst8|RAM4_4:inst8|MC:inst5   ; work         ;
-;          |MC:inst6|           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst8|RAM4_4:inst8|MC:inst6   ; work         ;
-;          |MC:inst7|           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst8|RAM4_4:inst8|MC:inst7   ; work         ;
-;          |MC:inst8|           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst8|RAM4_4:inst8|MC:inst8   ; work         ;
-;          |MC:inst9|           ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst8|RAM4_4:inst8|MC:inst9   ; work         ;
-;       |RAM4_4:inst9|          ; 28 (12)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst8|RAM4_4:inst9            ; work         ;
-;          |MC:inst10|          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst8|RAM4_4:inst9|MC:inst10  ; work         ;
-;          |MC:inst11|          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst8|RAM4_4:inst9|MC:inst11  ; work         ;
-;          |MC:inst12|          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst8|RAM4_4:inst9|MC:inst12  ; work         ;
-;          |MC:inst13|          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst8|RAM4_4:inst9|MC:inst13  ; work         ;
-;          |MC:inst14|          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst8|RAM4_4:inst9|MC:inst14  ; work         ;
-;          |MC:inst15|          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst8|RAM4_4:inst9|MC:inst15  ; work         ;
-;          |MC:inst16|          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst8|RAM4_4:inst9|MC:inst16  ; work         ;
-;          |MC:inst1|           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst8|RAM4_4:inst9|MC:inst1   ; work         ;
-;          |MC:inst2|           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst8|RAM4_4:inst9|MC:inst2   ; work         ;
-;          |MC:inst3|           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst8|RAM4_4:inst9|MC:inst3   ; work         ;
-;          |MC:inst4|           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst8|RAM4_4:inst9|MC:inst4   ; work         ;
-;          |MC:inst5|           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst8|RAM4_4:inst9|MC:inst5   ; work         ;
-;          |MC:inst6|           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst8|RAM4_4:inst9|MC:inst6   ; work         ;
-;          |MC:inst7|           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst8|RAM4_4:inst9|MC:inst7   ; work         ;
-;          |MC:inst8|           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst8|RAM4_4:inst9|MC:inst8   ; work         ;
-;          |MC:inst9|           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst8|RAM4_4:inst9|MC:inst9   ; work         ;
-;    |Selector:inst5|           ; 3 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|Selector:inst5                        ; work         ;
-;       |Mux2:inst2|            ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|Selector:inst5|Mux2:inst2             ; work         ;
-;       |Mux2:inst3|            ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|Selector:inst5|Mux2:inst3             ; work         ;
-;       |Mux2:inst4|            ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|Selector:inst5|Mux2:inst4             ; work         ;
-+-------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------+--------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                     ;
++-----------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------+--------------+
+; Compilation Hierarchy Node        ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                      ; Library Name ;
++-----------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------+--------------+
+; |LIFO                             ; 272 (4)           ; 7 (0)        ; 0           ; 0            ; 0       ; 0         ; 14   ; 0            ; |LIFO                                                    ; work         ;
+;    |CounterUp_Down:inst12|        ; 5 (4)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|CounterUp_Down:inst12                              ; work         ;
+;       |HAS:inst10|                ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|CounterUp_Down:inst12|HAS:inst10                   ; work         ;
+;    |CounterUp_Down:inst13|        ; 4 (3)             ; 3 (3)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|CounterUp_Down:inst13                              ; work         ;
+;       |HAS:inst10|                ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|CounterUp_Down:inst13|HAS:inst10                   ; work         ;
+;    |RAM16_8:inst1|                ; 256 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst1                                      ; work         ;
+;       |RAM4_4:inst1|              ; 38 (17)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst1|RAM4_4:inst1                         ; work         ;
+;          |MC:inst10|              ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst1|RAM4_4:inst1|MC:inst10               ; work         ;
+;          |MC:inst11|              ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst1|RAM4_4:inst1|MC:inst11               ; work         ;
+;          |MC:inst12|              ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst1|RAM4_4:inst1|MC:inst12               ; work         ;
+;          |MC:inst13|              ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst1|RAM4_4:inst1|MC:inst13               ; work         ;
+;          |MC:inst14|              ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst1|RAM4_4:inst1|MC:inst14               ; work         ;
+;          |MC:inst15|              ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst1|RAM4_4:inst1|MC:inst15               ; work         ;
+;          |MC:inst16|              ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst1|RAM4_4:inst1|MC:inst16               ; work         ;
+;          |MC:inst1|               ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst1|RAM4_4:inst1|MC:inst1                ; work         ;
+;          |MC:inst2|               ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst1|RAM4_4:inst1|MC:inst2                ; work         ;
+;          |MC:inst3|               ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst1|RAM4_4:inst1|MC:inst3                ; work         ;
+;          |MC:inst4|               ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst1|RAM4_4:inst1|MC:inst4                ; work         ;
+;          |MC:inst5|               ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst1|RAM4_4:inst1|MC:inst5                ; work         ;
+;          |MC:inst6|               ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst1|RAM4_4:inst1|MC:inst6                ; work         ;
+;          |MC:inst7|               ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst1|RAM4_4:inst1|MC:inst7                ; work         ;
+;          |MC:inst8|               ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst1|RAM4_4:inst1|MC:inst8                ; work         ;
+;          |MC:inst9|               ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst1|RAM4_4:inst1|MC:inst9                ; work         ;
+;       |RAM4_4:inst2|              ; 34 (13)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst1|RAM4_4:inst2                         ; work         ;
+;          |MC:inst10|              ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst1|RAM4_4:inst2|MC:inst10               ; work         ;
+;          |MC:inst11|              ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst1|RAM4_4:inst2|MC:inst11               ; work         ;
+;          |MC:inst12|              ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst1|RAM4_4:inst2|MC:inst12               ; work         ;
+;          |MC:inst13|              ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst1|RAM4_4:inst2|MC:inst13               ; work         ;
+;          |MC:inst14|              ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst1|RAM4_4:inst2|MC:inst14               ; work         ;
+;          |MC:inst15|              ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst1|RAM4_4:inst2|MC:inst15               ; work         ;
+;          |MC:inst16|              ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst1|RAM4_4:inst2|MC:inst16               ; work         ;
+;          |MC:inst1|               ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst1|RAM4_4:inst2|MC:inst1                ; work         ;
+;          |MC:inst2|               ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst1|RAM4_4:inst2|MC:inst2                ; work         ;
+;          |MC:inst3|               ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst1|RAM4_4:inst2|MC:inst3                ; work         ;
+;          |MC:inst4|               ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst1|RAM4_4:inst2|MC:inst4                ; work         ;
+;          |MC:inst5|               ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst1|RAM4_4:inst2|MC:inst5                ; work         ;
+;          |MC:inst6|               ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst1|RAM4_4:inst2|MC:inst6                ; work         ;
+;          |MC:inst7|               ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst1|RAM4_4:inst2|MC:inst7                ; work         ;
+;          |MC:inst8|               ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst1|RAM4_4:inst2|MC:inst8                ; work         ;
+;          |MC:inst9|               ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst1|RAM4_4:inst2|MC:inst9                ; work         ;
+;       |RAM4_4:inst4|              ; 34 (13)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst1|RAM4_4:inst4                         ; work         ;
+;          |MC:inst10|              ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst1|RAM4_4:inst4|MC:inst10               ; work         ;
+;          |MC:inst11|              ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst1|RAM4_4:inst4|MC:inst11               ; work         ;
+;          |MC:inst12|              ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst1|RAM4_4:inst4|MC:inst12               ; work         ;
+;          |MC:inst13|              ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst1|RAM4_4:inst4|MC:inst13               ; work         ;
+;          |MC:inst14|              ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst1|RAM4_4:inst4|MC:inst14               ; work         ;
+;          |MC:inst15|              ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst1|RAM4_4:inst4|MC:inst15               ; work         ;
+;          |MC:inst16|              ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst1|RAM4_4:inst4|MC:inst16               ; work         ;
+;          |MC:inst1|               ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst1|RAM4_4:inst4|MC:inst1                ; work         ;
+;          |MC:inst2|               ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst1|RAM4_4:inst4|MC:inst2                ; work         ;
+;          |MC:inst3|               ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst1|RAM4_4:inst4|MC:inst3                ; work         ;
+;          |MC:inst4|               ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst1|RAM4_4:inst4|MC:inst4                ; work         ;
+;          |MC:inst5|               ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst1|RAM4_4:inst4|MC:inst5                ; work         ;
+;          |MC:inst6|               ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst1|RAM4_4:inst4|MC:inst6                ; work         ;
+;          |MC:inst7|               ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst1|RAM4_4:inst4|MC:inst7                ; work         ;
+;          |MC:inst8|               ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst1|RAM4_4:inst4|MC:inst8                ; work         ;
+;          |MC:inst9|               ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst1|RAM4_4:inst4|MC:inst9                ; work         ;
+;       |RAM4_4:inst5|              ; 32 (16)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst1|RAM4_4:inst5                         ; work         ;
+;          |MC:inst10|              ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst1|RAM4_4:inst5|MC:inst10               ; work         ;
+;          |MC:inst11|              ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst1|RAM4_4:inst5|MC:inst11               ; work         ;
+;          |MC:inst12|              ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst1|RAM4_4:inst5|MC:inst12               ; work         ;
+;          |MC:inst13|              ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst1|RAM4_4:inst5|MC:inst13               ; work         ;
+;          |MC:inst14|              ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst1|RAM4_4:inst5|MC:inst14               ; work         ;
+;          |MC:inst15|              ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst1|RAM4_4:inst5|MC:inst15               ; work         ;
+;          |MC:inst16|              ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst1|RAM4_4:inst5|MC:inst16               ; work         ;
+;          |MC:inst1|               ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst1|RAM4_4:inst5|MC:inst1                ; work         ;
+;          |MC:inst2|               ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst1|RAM4_4:inst5|MC:inst2                ; work         ;
+;          |MC:inst3|               ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst1|RAM4_4:inst5|MC:inst3                ; work         ;
+;          |MC:inst4|               ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst1|RAM4_4:inst5|MC:inst4                ; work         ;
+;          |MC:inst5|               ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst1|RAM4_4:inst5|MC:inst5                ; work         ;
+;          |MC:inst6|               ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst1|RAM4_4:inst5|MC:inst6                ; work         ;
+;          |MC:inst7|               ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst1|RAM4_4:inst5|MC:inst7                ; work         ;
+;          |MC:inst8|               ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst1|RAM4_4:inst5|MC:inst8                ; work         ;
+;          |MC:inst9|               ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst1|RAM4_4:inst5|MC:inst9                ; work         ;
+;       |RAM4_4:inst6|              ; 28 (12)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst1|RAM4_4:inst6                         ; work         ;
+;          |MC:inst10|              ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst1|RAM4_4:inst6|MC:inst10               ; work         ;
+;          |MC:inst11|              ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst1|RAM4_4:inst6|MC:inst11               ; work         ;
+;          |MC:inst12|              ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst1|RAM4_4:inst6|MC:inst12               ; work         ;
+;          |MC:inst13|              ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst1|RAM4_4:inst6|MC:inst13               ; work         ;
+;          |MC:inst14|              ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst1|RAM4_4:inst6|MC:inst14               ; work         ;
+;          |MC:inst15|              ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst1|RAM4_4:inst6|MC:inst15               ; work         ;
+;          |MC:inst16|              ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst1|RAM4_4:inst6|MC:inst16               ; work         ;
+;          |MC:inst1|               ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst1|RAM4_4:inst6|MC:inst1                ; work         ;
+;          |MC:inst2|               ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst1|RAM4_4:inst6|MC:inst2                ; work         ;
+;          |MC:inst3|               ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst1|RAM4_4:inst6|MC:inst3                ; work         ;
+;          |MC:inst4|               ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst1|RAM4_4:inst6|MC:inst4                ; work         ;
+;          |MC:inst5|               ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst1|RAM4_4:inst6|MC:inst5                ; work         ;
+;          |MC:inst6|               ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst1|RAM4_4:inst6|MC:inst6                ; work         ;
+;          |MC:inst7|               ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst1|RAM4_4:inst6|MC:inst7                ; work         ;
+;          |MC:inst8|               ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst1|RAM4_4:inst6|MC:inst8                ; work         ;
+;          |MC:inst9|               ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst1|RAM4_4:inst6|MC:inst9                ; work         ;
+;       |RAM4_4:inst7|              ; 28 (12)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst1|RAM4_4:inst7                         ; work         ;
+;          |MC:inst10|              ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst1|RAM4_4:inst7|MC:inst10               ; work         ;
+;          |MC:inst11|              ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst1|RAM4_4:inst7|MC:inst11               ; work         ;
+;          |MC:inst12|              ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst1|RAM4_4:inst7|MC:inst12               ; work         ;
+;          |MC:inst13|              ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst1|RAM4_4:inst7|MC:inst13               ; work         ;
+;          |MC:inst14|              ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst1|RAM4_4:inst7|MC:inst14               ; work         ;
+;          |MC:inst15|              ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst1|RAM4_4:inst7|MC:inst15               ; work         ;
+;          |MC:inst16|              ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst1|RAM4_4:inst7|MC:inst16               ; work         ;
+;          |MC:inst1|               ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst1|RAM4_4:inst7|MC:inst1                ; work         ;
+;          |MC:inst2|               ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst1|RAM4_4:inst7|MC:inst2                ; work         ;
+;          |MC:inst3|               ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst1|RAM4_4:inst7|MC:inst3                ; work         ;
+;          |MC:inst4|               ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst1|RAM4_4:inst7|MC:inst4                ; work         ;
+;          |MC:inst5|               ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst1|RAM4_4:inst7|MC:inst5                ; work         ;
+;          |MC:inst6|               ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst1|RAM4_4:inst7|MC:inst6                ; work         ;
+;          |MC:inst7|               ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst1|RAM4_4:inst7|MC:inst7                ; work         ;
+;          |MC:inst8|               ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst1|RAM4_4:inst7|MC:inst8                ; work         ;
+;          |MC:inst9|               ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst1|RAM4_4:inst7|MC:inst9                ; work         ;
+;       |RAM4_4:inst8|              ; 28 (12)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst1|RAM4_4:inst8                         ; work         ;
+;          |MC:inst10|              ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst1|RAM4_4:inst8|MC:inst10               ; work         ;
+;          |MC:inst11|              ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst1|RAM4_4:inst8|MC:inst11               ; work         ;
+;          |MC:inst12|              ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst1|RAM4_4:inst8|MC:inst12               ; work         ;
+;          |MC:inst13|              ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst1|RAM4_4:inst8|MC:inst13               ; work         ;
+;          |MC:inst14|              ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst1|RAM4_4:inst8|MC:inst14               ; work         ;
+;          |MC:inst15|              ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst1|RAM4_4:inst8|MC:inst15               ; work         ;
+;          |MC:inst16|              ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst1|RAM4_4:inst8|MC:inst16               ; work         ;
+;          |MC:inst1|               ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst1|RAM4_4:inst8|MC:inst1                ; work         ;
+;          |MC:inst2|               ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst1|RAM4_4:inst8|MC:inst2                ; work         ;
+;          |MC:inst3|               ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst1|RAM4_4:inst8|MC:inst3                ; work         ;
+;          |MC:inst4|               ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst1|RAM4_4:inst8|MC:inst4                ; work         ;
+;          |MC:inst5|               ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst1|RAM4_4:inst8|MC:inst5                ; work         ;
+;          |MC:inst6|               ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst1|RAM4_4:inst8|MC:inst6                ; work         ;
+;          |MC:inst7|               ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst1|RAM4_4:inst8|MC:inst7                ; work         ;
+;          |MC:inst8|               ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst1|RAM4_4:inst8|MC:inst8                ; work         ;
+;          |MC:inst9|               ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst1|RAM4_4:inst8|MC:inst9                ; work         ;
+;       |RAM4_4:inst9|              ; 34 (13)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst1|RAM4_4:inst9                         ; work         ;
+;          |MC:inst10|              ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst1|RAM4_4:inst9|MC:inst10               ; work         ;
+;          |MC:inst11|              ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst1|RAM4_4:inst9|MC:inst11               ; work         ;
+;          |MC:inst12|              ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst1|RAM4_4:inst9|MC:inst12               ; work         ;
+;          |MC:inst13|              ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst1|RAM4_4:inst9|MC:inst13               ; work         ;
+;          |MC:inst14|              ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst1|RAM4_4:inst9|MC:inst14               ; work         ;
+;          |MC:inst15|              ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst1|RAM4_4:inst9|MC:inst15               ; work         ;
+;          |MC:inst16|              ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst1|RAM4_4:inst9|MC:inst16               ; work         ;
+;          |MC:inst1|               ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst1|RAM4_4:inst9|MC:inst1                ; work         ;
+;          |MC:inst2|               ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst1|RAM4_4:inst9|MC:inst2                ; work         ;
+;          |MC:inst3|               ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst1|RAM4_4:inst9|MC:inst3                ; work         ;
+;          |MC:inst4|               ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst1|RAM4_4:inst9|MC:inst4                ; work         ;
+;          |MC:inst5|               ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst1|RAM4_4:inst9|MC:inst5                ; work         ;
+;          |MC:inst6|               ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst1|RAM4_4:inst9|MC:inst6                ; work         ;
+;          |MC:inst7|               ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst1|RAM4_4:inst9|MC:inst7                ; work         ;
+;          |MC:inst8|               ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst1|RAM4_4:inst9|MC:inst8                ; work         ;
+;          |MC:inst9|               ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|RAM16_8:inst1|RAM4_4:inst9|MC:inst9                ; work         ;
+;    |busmux:inst2|                 ; 3 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|busmux:inst2                                       ; work         ;
+;       |lpm_mux:$00000|            ; 3 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|busmux:inst2|lpm_mux:$00000                        ; work         ;
+;          |mux_omc:auto_generated| ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LIFO|busmux:inst2|lpm_mux:$00000|mux_omc:auto_generated ; work         ;
++-----------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+-----------------------------------------------------------------------------------------------------------------------------+
-; User-Specified and Inferred Latches                                                                                         ;
-+------------------------------------------------------+---------------------------------------------+------------------------+
-; Latch Name                                           ; Latch Enable Signal                         ; Free of Timing Hazards ;
-+------------------------------------------------------+---------------------------------------------+------------------------+
-; RAM16_8:inst8|RAM4_4:inst1|MC:inst1|inst             ; RAM16_8:inst8|RAM4_4:inst1|MC:inst1|inst1   ; yes                    ;
-; RAM16_8:inst8|RAM4_4:inst1|MC:inst5|inst             ; RAM16_8:inst8|RAM4_4:inst1|MC:inst5|inst1   ; yes                    ;
-; RAM16_8:inst8|RAM4_4:inst1|MC:inst9|inst             ; RAM16_8:inst8|RAM4_4:inst1|MC:inst9|inst1   ; yes                    ;
-; RAM16_8:inst8|RAM4_4:inst1|MC:inst13|inst            ; RAM16_8:inst8|RAM4_4:inst1|MC:inst13|inst1  ; yes                    ;
-; RAM16_8:inst8|RAM4_4:inst4|MC:inst1|inst             ; RAM16_8:inst8|RAM4_4:inst4|MC:inst1|inst1   ; yes                    ;
-; RAM16_8:inst8|RAM4_4:inst4|MC:inst5|inst             ; RAM16_8:inst8|RAM4_4:inst4|MC:inst5|inst1   ; yes                    ;
-; RAM16_8:inst8|RAM4_4:inst4|MC:inst9|inst             ; RAM16_8:inst8|RAM4_4:inst4|MC:inst9|inst1   ; yes                    ;
-; RAM16_8:inst8|RAM4_4:inst4|MC:inst13|inst            ; RAM16_8:inst8|RAM4_4:inst4|MC:inst13|inst1  ; yes                    ;
-; RAM16_8:inst8|RAM4_4:inst8|MC:inst1|inst             ; RAM16_8:inst8|RAM4_4:inst8|MC:inst1|inst1   ; yes                    ;
-; RAM16_8:inst8|RAM4_4:inst8|MC:inst5|inst             ; RAM16_8:inst8|RAM4_4:inst8|MC:inst5|inst1   ; yes                    ;
-; RAM16_8:inst8|RAM4_4:inst8|MC:inst9|inst             ; RAM16_8:inst8|RAM4_4:inst8|MC:inst9|inst1   ; yes                    ;
-; RAM16_8:inst8|RAM4_4:inst8|MC:inst13|inst            ; RAM16_8:inst8|RAM4_4:inst8|MC:inst13|inst1  ; yes                    ;
-; RAM16_8:inst8|RAM4_4:inst10|MC:inst1|inst            ; RAM16_8:inst8|RAM4_4:inst10|MC:inst1|inst1  ; yes                    ;
-; RAM16_8:inst8|RAM4_4:inst10|MC:inst5|inst            ; RAM16_8:inst8|RAM4_4:inst10|MC:inst5|inst1  ; yes                    ;
-; RAM16_8:inst8|RAM4_4:inst10|MC:inst9|inst            ; RAM16_8:inst8|RAM4_4:inst10|MC:inst9|inst1  ; yes                    ;
-; RAM16_8:inst8|RAM4_4:inst10|MC:inst13|inst           ; RAM16_8:inst8|RAM4_4:inst10|MC:inst13|inst1 ; yes                    ;
-; RAM16_8:inst8|RAM4_4:inst1|MC:inst2|inst             ; RAM16_8:inst8|RAM4_4:inst1|MC:inst1|inst1   ; yes                    ;
-; RAM16_8:inst8|RAM4_4:inst1|MC:inst6|inst             ; RAM16_8:inst8|RAM4_4:inst1|MC:inst5|inst1   ; yes                    ;
-; RAM16_8:inst8|RAM4_4:inst1|MC:inst12|inst            ; RAM16_8:inst8|RAM4_4:inst1|MC:inst9|inst1   ; yes                    ;
-; RAM16_8:inst8|RAM4_4:inst1|MC:inst14|inst            ; RAM16_8:inst8|RAM4_4:inst1|MC:inst13|inst1  ; yes                    ;
-; RAM16_8:inst8|RAM4_4:inst4|MC:inst2|inst             ; RAM16_8:inst8|RAM4_4:inst4|MC:inst1|inst1   ; yes                    ;
-; RAM16_8:inst8|RAM4_4:inst4|MC:inst6|inst             ; RAM16_8:inst8|RAM4_4:inst4|MC:inst5|inst1   ; yes                    ;
-; RAM16_8:inst8|RAM4_4:inst4|MC:inst12|inst            ; RAM16_8:inst8|RAM4_4:inst4|MC:inst9|inst1   ; yes                    ;
-; RAM16_8:inst8|RAM4_4:inst4|MC:inst14|inst            ; RAM16_8:inst8|RAM4_4:inst4|MC:inst13|inst1  ; yes                    ;
-; RAM16_8:inst8|RAM4_4:inst8|MC:inst2|inst             ; RAM16_8:inst8|RAM4_4:inst8|MC:inst1|inst1   ; yes                    ;
-; RAM16_8:inst8|RAM4_4:inst8|MC:inst6|inst             ; RAM16_8:inst8|RAM4_4:inst8|MC:inst5|inst1   ; yes                    ;
-; RAM16_8:inst8|RAM4_4:inst8|MC:inst12|inst            ; RAM16_8:inst8|RAM4_4:inst8|MC:inst9|inst1   ; yes                    ;
-; RAM16_8:inst8|RAM4_4:inst8|MC:inst14|inst            ; RAM16_8:inst8|RAM4_4:inst8|MC:inst13|inst1  ; yes                    ;
-; RAM16_8:inst8|RAM4_4:inst10|MC:inst2|inst            ; RAM16_8:inst8|RAM4_4:inst10|MC:inst1|inst1  ; yes                    ;
-; RAM16_8:inst8|RAM4_4:inst10|MC:inst6|inst            ; RAM16_8:inst8|RAM4_4:inst10|MC:inst5|inst1  ; yes                    ;
-; RAM16_8:inst8|RAM4_4:inst10|MC:inst12|inst           ; RAM16_8:inst8|RAM4_4:inst10|MC:inst9|inst1  ; yes                    ;
-; RAM16_8:inst8|RAM4_4:inst10|MC:inst14|inst           ; RAM16_8:inst8|RAM4_4:inst10|MC:inst13|inst1 ; yes                    ;
-; RAM16_8:inst8|RAM4_4:inst1|MC:inst3|inst             ; RAM16_8:inst8|RAM4_4:inst1|MC:inst1|inst1   ; yes                    ;
-; RAM16_8:inst8|RAM4_4:inst1|MC:inst7|inst             ; RAM16_8:inst8|RAM4_4:inst1|MC:inst5|inst1   ; yes                    ;
-; RAM16_8:inst8|RAM4_4:inst1|MC:inst10|inst            ; RAM16_8:inst8|RAM4_4:inst1|MC:inst9|inst1   ; yes                    ;
-; RAM16_8:inst8|RAM4_4:inst1|MC:inst15|inst            ; RAM16_8:inst8|RAM4_4:inst1|MC:inst13|inst1  ; yes                    ;
-; RAM16_8:inst8|RAM4_4:inst4|MC:inst3|inst             ; RAM16_8:inst8|RAM4_4:inst4|MC:inst1|inst1   ; yes                    ;
-; RAM16_8:inst8|RAM4_4:inst4|MC:inst7|inst             ; RAM16_8:inst8|RAM4_4:inst4|MC:inst5|inst1   ; yes                    ;
-; RAM16_8:inst8|RAM4_4:inst4|MC:inst10|inst            ; RAM16_8:inst8|RAM4_4:inst4|MC:inst9|inst1   ; yes                    ;
-; RAM16_8:inst8|RAM4_4:inst4|MC:inst15|inst            ; RAM16_8:inst8|RAM4_4:inst4|MC:inst13|inst1  ; yes                    ;
-; RAM16_8:inst8|RAM4_4:inst8|MC:inst3|inst             ; RAM16_8:inst8|RAM4_4:inst8|MC:inst1|inst1   ; yes                    ;
-; RAM16_8:inst8|RAM4_4:inst8|MC:inst7|inst             ; RAM16_8:inst8|RAM4_4:inst8|MC:inst5|inst1   ; yes                    ;
-; RAM16_8:inst8|RAM4_4:inst8|MC:inst10|inst            ; RAM16_8:inst8|RAM4_4:inst8|MC:inst9|inst1   ; yes                    ;
-; RAM16_8:inst8|RAM4_4:inst8|MC:inst15|inst            ; RAM16_8:inst8|RAM4_4:inst8|MC:inst13|inst1  ; yes                    ;
-; RAM16_8:inst8|RAM4_4:inst10|MC:inst3|inst            ; RAM16_8:inst8|RAM4_4:inst10|MC:inst1|inst1  ; yes                    ;
-; RAM16_8:inst8|RAM4_4:inst10|MC:inst7|inst            ; RAM16_8:inst8|RAM4_4:inst10|MC:inst5|inst1  ; yes                    ;
-; RAM16_8:inst8|RAM4_4:inst10|MC:inst10|inst           ; RAM16_8:inst8|RAM4_4:inst10|MC:inst9|inst1  ; yes                    ;
-; RAM16_8:inst8|RAM4_4:inst10|MC:inst15|inst           ; RAM16_8:inst8|RAM4_4:inst10|MC:inst13|inst1 ; yes                    ;
-; RAM16_8:inst8|RAM4_4:inst1|MC:inst4|inst             ; RAM16_8:inst8|RAM4_4:inst1|MC:inst1|inst1   ; yes                    ;
-; RAM16_8:inst8|RAM4_4:inst1|MC:inst16|inst            ; RAM16_8:inst8|RAM4_4:inst1|MC:inst13|inst1  ; yes                    ;
-; RAM16_8:inst8|RAM4_4:inst1|MC:inst11|inst            ; RAM16_8:inst8|RAM4_4:inst1|MC:inst9|inst1   ; yes                    ;
-; RAM16_8:inst8|RAM4_4:inst1|MC:inst8|inst             ; RAM16_8:inst8|RAM4_4:inst1|MC:inst5|inst1   ; yes                    ;
-; RAM16_8:inst8|RAM4_4:inst4|MC:inst4|inst             ; RAM16_8:inst8|RAM4_4:inst4|MC:inst1|inst1   ; yes                    ;
-; RAM16_8:inst8|RAM4_4:inst4|MC:inst16|inst            ; RAM16_8:inst8|RAM4_4:inst4|MC:inst13|inst1  ; yes                    ;
-; RAM16_8:inst8|RAM4_4:inst4|MC:inst11|inst            ; RAM16_8:inst8|RAM4_4:inst4|MC:inst9|inst1   ; yes                    ;
-; RAM16_8:inst8|RAM4_4:inst4|MC:inst8|inst             ; RAM16_8:inst8|RAM4_4:inst4|MC:inst5|inst1   ; yes                    ;
-; RAM16_8:inst8|RAM4_4:inst8|MC:inst4|inst             ; RAM16_8:inst8|RAM4_4:inst8|MC:inst1|inst1   ; yes                    ;
-; RAM16_8:inst8|RAM4_4:inst8|MC:inst16|inst            ; RAM16_8:inst8|RAM4_4:inst8|MC:inst13|inst1  ; yes                    ;
-; RAM16_8:inst8|RAM4_4:inst8|MC:inst11|inst            ; RAM16_8:inst8|RAM4_4:inst8|MC:inst9|inst1   ; yes                    ;
-; RAM16_8:inst8|RAM4_4:inst8|MC:inst8|inst             ; RAM16_8:inst8|RAM4_4:inst8|MC:inst5|inst1   ; yes                    ;
-; RAM16_8:inst8|RAM4_4:inst10|MC:inst4|inst            ; RAM16_8:inst8|RAM4_4:inst10|MC:inst1|inst1  ; yes                    ;
-; RAM16_8:inst8|RAM4_4:inst10|MC:inst16|inst           ; RAM16_8:inst8|RAM4_4:inst10|MC:inst13|inst1 ; yes                    ;
-; RAM16_8:inst8|RAM4_4:inst10|MC:inst11|inst           ; RAM16_8:inst8|RAM4_4:inst10|MC:inst9|inst1  ; yes                    ;
-; RAM16_8:inst8|RAM4_4:inst10|MC:inst8|inst            ; RAM16_8:inst8|RAM4_4:inst10|MC:inst5|inst1  ; yes                    ;
-; RAM16_8:inst8|RAM4_4:inst3|MC:inst4|inst             ; RAM16_8:inst8|RAM4_4:inst1|MC:inst1|inst1   ; yes                    ;
-; RAM16_8:inst8|RAM4_4:inst3|MC:inst16|inst            ; RAM16_8:inst8|RAM4_4:inst1|MC:inst13|inst1  ; yes                    ;
-; RAM16_8:inst8|RAM4_4:inst3|MC:inst11|inst            ; RAM16_8:inst8|RAM4_4:inst1|MC:inst9|inst1   ; yes                    ;
-; RAM16_8:inst8|RAM4_4:inst3|MC:inst8|inst             ; RAM16_8:inst8|RAM4_4:inst1|MC:inst5|inst1   ; yes                    ;
-; RAM16_8:inst8|RAM4_4:inst9|MC:inst4|inst             ; RAM16_8:inst8|RAM4_4:inst8|MC:inst1|inst1   ; yes                    ;
-; RAM16_8:inst8|RAM4_4:inst9|MC:inst16|inst            ; RAM16_8:inst8|RAM4_4:inst8|MC:inst13|inst1  ; yes                    ;
-; RAM16_8:inst8|RAM4_4:inst9|MC:inst11|inst            ; RAM16_8:inst8|RAM4_4:inst8|MC:inst9|inst1   ; yes                    ;
-; RAM16_8:inst8|RAM4_4:inst9|MC:inst8|inst             ; RAM16_8:inst8|RAM4_4:inst8|MC:inst5|inst1   ; yes                    ;
-; RAM16_8:inst8|RAM4_4:inst13|MC:inst4|inst            ; RAM16_8:inst8|RAM4_4:inst10|MC:inst1|inst1  ; yes                    ;
-; RAM16_8:inst8|RAM4_4:inst13|MC:inst16|inst           ; RAM16_8:inst8|RAM4_4:inst10|MC:inst13|inst1 ; yes                    ;
-; RAM16_8:inst8|RAM4_4:inst13|MC:inst11|inst           ; RAM16_8:inst8|RAM4_4:inst10|MC:inst9|inst1  ; yes                    ;
-; RAM16_8:inst8|RAM4_4:inst13|MC:inst8|inst            ; RAM16_8:inst8|RAM4_4:inst10|MC:inst5|inst1  ; yes                    ;
-; RAM16_8:inst8|RAM4_4:inst6|MC:inst4|inst             ; RAM16_8:inst8|RAM4_4:inst4|MC:inst1|inst1   ; yes                    ;
-; RAM16_8:inst8|RAM4_4:inst6|MC:inst16|inst            ; RAM16_8:inst8|RAM4_4:inst4|MC:inst13|inst1  ; yes                    ;
-; RAM16_8:inst8|RAM4_4:inst6|MC:inst11|inst            ; RAM16_8:inst8|RAM4_4:inst4|MC:inst9|inst1   ; yes                    ;
-; RAM16_8:inst8|RAM4_4:inst6|MC:inst8|inst             ; RAM16_8:inst8|RAM4_4:inst4|MC:inst5|inst1   ; yes                    ;
-; RAM16_8:inst8|RAM4_4:inst3|MC:inst3|inst             ; RAM16_8:inst8|RAM4_4:inst1|MC:inst1|inst1   ; yes                    ;
-; RAM16_8:inst8|RAM4_4:inst3|MC:inst7|inst             ; RAM16_8:inst8|RAM4_4:inst1|MC:inst5|inst1   ; yes                    ;
-; RAM16_8:inst8|RAM4_4:inst3|MC:inst10|inst            ; RAM16_8:inst8|RAM4_4:inst1|MC:inst9|inst1   ; yes                    ;
-; RAM16_8:inst8|RAM4_4:inst3|MC:inst15|inst            ; RAM16_8:inst8|RAM4_4:inst1|MC:inst13|inst1  ; yes                    ;
-; RAM16_8:inst8|RAM4_4:inst9|MC:inst3|inst             ; RAM16_8:inst8|RAM4_4:inst8|MC:inst1|inst1   ; yes                    ;
-; RAM16_8:inst8|RAM4_4:inst9|MC:inst7|inst             ; RAM16_8:inst8|RAM4_4:inst8|MC:inst5|inst1   ; yes                    ;
-; RAM16_8:inst8|RAM4_4:inst9|MC:inst10|inst            ; RAM16_8:inst8|RAM4_4:inst8|MC:inst9|inst1   ; yes                    ;
-; RAM16_8:inst8|RAM4_4:inst9|MC:inst15|inst            ; RAM16_8:inst8|RAM4_4:inst8|MC:inst13|inst1  ; yes                    ;
-; RAM16_8:inst8|RAM4_4:inst13|MC:inst3|inst            ; RAM16_8:inst8|RAM4_4:inst10|MC:inst1|inst1  ; yes                    ;
-; RAM16_8:inst8|RAM4_4:inst13|MC:inst7|inst            ; RAM16_8:inst8|RAM4_4:inst10|MC:inst5|inst1  ; yes                    ;
-; RAM16_8:inst8|RAM4_4:inst13|MC:inst10|inst           ; RAM16_8:inst8|RAM4_4:inst10|MC:inst9|inst1  ; yes                    ;
-; RAM16_8:inst8|RAM4_4:inst13|MC:inst15|inst           ; RAM16_8:inst8|RAM4_4:inst10|MC:inst13|inst1 ; yes                    ;
-; RAM16_8:inst8|RAM4_4:inst6|MC:inst3|inst             ; RAM16_8:inst8|RAM4_4:inst4|MC:inst1|inst1   ; yes                    ;
-; RAM16_8:inst8|RAM4_4:inst6|MC:inst7|inst             ; RAM16_8:inst8|RAM4_4:inst4|MC:inst5|inst1   ; yes                    ;
-; RAM16_8:inst8|RAM4_4:inst6|MC:inst10|inst            ; RAM16_8:inst8|RAM4_4:inst4|MC:inst9|inst1   ; yes                    ;
-; RAM16_8:inst8|RAM4_4:inst6|MC:inst15|inst            ; RAM16_8:inst8|RAM4_4:inst4|MC:inst13|inst1  ; yes                    ;
-; RAM16_8:inst8|RAM4_4:inst3|MC:inst2|inst             ; RAM16_8:inst8|RAM4_4:inst1|MC:inst1|inst1   ; yes                    ;
-; RAM16_8:inst8|RAM4_4:inst3|MC:inst6|inst             ; RAM16_8:inst8|RAM4_4:inst1|MC:inst5|inst1   ; yes                    ;
-; RAM16_8:inst8|RAM4_4:inst3|MC:inst12|inst            ; RAM16_8:inst8|RAM4_4:inst1|MC:inst9|inst1   ; yes                    ;
-; RAM16_8:inst8|RAM4_4:inst3|MC:inst14|inst            ; RAM16_8:inst8|RAM4_4:inst1|MC:inst13|inst1  ; yes                    ;
-; Number of user-specified and inferred latches = 128  ;                                             ;                        ;
-+------------------------------------------------------+---------------------------------------------+------------------------+
++----------------------------------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                                                        ;
++------------------------------------------------------+--------------------------------------------+------------------------+
+; Latch Name                                           ; Latch Enable Signal                        ; Free of Timing Hazards ;
++------------------------------------------------------+--------------------------------------------+------------------------+
+; RAM16_8:inst1|RAM4_4:inst1|MC:inst1|inst             ; RAM16_8:inst1|RAM4_4:inst1|MC:inst1|inst1  ; yes                    ;
+; RAM16_8:inst1|RAM4_4:inst1|MC:inst5|inst             ; RAM16_8:inst1|RAM4_4:inst1|MC:inst5|inst1  ; yes                    ;
+; RAM16_8:inst1|RAM4_4:inst1|MC:inst9|inst             ; RAM16_8:inst1|RAM4_4:inst1|MC:inst9|inst1  ; yes                    ;
+; RAM16_8:inst1|RAM4_4:inst1|MC:inst13|inst            ; RAM16_8:inst1|RAM4_4:inst1|MC:inst13|inst1 ; yes                    ;
+; RAM16_8:inst1|RAM4_4:inst2|MC:inst1|inst             ; RAM16_8:inst1|RAM4_4:inst2|MC:inst1|inst1  ; yes                    ;
+; RAM16_8:inst1|RAM4_4:inst2|MC:inst5|inst             ; RAM16_8:inst1|RAM4_4:inst2|MC:inst5|inst1  ; yes                    ;
+; RAM16_8:inst1|RAM4_4:inst2|MC:inst9|inst             ; RAM16_8:inst1|RAM4_4:inst2|MC:inst9|inst1  ; yes                    ;
+; RAM16_8:inst1|RAM4_4:inst2|MC:inst13|inst            ; RAM16_8:inst1|RAM4_4:inst2|MC:inst13|inst1 ; yes                    ;
+; RAM16_8:inst1|RAM4_4:inst4|MC:inst1|inst             ; RAM16_8:inst1|RAM4_4:inst4|MC:inst1|inst1  ; yes                    ;
+; RAM16_8:inst1|RAM4_4:inst4|MC:inst5|inst             ; RAM16_8:inst1|RAM4_4:inst4|MC:inst5|inst1  ; yes                    ;
+; RAM16_8:inst1|RAM4_4:inst4|MC:inst9|inst             ; RAM16_8:inst1|RAM4_4:inst4|MC:inst9|inst1  ; yes                    ;
+; RAM16_8:inst1|RAM4_4:inst4|MC:inst13|inst            ; RAM16_8:inst1|RAM4_4:inst4|MC:inst13|inst1 ; yes                    ;
+; RAM16_8:inst1|RAM4_4:inst9|MC:inst1|inst             ; RAM16_8:inst1|RAM4_4:inst9|MC:inst1|inst1  ; yes                    ;
+; RAM16_8:inst1|RAM4_4:inst9|MC:inst5|inst             ; RAM16_8:inst1|RAM4_4:inst9|MC:inst5|inst1  ; yes                    ;
+; RAM16_8:inst1|RAM4_4:inst9|MC:inst9|inst             ; RAM16_8:inst1|RAM4_4:inst9|MC:inst9|inst1  ; yes                    ;
+; RAM16_8:inst1|RAM4_4:inst9|MC:inst13|inst            ; RAM16_8:inst1|RAM4_4:inst9|MC:inst13|inst1 ; yes                    ;
+; RAM16_8:inst1|RAM4_4:inst1|MC:inst2|inst             ; RAM16_8:inst1|RAM4_4:inst1|MC:inst1|inst1  ; yes                    ;
+; RAM16_8:inst1|RAM4_4:inst1|MC:inst6|inst             ; RAM16_8:inst1|RAM4_4:inst1|MC:inst5|inst1  ; yes                    ;
+; RAM16_8:inst1|RAM4_4:inst1|MC:inst12|inst            ; RAM16_8:inst1|RAM4_4:inst1|MC:inst9|inst1  ; yes                    ;
+; RAM16_8:inst1|RAM4_4:inst1|MC:inst14|inst            ; RAM16_8:inst1|RAM4_4:inst1|MC:inst13|inst1 ; yes                    ;
+; RAM16_8:inst1|RAM4_4:inst2|MC:inst2|inst             ; RAM16_8:inst1|RAM4_4:inst2|MC:inst1|inst1  ; yes                    ;
+; RAM16_8:inst1|RAM4_4:inst2|MC:inst6|inst             ; RAM16_8:inst1|RAM4_4:inst2|MC:inst5|inst1  ; yes                    ;
+; RAM16_8:inst1|RAM4_4:inst2|MC:inst12|inst            ; RAM16_8:inst1|RAM4_4:inst2|MC:inst9|inst1  ; yes                    ;
+; RAM16_8:inst1|RAM4_4:inst2|MC:inst14|inst            ; RAM16_8:inst1|RAM4_4:inst2|MC:inst13|inst1 ; yes                    ;
+; RAM16_8:inst1|RAM4_4:inst4|MC:inst2|inst             ; RAM16_8:inst1|RAM4_4:inst4|MC:inst1|inst1  ; yes                    ;
+; RAM16_8:inst1|RAM4_4:inst4|MC:inst6|inst             ; RAM16_8:inst1|RAM4_4:inst4|MC:inst5|inst1  ; yes                    ;
+; RAM16_8:inst1|RAM4_4:inst4|MC:inst12|inst            ; RAM16_8:inst1|RAM4_4:inst4|MC:inst9|inst1  ; yes                    ;
+; RAM16_8:inst1|RAM4_4:inst4|MC:inst14|inst            ; RAM16_8:inst1|RAM4_4:inst4|MC:inst13|inst1 ; yes                    ;
+; RAM16_8:inst1|RAM4_4:inst9|MC:inst2|inst             ; RAM16_8:inst1|RAM4_4:inst9|MC:inst1|inst1  ; yes                    ;
+; RAM16_8:inst1|RAM4_4:inst9|MC:inst6|inst             ; RAM16_8:inst1|RAM4_4:inst9|MC:inst5|inst1  ; yes                    ;
+; RAM16_8:inst1|RAM4_4:inst9|MC:inst12|inst            ; RAM16_8:inst1|RAM4_4:inst9|MC:inst9|inst1  ; yes                    ;
+; RAM16_8:inst1|RAM4_4:inst9|MC:inst14|inst            ; RAM16_8:inst1|RAM4_4:inst9|MC:inst13|inst1 ; yes                    ;
+; RAM16_8:inst1|RAM4_4:inst1|MC:inst3|inst             ; RAM16_8:inst1|RAM4_4:inst1|MC:inst1|inst1  ; yes                    ;
+; RAM16_8:inst1|RAM4_4:inst1|MC:inst7|inst             ; RAM16_8:inst1|RAM4_4:inst1|MC:inst5|inst1  ; yes                    ;
+; RAM16_8:inst1|RAM4_4:inst1|MC:inst10|inst            ; RAM16_8:inst1|RAM4_4:inst1|MC:inst9|inst1  ; yes                    ;
+; RAM16_8:inst1|RAM4_4:inst1|MC:inst15|inst            ; RAM16_8:inst1|RAM4_4:inst1|MC:inst13|inst1 ; yes                    ;
+; RAM16_8:inst1|RAM4_4:inst2|MC:inst3|inst             ; RAM16_8:inst1|RAM4_4:inst2|MC:inst1|inst1  ; yes                    ;
+; RAM16_8:inst1|RAM4_4:inst2|MC:inst7|inst             ; RAM16_8:inst1|RAM4_4:inst2|MC:inst5|inst1  ; yes                    ;
+; RAM16_8:inst1|RAM4_4:inst2|MC:inst10|inst            ; RAM16_8:inst1|RAM4_4:inst2|MC:inst9|inst1  ; yes                    ;
+; RAM16_8:inst1|RAM4_4:inst2|MC:inst15|inst            ; RAM16_8:inst1|RAM4_4:inst2|MC:inst13|inst1 ; yes                    ;
+; RAM16_8:inst1|RAM4_4:inst4|MC:inst3|inst             ; RAM16_8:inst1|RAM4_4:inst4|MC:inst1|inst1  ; yes                    ;
+; RAM16_8:inst1|RAM4_4:inst4|MC:inst7|inst             ; RAM16_8:inst1|RAM4_4:inst4|MC:inst5|inst1  ; yes                    ;
+; RAM16_8:inst1|RAM4_4:inst4|MC:inst10|inst            ; RAM16_8:inst1|RAM4_4:inst4|MC:inst9|inst1  ; yes                    ;
+; RAM16_8:inst1|RAM4_4:inst4|MC:inst15|inst            ; RAM16_8:inst1|RAM4_4:inst4|MC:inst13|inst1 ; yes                    ;
+; RAM16_8:inst1|RAM4_4:inst9|MC:inst3|inst             ; RAM16_8:inst1|RAM4_4:inst9|MC:inst1|inst1  ; yes                    ;
+; RAM16_8:inst1|RAM4_4:inst9|MC:inst7|inst             ; RAM16_8:inst1|RAM4_4:inst9|MC:inst5|inst1  ; yes                    ;
+; RAM16_8:inst1|RAM4_4:inst9|MC:inst10|inst            ; RAM16_8:inst1|RAM4_4:inst9|MC:inst9|inst1  ; yes                    ;
+; RAM16_8:inst1|RAM4_4:inst9|MC:inst15|inst            ; RAM16_8:inst1|RAM4_4:inst9|MC:inst13|inst1 ; yes                    ;
+; RAM16_8:inst1|RAM4_4:inst1|MC:inst4|inst             ; RAM16_8:inst1|RAM4_4:inst1|MC:inst1|inst1  ; yes                    ;
+; RAM16_8:inst1|RAM4_4:inst1|MC:inst8|inst             ; RAM16_8:inst1|RAM4_4:inst1|MC:inst5|inst1  ; yes                    ;
+; RAM16_8:inst1|RAM4_4:inst1|MC:inst11|inst            ; RAM16_8:inst1|RAM4_4:inst1|MC:inst9|inst1  ; yes                    ;
+; RAM16_8:inst1|RAM4_4:inst1|MC:inst16|inst            ; RAM16_8:inst1|RAM4_4:inst1|MC:inst13|inst1 ; yes                    ;
+; RAM16_8:inst1|RAM4_4:inst2|MC:inst4|inst             ; RAM16_8:inst1|RAM4_4:inst2|MC:inst1|inst1  ; yes                    ;
+; RAM16_8:inst1|RAM4_4:inst2|MC:inst8|inst             ; RAM16_8:inst1|RAM4_4:inst2|MC:inst5|inst1  ; yes                    ;
+; RAM16_8:inst1|RAM4_4:inst2|MC:inst11|inst            ; RAM16_8:inst1|RAM4_4:inst2|MC:inst9|inst1  ; yes                    ;
+; RAM16_8:inst1|RAM4_4:inst2|MC:inst16|inst            ; RAM16_8:inst1|RAM4_4:inst2|MC:inst13|inst1 ; yes                    ;
+; RAM16_8:inst1|RAM4_4:inst4|MC:inst4|inst             ; RAM16_8:inst1|RAM4_4:inst4|MC:inst1|inst1  ; yes                    ;
+; RAM16_8:inst1|RAM4_4:inst4|MC:inst8|inst             ; RAM16_8:inst1|RAM4_4:inst4|MC:inst5|inst1  ; yes                    ;
+; RAM16_8:inst1|RAM4_4:inst4|MC:inst11|inst            ; RAM16_8:inst1|RAM4_4:inst4|MC:inst9|inst1  ; yes                    ;
+; RAM16_8:inst1|RAM4_4:inst4|MC:inst16|inst            ; RAM16_8:inst1|RAM4_4:inst4|MC:inst13|inst1 ; yes                    ;
+; RAM16_8:inst1|RAM4_4:inst9|MC:inst4|inst             ; RAM16_8:inst1|RAM4_4:inst9|MC:inst1|inst1  ; yes                    ;
+; RAM16_8:inst1|RAM4_4:inst9|MC:inst8|inst             ; RAM16_8:inst1|RAM4_4:inst9|MC:inst5|inst1  ; yes                    ;
+; RAM16_8:inst1|RAM4_4:inst9|MC:inst11|inst            ; RAM16_8:inst1|RAM4_4:inst9|MC:inst9|inst1  ; yes                    ;
+; RAM16_8:inst1|RAM4_4:inst9|MC:inst16|inst            ; RAM16_8:inst1|RAM4_4:inst9|MC:inst13|inst1 ; yes                    ;
+; RAM16_8:inst1|RAM4_4:inst5|MC:inst1|inst             ; RAM16_8:inst1|RAM4_4:inst1|MC:inst1|inst1  ; yes                    ;
+; RAM16_8:inst1|RAM4_4:inst5|MC:inst5|inst             ; RAM16_8:inst1|RAM4_4:inst1|MC:inst5|inst1  ; yes                    ;
+; RAM16_8:inst1|RAM4_4:inst5|MC:inst9|inst             ; RAM16_8:inst1|RAM4_4:inst1|MC:inst9|inst1  ; yes                    ;
+; RAM16_8:inst1|RAM4_4:inst5|MC:inst13|inst            ; RAM16_8:inst1|RAM4_4:inst1|MC:inst13|inst1 ; yes                    ;
+; RAM16_8:inst1|RAM4_4:inst6|MC:inst1|inst             ; RAM16_8:inst1|RAM4_4:inst2|MC:inst1|inst1  ; yes                    ;
+; RAM16_8:inst1|RAM4_4:inst6|MC:inst5|inst             ; RAM16_8:inst1|RAM4_4:inst2|MC:inst5|inst1  ; yes                    ;
+; RAM16_8:inst1|RAM4_4:inst6|MC:inst9|inst             ; RAM16_8:inst1|RAM4_4:inst2|MC:inst9|inst1  ; yes                    ;
+; RAM16_8:inst1|RAM4_4:inst6|MC:inst13|inst            ; RAM16_8:inst1|RAM4_4:inst2|MC:inst13|inst1 ; yes                    ;
+; RAM16_8:inst1|RAM4_4:inst7|MC:inst1|inst             ; RAM16_8:inst1|RAM4_4:inst4|MC:inst1|inst1  ; yes                    ;
+; RAM16_8:inst1|RAM4_4:inst7|MC:inst5|inst             ; RAM16_8:inst1|RAM4_4:inst4|MC:inst5|inst1  ; yes                    ;
+; RAM16_8:inst1|RAM4_4:inst7|MC:inst9|inst             ; RAM16_8:inst1|RAM4_4:inst4|MC:inst9|inst1  ; yes                    ;
+; RAM16_8:inst1|RAM4_4:inst7|MC:inst13|inst            ; RAM16_8:inst1|RAM4_4:inst4|MC:inst13|inst1 ; yes                    ;
+; RAM16_8:inst1|RAM4_4:inst8|MC:inst1|inst             ; RAM16_8:inst1|RAM4_4:inst9|MC:inst1|inst1  ; yes                    ;
+; RAM16_8:inst1|RAM4_4:inst8|MC:inst5|inst             ; RAM16_8:inst1|RAM4_4:inst9|MC:inst5|inst1  ; yes                    ;
+; RAM16_8:inst1|RAM4_4:inst8|MC:inst9|inst             ; RAM16_8:inst1|RAM4_4:inst9|MC:inst9|inst1  ; yes                    ;
+; RAM16_8:inst1|RAM4_4:inst8|MC:inst13|inst            ; RAM16_8:inst1|RAM4_4:inst9|MC:inst13|inst1 ; yes                    ;
+; RAM16_8:inst1|RAM4_4:inst5|MC:inst2|inst             ; RAM16_8:inst1|RAM4_4:inst1|MC:inst1|inst1  ; yes                    ;
+; RAM16_8:inst1|RAM4_4:inst5|MC:inst6|inst             ; RAM16_8:inst1|RAM4_4:inst1|MC:inst5|inst1  ; yes                    ;
+; RAM16_8:inst1|RAM4_4:inst5|MC:inst12|inst            ; RAM16_8:inst1|RAM4_4:inst1|MC:inst9|inst1  ; yes                    ;
+; RAM16_8:inst1|RAM4_4:inst5|MC:inst14|inst            ; RAM16_8:inst1|RAM4_4:inst1|MC:inst13|inst1 ; yes                    ;
+; RAM16_8:inst1|RAM4_4:inst6|MC:inst2|inst             ; RAM16_8:inst1|RAM4_4:inst2|MC:inst1|inst1  ; yes                    ;
+; RAM16_8:inst1|RAM4_4:inst6|MC:inst6|inst             ; RAM16_8:inst1|RAM4_4:inst2|MC:inst5|inst1  ; yes                    ;
+; RAM16_8:inst1|RAM4_4:inst6|MC:inst12|inst            ; RAM16_8:inst1|RAM4_4:inst2|MC:inst9|inst1  ; yes                    ;
+; RAM16_8:inst1|RAM4_4:inst6|MC:inst14|inst            ; RAM16_8:inst1|RAM4_4:inst2|MC:inst13|inst1 ; yes                    ;
+; RAM16_8:inst1|RAM4_4:inst7|MC:inst2|inst             ; RAM16_8:inst1|RAM4_4:inst4|MC:inst1|inst1  ; yes                    ;
+; RAM16_8:inst1|RAM4_4:inst7|MC:inst6|inst             ; RAM16_8:inst1|RAM4_4:inst4|MC:inst5|inst1  ; yes                    ;
+; RAM16_8:inst1|RAM4_4:inst7|MC:inst12|inst            ; RAM16_8:inst1|RAM4_4:inst4|MC:inst9|inst1  ; yes                    ;
+; RAM16_8:inst1|RAM4_4:inst7|MC:inst14|inst            ; RAM16_8:inst1|RAM4_4:inst4|MC:inst13|inst1 ; yes                    ;
+; RAM16_8:inst1|RAM4_4:inst8|MC:inst2|inst             ; RAM16_8:inst1|RAM4_4:inst9|MC:inst1|inst1  ; yes                    ;
+; RAM16_8:inst1|RAM4_4:inst8|MC:inst6|inst             ; RAM16_8:inst1|RAM4_4:inst9|MC:inst5|inst1  ; yes                    ;
+; RAM16_8:inst1|RAM4_4:inst8|MC:inst12|inst            ; RAM16_8:inst1|RAM4_4:inst9|MC:inst9|inst1  ; yes                    ;
+; RAM16_8:inst1|RAM4_4:inst8|MC:inst14|inst            ; RAM16_8:inst1|RAM4_4:inst9|MC:inst13|inst1 ; yes                    ;
+; RAM16_8:inst1|RAM4_4:inst5|MC:inst3|inst             ; RAM16_8:inst1|RAM4_4:inst1|MC:inst1|inst1  ; yes                    ;
+; RAM16_8:inst1|RAM4_4:inst5|MC:inst7|inst             ; RAM16_8:inst1|RAM4_4:inst1|MC:inst5|inst1  ; yes                    ;
+; RAM16_8:inst1|RAM4_4:inst5|MC:inst10|inst            ; RAM16_8:inst1|RAM4_4:inst1|MC:inst9|inst1  ; yes                    ;
+; RAM16_8:inst1|RAM4_4:inst5|MC:inst15|inst            ; RAM16_8:inst1|RAM4_4:inst1|MC:inst13|inst1 ; yes                    ;
+; Number of user-specified and inferred latches = 128  ;                                            ;                        ;
++------------------------------------------------------+--------------------------------------------+------------------------+
 Table restricted to first 100 entries. Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
 
-+------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                           ;
-+---------------------------------------+--------------------------------------+
-; Register name                         ; Reason for Removal                   ;
-+---------------------------------------+--------------------------------------+
-; CounterUp_Down_set:Top-1|inst3        ; Merged with CounterUp_Down:Top|inst3 ;
-; Total Number of Removed Registers = 1 ;                                      ;
-+---------------------------------------+--------------------------------------+
++---------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                              ;
++---------------------------------------+-----------------------------------------+
+; Register name                         ; Reason for Removal                      ;
++---------------------------------------+-----------------------------------------+
+; CounterUp_Down:inst13|inst3           ; Merged with CounterUp_Down:inst12|inst3 ;
+; Total Number of Removed Registers = 1 ;                                         ;
++---------------------------------------+-----------------------------------------+
 
 
 +------------------------------------------------------+
@@ -500,11 +505,21 @@ Table restricted to first 100 entries. Note: All latches listed above may not be
 +----------------------------------------+---------+
 ; Inverted Register                      ; Fan out ;
 +----------------------------------------+---------+
-; CounterUp_Down_set:Top-1|inst2         ; 3       ;
-; CounterUp_Down_set:Top-1|inst          ; 5       ;
-; CounterUp_Down_set:Top-1|inst1         ; 7       ;
+; CounterUp_Down:inst13|inst2            ; 3       ;
+; CounterUp_Down:inst13|inst             ; 5       ;
+; CounterUp_Down:inst13|inst1            ; 7       ;
 ; Total number of inverted registers = 3 ;         ;
 +----------------------------------------+---------+
+
+
++-----------------------------------------------------------+
+; Parameter Settings for User Entity Instance: BUSMUX:inst2 ;
++----------------+-------+----------------------------------+
+; Parameter Name ; Value ; Type                             ;
++----------------+-------+----------------------------------+
+; WIDTH          ; 4     ; Signed Integer                   ;
++----------------+-------+----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
 +-------------------------------+
@@ -522,7 +537,7 @@ Table restricted to first 100 entries. Note: All latches listed above may not be
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Sat Oct 12 21:58:54 2024
+    Info: Processing started: Wed Nov 20 17:44:15 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off LIFO -c LIFO
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file lifo.bdf
@@ -531,77 +546,76 @@ Info (12021): Found 1 design units, including 1 entities, in source file counter
     Info (12023): Found entity 1: CounterUp_Down
 Info (12021): Found 1 design units, including 1 entities, in source file has.bdf
     Info (12023): Found entity 1: HAS
-Info (12021): Found 1 design units, including 1 entities, in source file counterup_down_set.bdf
-    Info (12023): Found entity 1: CounterUp_Down_set
-Info (12021): Found 1 design units, including 1 entities, in source file selector.bdf
-    Info (12023): Found entity 1: Selector
 Info (12021): Found 1 design units, including 1 entities, in source file ram16_8.bdf
     Info (12023): Found entity 1: RAM16_8
 Info (12021): Found 1 design units, including 1 entities, in source file ram4_4.bdf
     Info (12023): Found entity 1: RAM4_4
-Warning (12019): Can't analyze file -- file test.bdf is missing
+Info (12021): Found 1 design units, including 1 entities, in source file decoder2_4.bdf
+    Info (12023): Found entity 1: Decoder2_4
 Info (12127): Elaborating entity "LIFO" for the top level hierarchy
-Info (12128): Elaborating entity "CounterUp_Down" for hierarchy "CounterUp_Down:Top"
-Info (12128): Elaborating entity "HAS" for hierarchy "CounterUp_Down:Top|HAS:inst8"
-Info (12128): Elaborating entity "RAM16_8" for hierarchy "RAM16_8:inst8"
-Info (12128): Elaborating entity "RAM4_4" for hierarchy "RAM16_8:inst8|RAM4_4:inst3"
+Info (12128): Elaborating entity "CounterUp_Down" for hierarchy "CounterUp_Down:inst12"
+Info (12128): Elaborating entity "HAS" for hierarchy "CounterUp_Down:inst12|HAS:inst9"
+Info (12128): Elaborating entity "RAM16_8" for hierarchy "RAM16_8:inst1"
+Info (12128): Elaborating entity "RAM4_4" for hierarchy "RAM16_8:inst1|RAM4_4:inst1"
 Warning (12125): Using design file mc.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: MC
-Info (12128): Elaborating entity "MC" for hierarchy "RAM16_8:inst8|RAM4_4:inst3|MC:inst1"
-Warning (12125): Using design file decoder2_4.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
-    Info (12023): Found entity 1: Decoder2_4
-Info (12128): Elaborating entity "Decoder2_4" for hierarchy "RAM16_8:inst8|RAM4_4:inst3|Decoder2_4:inst"
-Info (12128): Elaborating entity "Selector" for hierarchy "Selector:inst5"
-Warning (12125): Using design file mux2.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
-    Info (12023): Found entity 1: Mux2
-Info (12128): Elaborating entity "Mux2" for hierarchy "Selector:inst5|Mux2:inst"
-Info (12128): Elaborating entity "CounterUp_Down_set" for hierarchy "CounterUp_Down_set:Top-1"
+Info (12128): Elaborating entity "MC" for hierarchy "RAM16_8:inst1|RAM4_4:inst1|MC:inst1"
+Info (12128): Elaborating entity "Decoder2_4" for hierarchy "RAM16_8:inst1|RAM4_4:inst1|Decoder2_4:inst"
+Info (12128): Elaborating entity "BUSMUX" for hierarchy "BUSMUX:inst2"
+Info (12130): Elaborated megafunction instantiation "BUSMUX:inst2"
+Info (12133): Instantiated megafunction "BUSMUX:inst2" with the following parameter:
+    Info (12134): Parameter "WIDTH" = "4"
+Info (12128): Elaborating entity "lpm_mux" for hierarchy "BUSMUX:inst2|lpm_mux:$00000"
+Info (12131): Elaborated megafunction instantiation "BUSMUX:inst2|lpm_mux:$00000", which is child of megafunction instantiation "BUSMUX:inst2"
+Info (12021): Found 1 design units, including 1 entities, in source file db/mux_omc.tdf
+    Info (12023): Found entity 1: mux_omc
+Info (12128): Elaborating entity "mux_omc" for hierarchy "BUSMUX:inst2|lpm_mux:$00000|mux_omc:auto_generated"
 Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
-    Warning (13047): Converted the fan-out from the tri-state buffer "RAM16_8:inst8|RAM4_4:inst1|MC:inst1|inst3" to the node "RAM16_8:inst8|RAM4_4:inst1|inst25" into an OR gate
-    Warning (13047): Converted the fan-out from the tri-state buffer "RAM16_8:inst8|RAM4_4:inst4|MC:inst1|inst3" to the node "RAM16_8:inst8|RAM4_4:inst4|inst25" into an OR gate
-    Warning (13047): Converted the fan-out from the tri-state buffer "RAM16_8:inst8|RAM4_4:inst8|MC:inst1|inst3" to the node "RAM16_8:inst8|RAM4_4:inst8|inst25" into an OR gate
-    Warning (13047): Converted the fan-out from the tri-state buffer "RAM16_8:inst8|RAM4_4:inst10|MC:inst1|inst3" to the node "RAM16_8:inst8|RAM4_4:inst10|inst25" into an OR gate
-    Warning (13047): Converted the fan-out from the tri-state buffer "RAM16_8:inst8|RAM4_4:inst1|MC:inst2|inst3" to the node "RAM16_8:inst8|RAM4_4:inst1|inst24" into an OR gate
-    Warning (13047): Converted the fan-out from the tri-state buffer "RAM16_8:inst8|RAM4_4:inst4|MC:inst2|inst3" to the node "RAM16_8:inst8|RAM4_4:inst4|inst24" into an OR gate
-    Warning (13047): Converted the fan-out from the tri-state buffer "RAM16_8:inst8|RAM4_4:inst8|MC:inst2|inst3" to the node "RAM16_8:inst8|RAM4_4:inst8|inst24" into an OR gate
-    Warning (13047): Converted the fan-out from the tri-state buffer "RAM16_8:inst8|RAM4_4:inst10|MC:inst2|inst3" to the node "RAM16_8:inst8|RAM4_4:inst10|inst24" into an OR gate
-    Warning (13047): Converted the fan-out from the tri-state buffer "RAM16_8:inst8|RAM4_4:inst1|MC:inst3|inst3" to the node "RAM16_8:inst8|RAM4_4:inst1|inst22" into an OR gate
-    Warning (13047): Converted the fan-out from the tri-state buffer "RAM16_8:inst8|RAM4_4:inst4|MC:inst3|inst3" to the node "RAM16_8:inst8|RAM4_4:inst4|inst22" into an OR gate
-    Warning (13047): Converted the fan-out from the tri-state buffer "RAM16_8:inst8|RAM4_4:inst8|MC:inst3|inst3" to the node "RAM16_8:inst8|RAM4_4:inst8|inst22" into an OR gate
-    Warning (13047): Converted the fan-out from the tri-state buffer "RAM16_8:inst8|RAM4_4:inst10|MC:inst3|inst3" to the node "RAM16_8:inst8|RAM4_4:inst10|inst22" into an OR gate
-    Warning (13047): Converted the fan-out from the tri-state buffer "RAM16_8:inst8|RAM4_4:inst1|MC:inst4|inst3" to the node "RAM16_8:inst8|RAM4_4:inst1|inst23" into an OR gate
-    Warning (13047): Converted the fan-out from the tri-state buffer "RAM16_8:inst8|RAM4_4:inst4|MC:inst4|inst3" to the node "RAM16_8:inst8|RAM4_4:inst4|inst23" into an OR gate
-    Warning (13047): Converted the fan-out from the tri-state buffer "RAM16_8:inst8|RAM4_4:inst8|MC:inst4|inst3" to the node "RAM16_8:inst8|RAM4_4:inst8|inst23" into an OR gate
-    Warning (13047): Converted the fan-out from the tri-state buffer "RAM16_8:inst8|RAM4_4:inst10|MC:inst4|inst3" to the node "RAM16_8:inst8|RAM4_4:inst10|inst23" into an OR gate
-    Warning (13047): Converted the fan-out from the tri-state buffer "RAM16_8:inst8|RAM4_4:inst3|MC:inst4|inst3" to the node "RAM16_8:inst8|RAM4_4:inst3|inst23" into an OR gate
-    Warning (13047): Converted the fan-out from the tri-state buffer "RAM16_8:inst8|RAM4_4:inst9|MC:inst4|inst3" to the node "RAM16_8:inst8|RAM4_4:inst9|inst23" into an OR gate
-    Warning (13047): Converted the fan-out from the tri-state buffer "RAM16_8:inst8|RAM4_4:inst13|MC:inst4|inst3" to the node "RAM16_8:inst8|RAM4_4:inst13|inst23" into an OR gate
-    Warning (13047): Converted the fan-out from the tri-state buffer "RAM16_8:inst8|RAM4_4:inst6|MC:inst4|inst3" to the node "RAM16_8:inst8|RAM4_4:inst6|inst23" into an OR gate
-    Warning (13047): Converted the fan-out from the tri-state buffer "RAM16_8:inst8|RAM4_4:inst3|MC:inst3|inst3" to the node "RAM16_8:inst8|RAM4_4:inst3|inst22" into an OR gate
-    Warning (13047): Converted the fan-out from the tri-state buffer "RAM16_8:inst8|RAM4_4:inst9|MC:inst3|inst3" to the node "RAM16_8:inst8|RAM4_4:inst9|inst22" into an OR gate
-    Warning (13047): Converted the fan-out from the tri-state buffer "RAM16_8:inst8|RAM4_4:inst13|MC:inst3|inst3" to the node "RAM16_8:inst8|RAM4_4:inst13|inst22" into an OR gate
-    Warning (13047): Converted the fan-out from the tri-state buffer "RAM16_8:inst8|RAM4_4:inst6|MC:inst3|inst3" to the node "RAM16_8:inst8|RAM4_4:inst6|inst22" into an OR gate
-    Warning (13047): Converted the fan-out from the tri-state buffer "RAM16_8:inst8|RAM4_4:inst3|MC:inst2|inst3" to the node "RAM16_8:inst8|RAM4_4:inst3|inst24" into an OR gate
-    Warning (13047): Converted the fan-out from the tri-state buffer "RAM16_8:inst8|RAM4_4:inst9|MC:inst2|inst3" to the node "RAM16_8:inst8|RAM4_4:inst9|inst24" into an OR gate
-    Warning (13047): Converted the fan-out from the tri-state buffer "RAM16_8:inst8|RAM4_4:inst13|MC:inst2|inst3" to the node "RAM16_8:inst8|RAM4_4:inst13|inst24" into an OR gate
-    Warning (13047): Converted the fan-out from the tri-state buffer "RAM16_8:inst8|RAM4_4:inst6|MC:inst2|inst3" to the node "RAM16_8:inst8|RAM4_4:inst6|inst24" into an OR gate
-    Warning (13047): Converted the fan-out from the tri-state buffer "RAM16_8:inst8|RAM4_4:inst3|MC:inst1|inst3" to the node "RAM16_8:inst8|RAM4_4:inst3|inst25" into an OR gate
-    Warning (13047): Converted the fan-out from the tri-state buffer "RAM16_8:inst8|RAM4_4:inst9|MC:inst1|inst3" to the node "RAM16_8:inst8|RAM4_4:inst9|inst25" into an OR gate
-    Warning (13047): Converted the fan-out from the tri-state buffer "RAM16_8:inst8|RAM4_4:inst13|MC:inst1|inst3" to the node "RAM16_8:inst8|RAM4_4:inst13|inst25" into an OR gate
-    Warning (13047): Converted the fan-out from the tri-state buffer "RAM16_8:inst8|RAM4_4:inst6|MC:inst1|inst3" to the node "RAM16_8:inst8|RAM4_4:inst6|inst25" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "RAM16_8:inst1|RAM4_4:inst1|MC:inst1|inst3" to the node "RAM16_8:inst1|RAM4_4:inst1|inst25" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "RAM16_8:inst1|RAM4_4:inst2|MC:inst1|inst3" to the node "RAM16_8:inst1|RAM4_4:inst2|inst25" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "RAM16_8:inst1|RAM4_4:inst4|MC:inst1|inst3" to the node "RAM16_8:inst1|RAM4_4:inst4|inst25" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "RAM16_8:inst1|RAM4_4:inst9|MC:inst1|inst3" to the node "RAM16_8:inst1|RAM4_4:inst9|inst25" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "RAM16_8:inst1|RAM4_4:inst1|MC:inst2|inst3" to the node "RAM16_8:inst1|RAM4_4:inst1|inst24" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "RAM16_8:inst1|RAM4_4:inst2|MC:inst2|inst3" to the node "RAM16_8:inst1|RAM4_4:inst2|inst24" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "RAM16_8:inst1|RAM4_4:inst4|MC:inst2|inst3" to the node "RAM16_8:inst1|RAM4_4:inst4|inst24" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "RAM16_8:inst1|RAM4_4:inst9|MC:inst2|inst3" to the node "RAM16_8:inst1|RAM4_4:inst9|inst24" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "RAM16_8:inst1|RAM4_4:inst1|MC:inst3|inst3" to the node "RAM16_8:inst1|RAM4_4:inst1|inst22" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "RAM16_8:inst1|RAM4_4:inst2|MC:inst3|inst3" to the node "RAM16_8:inst1|RAM4_4:inst2|inst22" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "RAM16_8:inst1|RAM4_4:inst4|MC:inst3|inst3" to the node "RAM16_8:inst1|RAM4_4:inst4|inst22" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "RAM16_8:inst1|RAM4_4:inst9|MC:inst3|inst3" to the node "RAM16_8:inst1|RAM4_4:inst9|inst22" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "RAM16_8:inst1|RAM4_4:inst1|MC:inst4|inst3" to the node "RAM16_8:inst1|RAM4_4:inst1|inst23" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "RAM16_8:inst1|RAM4_4:inst2|MC:inst4|inst3" to the node "RAM16_8:inst1|RAM4_4:inst2|inst23" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "RAM16_8:inst1|RAM4_4:inst4|MC:inst4|inst3" to the node "RAM16_8:inst1|RAM4_4:inst4|inst23" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "RAM16_8:inst1|RAM4_4:inst9|MC:inst4|inst3" to the node "RAM16_8:inst1|RAM4_4:inst9|inst23" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "RAM16_8:inst1|RAM4_4:inst5|MC:inst1|inst3" to the node "RAM16_8:inst1|RAM4_4:inst5|inst25" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "RAM16_8:inst1|RAM4_4:inst6|MC:inst1|inst3" to the node "RAM16_8:inst1|RAM4_4:inst6|inst25" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "RAM16_8:inst1|RAM4_4:inst7|MC:inst1|inst3" to the node "RAM16_8:inst1|RAM4_4:inst7|inst25" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "RAM16_8:inst1|RAM4_4:inst8|MC:inst1|inst3" to the node "RAM16_8:inst1|RAM4_4:inst8|inst25" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "RAM16_8:inst1|RAM4_4:inst5|MC:inst2|inst3" to the node "RAM16_8:inst1|RAM4_4:inst5|inst24" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "RAM16_8:inst1|RAM4_4:inst6|MC:inst2|inst3" to the node "RAM16_8:inst1|RAM4_4:inst6|inst24" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "RAM16_8:inst1|RAM4_4:inst7|MC:inst2|inst3" to the node "RAM16_8:inst1|RAM4_4:inst7|inst24" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "RAM16_8:inst1|RAM4_4:inst8|MC:inst2|inst3" to the node "RAM16_8:inst1|RAM4_4:inst8|inst24" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "RAM16_8:inst1|RAM4_4:inst5|MC:inst3|inst3" to the node "RAM16_8:inst1|RAM4_4:inst5|inst22" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "RAM16_8:inst1|RAM4_4:inst6|MC:inst3|inst3" to the node "RAM16_8:inst1|RAM4_4:inst6|inst22" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "RAM16_8:inst1|RAM4_4:inst7|MC:inst3|inst3" to the node "RAM16_8:inst1|RAM4_4:inst7|inst22" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "RAM16_8:inst1|RAM4_4:inst8|MC:inst3|inst3" to the node "RAM16_8:inst1|RAM4_4:inst8|inst22" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "RAM16_8:inst1|RAM4_4:inst5|MC:inst4|inst3" to the node "RAM16_8:inst1|RAM4_4:inst5|inst23" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "RAM16_8:inst1|RAM4_4:inst6|MC:inst4|inst3" to the node "RAM16_8:inst1|RAM4_4:inst6|inst23" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "RAM16_8:inst1|RAM4_4:inst7|MC:inst4|inst3" to the node "RAM16_8:inst1|RAM4_4:inst7|inst23" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "RAM16_8:inst1|RAM4_4:inst8|MC:inst4|inst3" to the node "RAM16_8:inst1|RAM4_4:inst8|inst23" into an OR gate
 Info (13000): Registers with preset signals will power-up high
 Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 290 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 286 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 4 input pins
-    Info (21059): Implemented 6 output pins
+    Info (21059): Implemented 2 output pins
     Info (21060): Implemented 8 bidirectional pins
     Info (21061): Implemented 272 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 38 warnings
-    Info: Peak virtual memory: 4600 megabytes
-    Info: Processing ended: Sat Oct 12 21:58:55 2024
-    Info: Elapsed time: 00:00:01
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 35 warnings
+    Info: Peak virtual memory: 4617 megabytes
+    Info: Processing ended: Wed Nov 20 17:44:17 2024
+    Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:01
 
 

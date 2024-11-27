@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Can2
-Mon Nov 04 22:02:12 2024
+Thu Nov 21 20:09:30 2024
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -41,7 +41,7 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Nov 04 22:02:12 2024           ;
+; Analysis & Synthesis Status        ; Successful - Thu Nov 21 20:09:30 2024           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; Can2                                            ;
 ; Top-level Entity Name              ; Datapath                                        ;
@@ -159,19 +159,19 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------------+-----------------+------------------------------------------+---------------------------------------------------------------+---------+
 ; File Name with User-Entered Path ; Used in Netlist ; File Type                                ; File Name with Absolute Path                                  ; Library ;
 +----------------------------------+-----------------+------------------------------------------+---------------------------------------------------------------+---------+
-; Sum8Bit.bdf                      ; yes             ; User Block Diagram/Schematic File        ; D:/study/year3/TKLLS/CE118/DoAn/Can2/Sum8Bit.bdf              ;         ;
-; 1BitRigthShift.bdf               ; yes             ; User Block Diagram/Schematic File        ; D:/study/year3/TKLLS/CE118/DoAn/Can2/1BitRigthShift.bdf       ;         ;
-; 3BitRigthShift.bdf               ; yes             ; User Block Diagram/Schematic File        ; D:/study/year3/TKLLS/CE118/DoAn/Can2/3BitRigthShift.bdf       ;         ;
-; SumorSub.bdf                     ; yes             ; User Block Diagram/Schematic File        ; D:/study/year3/TKLLS/CE118/DoAn/Can2/SumorSub.bdf             ;         ;
-; Xor8bit.bdf                      ; yes             ; User Block Diagram/Schematic File        ; D:/study/year3/TKLLS/CE118/DoAn/Can2/Xor8bit.bdf              ;         ;
-; Datapath.bdf                     ; yes             ; User Block Diagram/Schematic File        ; D:/study/year3/TKLLS/CE118/DoAn/Can2/Datapath.bdf             ;         ;
-; minmax.bdf                       ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/study/year3/TKLLS/CE118/DoAn/Can2/minmax.bdf               ;         ;
-; mux21_8bit.bdf                   ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/study/year3/TKLLS/CE118/DoAn/Can2/mux21_8bit.bdf           ;         ;
+; Sum8Bit.bdf                      ; yes             ; User Block Diagram/Schematic File        ; C:/Hung/Year3/TKLLS/CE118/DoAn/Can2/Sum8Bit.bdf               ;         ;
+; 1BitRigthShift.bdf               ; yes             ; User Block Diagram/Schematic File        ; C:/Hung/Year3/TKLLS/CE118/DoAn/Can2/1BitRigthShift.bdf        ;         ;
+; 3BitRigthShift.bdf               ; yes             ; User Block Diagram/Schematic File        ; C:/Hung/Year3/TKLLS/CE118/DoAn/Can2/3BitRigthShift.bdf        ;         ;
+; SumorSub.bdf                     ; yes             ; User Block Diagram/Schematic File        ; C:/Hung/Year3/TKLLS/CE118/DoAn/Can2/SumorSub.bdf              ;         ;
+; Xor8bit.bdf                      ; yes             ; User Block Diagram/Schematic File        ; C:/Hung/Year3/TKLLS/CE118/DoAn/Can2/Xor8bit.bdf               ;         ;
+; Datapath.bdf                     ; yes             ; User Block Diagram/Schematic File        ; C:/Hung/Year3/TKLLS/CE118/DoAn/Can2/Datapath.bdf              ;         ;
+; minmax.bdf                       ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Hung/Year3/TKLLS/CE118/DoAn/Can2/minmax.bdf                ;         ;
+; mux21_8bit.bdf                   ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Hung/Year3/TKLLS/CE118/DoAn/Can2/mux21_8bit.bdf            ;         ;
 ; 21mux.bdf                        ; yes             ; Megafunction                             ; c:/altera/13.0sp1/quartus/libraries/others/maxplus2/21mux.bdf ;         ;
-; subnbit.bdf                      ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/study/year3/TKLLS/CE118/DoAn/Can2/subnbit.bdf              ;         ;
-; sub1bit.bdf                      ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/study/year3/TKLLS/CE118/DoAn/Can2/sub1bit.bdf              ;         ;
-; sum.bdf                          ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/study/year3/TKLLS/CE118/DoAn/Can2/sum.bdf                  ;         ;
-; trituyetdoi.bdf                  ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/study/year3/TKLLS/CE118/DoAn/Can2/trituyetdoi.bdf          ;         ;
+; subnbit.bdf                      ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Hung/Year3/TKLLS/CE118/DoAn/Can2/subnbit.bdf               ;         ;
+; sub1bit.bdf                      ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Hung/Year3/TKLLS/CE118/DoAn/Can2/sub1bit.bdf               ;         ;
+; sum.bdf                          ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Hung/Year3/TKLLS/CE118/DoAn/Can2/sum.bdf                   ;         ;
+; trituyetdoi.bdf                  ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Hung/Year3/TKLLS/CE118/DoAn/Can2/trituyetdoi.bdf           ;         ;
 +----------------------------------+-----------------+------------------------------------------+---------------------------------------------------------------+---------+
 
 
@@ -322,7 +322,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Mon Nov 04 22:02:11 2024
+    Info: Processing started: Thu Nov 21 20:09:23 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Can2 -c Can2
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file can2.bdf
@@ -392,8 +392,8 @@ Info (21057): Implemented 129 device resources after synthesis - the final resou
     Info (21061): Implemented 105 logic cells
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 26 warnings
     Info: Peak virtual memory: 4600 megabytes
-    Info: Processing ended: Mon Nov 04 22:02:12 2024
-    Info: Elapsed time: 00:00:01
+    Info: Processing ended: Thu Nov 21 20:09:30 2024
+    Info: Elapsed time: 00:00:07
     Info: Total CPU time (on all processors): 00:00:01
 
 

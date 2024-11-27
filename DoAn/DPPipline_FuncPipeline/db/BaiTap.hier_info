@@ -1,0 +1,3844 @@
+|BaiTap
+Y[0] <= Datapath:inst.Y[0]
+Y[1] <= Datapath:inst.Y[1]
+Y[2] <= Datapath:inst.Y[2]
+Y[3] <= Datapath:inst.Y[3]
+Y[4] <= Datapath:inst.Y[4]
+Y[5] <= Datapath:inst.Y[5]
+Y[6] <= Datapath:inst.Y[6]
+Y[7] <= Datapath:inst.Y[7]
+CLK => Control:inst1.CLK
+CLK => Datapath:inst.CLK
+CLR => Control:inst1.CLR
+In1[0] => Datapath:inst.In1[0]
+In1[1] => Datapath:inst.In1[1]
+In1[2] => Datapath:inst.In1[2]
+In1[3] => Datapath:inst.In1[3]
+In1[4] => Datapath:inst.In1[4]
+In1[5] => Datapath:inst.In1[5]
+In1[6] => Datapath:inst.In1[6]
+In1[7] => Datapath:inst.In1[7]
+In2[0] => Datapath:inst.In2[0]
+In2[1] => Datapath:inst.In2[1]
+In2[2] => Datapath:inst.In2[2]
+In2[3] => Datapath:inst.In2[3]
+In2[4] => Datapath:inst.In2[4]
+In2[5] => Datapath:inst.In2[5]
+In2[6] => Datapath:inst.In2[6]
+In2[7] => Datapath:inst.In2[7]
+
+
+|BaiTap|Datapath:inst
+Bus1[0] <= Register2x8:inst2.OA[0]
+Bus1[1] <= Register2x8:inst2.OA[1]
+Bus1[2] <= Register2x8:inst2.OA[2]
+Bus1[3] <= Register2x8:inst2.OA[3]
+Bus1[4] <= Register2x8:inst2.OA[4]
+Bus1[5] <= Register2x8:inst2.OA[5]
+Bus1[6] <= Register2x8:inst2.OA[6]
+Bus1[7] <= Register2x8:inst2.OA[7]
+WE1 => Register2x8:inst2.WE
+WA1 => Register2x8:inst2.WA
+REA1 => Register2x8:inst2.REA
+RAA1 => Register2x8:inst2.RAA
+CLK => Register2x8:inst2.CLK
+CLK => AU1:inst.CLK
+CLK => Register2x8:inst23.CLK
+CLK => Register1x8:inst25.CLK
+CLK => Register1x8:inst24.CLK
+CLK => Register4x8:inst14.CLk
+CLK => AU2:inst1.CLK
+In1[0] => inst10[0].DATAIN
+In1[1] => inst10[1].DATAIN
+In1[2] => inst10[2].DATAIN
+In1[3] => inst10[3].DATAIN
+In1[4] => inst10[4].DATAIN
+In1[5] => inst10[5].DATAIN
+In1[6] => inst10[6].DATAIN
+In1[7] => inst10[7].DATAIN
+TB3[0] => inst11[7].OE
+TB3[0] => inst11[6].OE
+TB3[0] => inst11[5].OE
+TB3[0] => inst11[4].OE
+TB3[0] => inst11[3].OE
+TB3[0] => inst11[2].OE
+TB3[0] => inst11[1].OE
+TB3[0] => inst11[0].OE
+TB3[1] => inst10[7].OE
+TB3[1] => inst10[6].OE
+TB3[1] => inst10[5].OE
+TB3[1] => inst10[4].OE
+TB3[1] => inst10[3].OE
+TB3[1] => inst10[2].OE
+TB3[1] => inst10[1].OE
+TB3[1] => inst10[0].OE
+WE6 => AU1:inst.WE
+TB2[0] => inst9[7].OE
+TB2[0] => inst9[6].OE
+TB2[0] => inst9[5].OE
+TB2[0] => inst9[4].OE
+TB2[0] => inst9[3].OE
+TB2[0] => inst9[2].OE
+TB2[0] => inst9[1].OE
+TB2[0] => inst9[0].OE
+TB2[1] => inst8[7].OE
+TB2[1] => inst8[6].OE
+TB2[1] => inst8[5].OE
+TB2[1] => inst8[4].OE
+TB2[1] => inst8[3].OE
+TB2[1] => inst8[2].OE
+TB2[1] => inst8[1].OE
+TB2[1] => inst8[0].OE
+WE2 => Register2x8:inst23.WE
+WA2 => Register2x8:inst23.WA
+REA2 => Register2x8:inst23.REA
+RAA2 => Register2x8:inst23.RAA
+In2[0] => inst13[0].DATAIN
+In2[1] => inst13[1].DATAIN
+In2[2] => inst13[2].DATAIN
+In2[3] => inst13[3].DATAIN
+In2[4] => inst13[4].DATAIN
+In2[5] => inst13[5].DATAIN
+In2[6] => inst13[6].DATAIN
+In2[7] => inst13[7].DATAIN
+TB4[0] => inst12[7].OE
+TB4[0] => inst12[6].OE
+TB4[0] => inst12[5].OE
+TB4[0] => inst12[4].OE
+TB4[0] => inst12[3].OE
+TB4[0] => inst12[2].OE
+TB4[0] => inst12[1].OE
+TB4[0] => inst12[0].OE
+TB4[1] => inst13[7].OE
+TB4[1] => inst13[6].OE
+TB4[1] => inst13[5].OE
+TB4[1] => inst13[4].OE
+TB4[1] => inst13[3].OE
+TB4[1] => inst13[2].OE
+TB4[1] => inst13[1].OE
+TB4[1] => inst13[0].OE
+RAA6[0] => AU1:inst.RAA[0]
+RAA6[1] => AU1:inst.RAA[1]
+S1[0] => AU1:inst.S[0]
+S1[1] => AU1:inst.S[1]
+WA6[0] => AU1:inst.WA[0]
+WA6[1] => AU1:inst.WA[1]
+Bus2[0] <= gdfx_temp0[0].DB_MAX_OUTPUT_PORT_TYPE
+Bus2[1] <= gdfx_temp0[1].DB_MAX_OUTPUT_PORT_TYPE
+Bus2[2] <= gdfx_temp0[2].DB_MAX_OUTPUT_PORT_TYPE
+Bus2[3] <= gdfx_temp0[3].DB_MAX_OUTPUT_PORT_TYPE
+Bus2[4] <= gdfx_temp0[4].DB_MAX_OUTPUT_PORT_TYPE
+Bus2[5] <= gdfx_temp0[5].DB_MAX_OUTPUT_PORT_TYPE
+Bus2[6] <= gdfx_temp0[6].DB_MAX_OUTPUT_PORT_TYPE
+Bus2[7] <= gdfx_temp0[7].DB_MAX_OUTPUT_PORT_TYPE
+Bus3[0] <= gdfx_temp2[0].DB_MAX_OUTPUT_PORT_TYPE
+Bus3[1] <= gdfx_temp2[1].DB_MAX_OUTPUT_PORT_TYPE
+Bus3[2] <= gdfx_temp2[2].DB_MAX_OUTPUT_PORT_TYPE
+Bus3[3] <= gdfx_temp2[3].DB_MAX_OUTPUT_PORT_TYPE
+Bus3[4] <= gdfx_temp2[4].DB_MAX_OUTPUT_PORT_TYPE
+Bus3[5] <= gdfx_temp2[5].DB_MAX_OUTPUT_PORT_TYPE
+Bus3[6] <= gdfx_temp2[6].DB_MAX_OUTPUT_PORT_TYPE
+Bus3[7] <= gdfx_temp2[7].DB_MAX_OUTPUT_PORT_TYPE
+Bus4[0] <= gdfx_temp1[0].DB_MAX_OUTPUT_PORT_TYPE
+Bus4[1] <= gdfx_temp1[1].DB_MAX_OUTPUT_PORT_TYPE
+Bus4[2] <= gdfx_temp1[2].DB_MAX_OUTPUT_PORT_TYPE
+Bus4[3] <= gdfx_temp1[3].DB_MAX_OUTPUT_PORT_TYPE
+Bus4[4] <= gdfx_temp1[4].DB_MAX_OUTPUT_PORT_TYPE
+Bus4[5] <= gdfx_temp1[5].DB_MAX_OUTPUT_PORT_TYPE
+Bus4[6] <= gdfx_temp1[6].DB_MAX_OUTPUT_PORT_TYPE
+Bus4[7] <= gdfx_temp1[7].DB_MAX_OUTPUT_PORT_TYPE
+Bus5[0] <= gdfx_temp4[0].DB_MAX_OUTPUT_PORT_TYPE
+Bus5[1] <= gdfx_temp4[1].DB_MAX_OUTPUT_PORT_TYPE
+Bus5[2] <= gdfx_temp4[2].DB_MAX_OUTPUT_PORT_TYPE
+Bus5[3] <= gdfx_temp4[3].DB_MAX_OUTPUT_PORT_TYPE
+Bus5[4] <= gdfx_temp4[4].DB_MAX_OUTPUT_PORT_TYPE
+Bus5[5] <= gdfx_temp4[5].DB_MAX_OUTPUT_PORT_TYPE
+Bus5[6] <= gdfx_temp4[6].DB_MAX_OUTPUT_PORT_TYPE
+Bus5[7] <= gdfx_temp4[7].DB_MAX_OUTPUT_PORT_TYPE
+WE4 => Register1x8:inst25.WE
+REA4 => Register1x8:inst25.RE
+TB5[0] => inst20[7].OE
+TB5[0] => inst20[6].OE
+TB5[0] => inst20[5].OE
+TB5[0] => inst20[4].OE
+TB5[0] => inst20[3].OE
+TB5[0] => inst20[2].OE
+TB5[0] => inst20[1].OE
+TB5[0] => inst20[0].OE
+TB5[1] => inst19[7].OE
+TB5[1] => inst19[6].OE
+TB5[1] => inst19[5].OE
+TB5[1] => inst19[4].OE
+TB5[1] => inst19[3].OE
+TB5[1] => inst19[2].OE
+TB5[1] => inst19[1].OE
+TB5[1] => inst19[0].OE
+WE5 => Register1x8:inst24.WE
+REA5 => Register1x8:inst24.RE
+Bus6[0] <= Register4x8:inst14.Y[0]
+Bus6[1] <= Register4x8:inst14.Y[1]
+Bus6[2] <= Register4x8:inst14.Y[2]
+Bus6[3] <= Register4x8:inst14.Y[3]
+Bus6[4] <= Register4x8:inst14.Y[4]
+Bus6[5] <= Register4x8:inst14.Y[5]
+Bus6[6] <= Register4x8:inst14.Y[6]
+Bus6[7] <= Register4x8:inst14.Y[7]
+WE3 => Register4x8:inst14.WE
+REA3 => Register4x8:inst14.REA
+TB7[0] => inst18[7].OE
+TB7[0] => inst18[6].OE
+TB7[0] => inst18[5].OE
+TB7[0] => inst18[4].OE
+TB7[0] => inst18[3].OE
+TB7[0] => inst18[2].OE
+TB7[0] => inst18[1].OE
+TB7[0] => inst18[0].OE
+TB7[1] => inst17[7].OE
+TB7[1] => inst17[6].OE
+TB7[1] => inst17[5].OE
+TB7[1] => inst17[4].OE
+TB7[1] => inst17[3].OE
+TB7[1] => inst17[2].OE
+TB7[1] => inst17[1].OE
+TB7[1] => inst17[0].OE
+WE7 => AU2:inst1.WE
+RAA7[0] => AU2:inst1.RAA[0]
+RAA7[1] => AU2:inst1.RAA[1]
+S2[0] => AU2:inst1.S[0]
+S2[1] => AU2:inst1.S[1]
+WA7[0] => AU2:inst1.WA[0]
+WA7[1] => AU2:inst1.WA[1]
+RAA3[0] => Register4x8:inst14.RAA[0]
+RAA3[1] => Register4x8:inst14.RAA[1]
+WA3[0] => Register4x8:inst14.WA[0]
+WA3[1] => Register4x8:inst14.WA[1]
+Bus7[0] <= gdfx_temp3[0].DB_MAX_OUTPUT_PORT_TYPE
+Bus7[1] <= gdfx_temp3[1].DB_MAX_OUTPUT_PORT_TYPE
+Bus7[2] <= gdfx_temp3[2].DB_MAX_OUTPUT_PORT_TYPE
+Bus7[3] <= gdfx_temp3[3].DB_MAX_OUTPUT_PORT_TYPE
+Bus7[4] <= gdfx_temp3[4].DB_MAX_OUTPUT_PORT_TYPE
+Bus7[5] <= gdfx_temp3[5].DB_MAX_OUTPUT_PORT_TYPE
+Bus7[6] <= gdfx_temp3[6].DB_MAX_OUTPUT_PORT_TYPE
+Bus7[7] <= gdfx_temp3[7].DB_MAX_OUTPUT_PORT_TYPE
+Y[0] <= inst21[0].DB_MAX_OUTPUT_PORT_TYPE
+Y[1] <= inst21[1].DB_MAX_OUTPUT_PORT_TYPE
+Y[2] <= inst21[2].DB_MAX_OUTPUT_PORT_TYPE
+Y[3] <= inst21[3].DB_MAX_OUTPUT_PORT_TYPE
+Y[4] <= inst21[4].DB_MAX_OUTPUT_PORT_TYPE
+Y[5] <= inst21[5].DB_MAX_OUTPUT_PORT_TYPE
+Y[6] <= inst21[6].DB_MAX_OUTPUT_PORT_TYPE
+Y[7] <= inst21[7].DB_MAX_OUTPUT_PORT_TYPE
+TO => inst21[7].OE
+TO => inst21[6].OE
+TO => inst21[5].OE
+TO => inst21[4].OE
+TO => inst21[3].OE
+TO => inst21[2].OE
+TO => inst21[1].OE
+TO => inst21[0].OE
+
+
+|BaiTap|Datapath:inst|Register2x8:inst2
+OA[0] <= OA~4.DB_MAX_OUTPUT_PORT_TYPE
+OA[1] <= OA~7.DB_MAX_OUTPUT_PORT_TYPE
+OA[2] <= OA~3.DB_MAX_OUTPUT_PORT_TYPE
+OA[3] <= OA~6.DB_MAX_OUTPUT_PORT_TYPE
+OA[4] <= OA~2.DB_MAX_OUTPUT_PORT_TYPE
+OA[5] <= OA~1.DB_MAX_OUTPUT_PORT_TYPE
+OA[6] <= OA~5.DB_MAX_OUTPUT_PORT_TYPE
+OA[7] <= OA~0.DB_MAX_OUTPUT_PORT_TYPE
+REA => Decoder1_2:inst.WE
+RAA => Decoder1_2:inst.ADR
+REB => Decoder1_2:inst2.WE
+RAB => Decoder1_2:inst2.ADR
+WE => Decoder1_2:inst1.WE
+WA => Decoder1_2:inst1.ADR
+I[0] => RFC:inst16.input
+I[0] => RFC:inst18.input
+I[1] => RFC:inst15.input
+I[1] => RFC:inst17.input
+I[2] => RFC:inst12.input
+I[2] => RFC:inst14.input
+I[3] => RFC:inst11.input
+I[3] => RFC:inst13.input
+I[4] => RFC:inst6.input
+I[4] => RFC:inst10.input
+I[5] => RFC:inst5.input
+I[5] => RFC:inst9.input
+I[6] => RFC:inst4.input
+I[6] => RFC:inst8.input
+I[7] => RFC:inst3.input
+I[7] => RFC:inst7.input
+CLK => RFC:inst3.CLK
+CLK => RFC:inst7.CLK
+CLK => RFC:inst5.CLK
+CLK => RFC:inst9.CLK
+CLK => RFC:inst6.CLK
+CLK => RFC:inst10.CLK
+CLK => RFC:inst12.CLK
+CLK => RFC:inst14.CLK
+CLK => RFC:inst16.CLK
+CLK => RFC:inst18.CLK
+CLK => RFC:inst4.CLK
+CLK => RFC:inst8.CLK
+CLK => RFC:inst11.CLK
+CLK => RFC:inst13.CLK
+CLK => RFC:inst15.CLK
+CLK => RFC:inst17.CLK
+OB[0] <= OB~7.DB_MAX_OUTPUT_PORT_TYPE
+OB[1] <= OB~6.DB_MAX_OUTPUT_PORT_TYPE
+OB[2] <= OB~5.DB_MAX_OUTPUT_PORT_TYPE
+OB[3] <= OB~4.DB_MAX_OUTPUT_PORT_TYPE
+OB[4] <= OB~3.DB_MAX_OUTPUT_PORT_TYPE
+OB[5] <= OB~2.DB_MAX_OUTPUT_PORT_TYPE
+OB[6] <= OB~1.DB_MAX_OUTPUT_PORT_TYPE
+OB[7] <= OB~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BaiTap|Datapath:inst|Register2x8:inst2|RFC:inst3
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|BaiTap|Datapath:inst|Register2x8:inst2|Decoder1_2:inst
+O1 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+WE => inst1.IN0
+WE => inst2.IN0
+ADR => inst1.IN1
+ADR => inst.IN0
+O0 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BaiTap|Datapath:inst|Register2x8:inst2|Decoder1_2:inst2
+O1 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+WE => inst1.IN0
+WE => inst2.IN0
+ADR => inst1.IN1
+ADR => inst.IN0
+O0 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BaiTap|Datapath:inst|Register2x8:inst2|Decoder1_2:inst1
+O1 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+WE => inst1.IN0
+WE => inst2.IN0
+ADR => inst1.IN1
+ADR => inst.IN0
+O0 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BaiTap|Datapath:inst|Register2x8:inst2|RFC:inst7
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|BaiTap|Datapath:inst|Register2x8:inst2|RFC:inst5
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|BaiTap|Datapath:inst|Register2x8:inst2|RFC:inst9
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|BaiTap|Datapath:inst|Register2x8:inst2|RFC:inst6
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|BaiTap|Datapath:inst|Register2x8:inst2|RFC:inst10
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|BaiTap|Datapath:inst|Register2x8:inst2|RFC:inst12
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|BaiTap|Datapath:inst|Register2x8:inst2|RFC:inst14
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|BaiTap|Datapath:inst|Register2x8:inst2|RFC:inst16
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|BaiTap|Datapath:inst|Register2x8:inst2|RFC:inst18
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|BaiTap|Datapath:inst|Register2x8:inst2|RFC:inst4
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|BaiTap|Datapath:inst|Register2x8:inst2|RFC:inst8
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|BaiTap|Datapath:inst|Register2x8:inst2|RFC:inst11
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|BaiTap|Datapath:inst|Register2x8:inst2|RFC:inst13
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|BaiTap|Datapath:inst|Register2x8:inst2|RFC:inst15
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|BaiTap|Datapath:inst|Register2x8:inst2|RFC:inst17
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|BaiTap|Datapath:inst|AU1:inst
+Y[0] <= Register4x8:inst1.Y[0]
+Y[1] <= Register4x8:inst1.Y[1]
+Y[2] <= Register4x8:inst1.Y[2]
+Y[3] <= Register4x8:inst1.Y[3]
+Y[4] <= Register4x8:inst1.Y[4]
+Y[5] <= Register4x8:inst1.Y[5]
+Y[6] <= Register4x8:inst1.Y[6]
+Y[7] <= Register4x8:inst1.Y[7]
+WE => Register4x8:inst1.WE
+CLK => Register4x8:inst1.CLk
+S[0] => inst9.IN0
+S[1] => inst6[7].IN0
+S[1] => inst6[6].IN0
+S[1] => inst6[5].IN0
+S[1] => inst6[4].IN0
+S[1] => inst6[3].IN0
+S[1] => inst6[2].IN0
+S[1] => inst6[1].IN0
+S[1] => inst6[0].IN0
+S[1] => BUSMUX:inst7.sel
+A[0] => inst6[0].IN1
+A[0] => BUSMUX:inst7.datab[0]
+A[1] => inst6[1].IN1
+A[1] => BUSMUX:inst7.datab[1]
+A[2] => inst6[2].IN1
+A[2] => BUSMUX:inst7.datab[2]
+A[3] => inst6[3].IN1
+A[3] => BUSMUX:inst7.datab[3]
+A[4] => inst6[4].IN1
+A[4] => BUSMUX:inst7.datab[4]
+A[5] => inst6[5].IN1
+A[5] => BUSMUX:inst7.datab[5]
+A[6] => inst6[6].IN1
+A[6] => BUSMUX:inst7.datab[6]
+A[7] => inst6[7].IN1
+A[7] => BUSMUX:inst7.datab[7]
+B[0] => inst2[0].IN0
+B[0] => BUSMUX:inst8.dataa[0]
+B[1] => inst2[1].IN0
+B[1] => BUSMUX:inst8.dataa[1]
+B[2] => inst2[2].IN0
+B[2] => BUSMUX:inst8.dataa[2]
+B[3] => inst2[3].IN0
+B[3] => BUSMUX:inst8.dataa[3]
+B[4] => inst2[4].IN0
+B[4] => BUSMUX:inst8.dataa[4]
+B[5] => inst2[5].IN0
+B[5] => BUSMUX:inst8.dataa[5]
+B[6] => inst2[6].IN0
+B[6] => BUSMUX:inst8.dataa[6]
+B[7] => inst2[7].IN0
+B[7] => BUSMUX:inst8.dataa[7]
+RAA[0] => Register4x8:inst1.RAA[0]
+RAA[1] => Register4x8:inst1.RAA[1]
+WA[0] => Register4x8:inst1.WA[0]
+WA[1] => Register4x8:inst1.WA[1]
+
+
+|BaiTap|Datapath:inst|AU1:inst|Register4x8:inst1
+Y[0] <= register:inst1.A[0]
+Y[1] <= register:inst1.A[1]
+Y[2] <= register:inst1.A[2]
+Y[3] <= register:inst1.A[3]
+Y[4] <= register:inst.A[0]
+Y[5] <= register:inst.A[1]
+Y[6] <= register:inst.A[2]
+Y[7] <= register:inst.A[3]
+WE => register:inst.WE
+WE => register:inst1.WE
+REA => register:inst.REA
+REA => register:inst1.REA
+CLk => register:inst.CLK
+CLk => register:inst1.CLK
+In[0] => register:inst1.I[0]
+In[1] => register:inst1.I[1]
+In[2] => register:inst1.I[2]
+In[3] => register:inst1.I[3]
+In[4] => register:inst.I[0]
+In[5] => register:inst.I[1]
+In[6] => register:inst.I[2]
+In[7] => register:inst.I[3]
+RAA[0] => register:inst.RAA[0]
+RAA[0] => register:inst1.RAA[0]
+RAA[1] => register:inst.RAA[1]
+RAA[1] => register:inst1.RAA[1]
+WA[0] => register:inst.WA[0]
+WA[0] => register:inst1.WA[0]
+WA[1] => register:inst.WA[1]
+WA[1] => register:inst1.WA[1]
+
+
+|BaiTap|Datapath:inst|AU1:inst|Register4x8:inst1|register:inst
+A[0] <= A~3.DB_MAX_OUTPUT_PORT_TYPE
+A[1] <= A~2.DB_MAX_OUTPUT_PORT_TYPE
+A[2] <= A~1.DB_MAX_OUTPUT_PORT_TYPE
+A[3] <= A~0.DB_MAX_OUTPUT_PORT_TYPE
+RAA[0] => Decoder2_4:inst.A0
+RAA[1] => Decoder2_4:inst.A1
+REA => Decoder2_4:inst.E
+RAB[0] => Decoder2_4:inst19.A0
+RAB[1] => Decoder2_4:inst19.A1
+REB => Decoder2_4:inst19.E
+WA[0] => Decoder2_4:inst20.A0
+WA[1] => Decoder2_4:inst20.A1
+WE => Decoder2_4:inst20.E
+I[0] => RFC:inst6.input
+I[0] => RFC:inst10.input
+I[0] => RFC:inst14.input
+I[0] => RFC:inst18.input
+I[1] => RFC:inst5.input
+I[1] => RFC:inst9.input
+I[1] => RFC:inst13.input
+I[1] => RFC:inst17.input
+I[2] => RFC:inst4.input
+I[2] => RFC:inst16.input
+I[2] => RFC:inst12.input
+I[2] => RFC:inst8.input
+I[3] => RFC:inst3.input
+I[3] => RFC:inst7.input
+I[3] => RFC:inst11.input
+I[3] => RFC:inst15.input
+CLK => RFC:inst3.CLK
+CLK => RFC:inst7.CLK
+CLK => RFC:inst11.CLK
+CLK => RFC:inst15.CLK
+CLK => RFC:inst4.CLK
+CLK => RFC:inst16.CLK
+CLK => RFC:inst12.CLK
+CLK => RFC:inst8.CLK
+CLK => RFC:inst5.CLK
+CLK => RFC:inst9.CLK
+CLK => RFC:inst13.CLK
+CLK => RFC:inst17.CLK
+CLK => RFC:inst6.CLK
+CLK => RFC:inst10.CLK
+CLK => RFC:inst14.CLK
+CLK => RFC:inst18.CLK
+B[0] <= B~0.DB_MAX_OUTPUT_PORT_TYPE
+B[1] <= B~1.DB_MAX_OUTPUT_PORT_TYPE
+B[2] <= B~2.DB_MAX_OUTPUT_PORT_TYPE
+B[3] <= B~3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BaiTap|Datapath:inst|AU1:inst|Register4x8:inst1|register:inst|RFC:inst3
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|BaiTap|Datapath:inst|AU1:inst|Register4x8:inst1|register:inst|Decoder2_4:inst
+Q3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A1 => inst.IN0
+A1 => inst1.IN0
+A1 => inst4.IN0
+A0 => inst.IN1
+A0 => inst5.IN0
+A0 => inst2.IN1
+E => inst.IN2
+E => inst1.IN2
+E => inst2.IN2
+E => inst3.IN2
+Q2 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Q1 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Q0 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BaiTap|Datapath:inst|AU1:inst|Register4x8:inst1|register:inst|Decoder2_4:inst19
+Q3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A1 => inst.IN0
+A1 => inst1.IN0
+A1 => inst4.IN0
+A0 => inst.IN1
+A0 => inst5.IN0
+A0 => inst2.IN1
+E => inst.IN2
+E => inst1.IN2
+E => inst2.IN2
+E => inst3.IN2
+Q2 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Q1 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Q0 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BaiTap|Datapath:inst|AU1:inst|Register4x8:inst1|register:inst|Decoder2_4:inst20
+Q3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A1 => inst.IN0
+A1 => inst1.IN0
+A1 => inst4.IN0
+A0 => inst.IN1
+A0 => inst5.IN0
+A0 => inst2.IN1
+E => inst.IN2
+E => inst1.IN2
+E => inst2.IN2
+E => inst3.IN2
+Q2 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Q1 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Q0 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BaiTap|Datapath:inst|AU1:inst|Register4x8:inst1|register:inst|RFC:inst7
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|BaiTap|Datapath:inst|AU1:inst|Register4x8:inst1|register:inst|RFC:inst11
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|BaiTap|Datapath:inst|AU1:inst|Register4x8:inst1|register:inst|RFC:inst15
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|BaiTap|Datapath:inst|AU1:inst|Register4x8:inst1|register:inst|RFC:inst4
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|BaiTap|Datapath:inst|AU1:inst|Register4x8:inst1|register:inst|RFC:inst16
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|BaiTap|Datapath:inst|AU1:inst|Register4x8:inst1|register:inst|RFC:inst12
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|BaiTap|Datapath:inst|AU1:inst|Register4x8:inst1|register:inst|RFC:inst8
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|BaiTap|Datapath:inst|AU1:inst|Register4x8:inst1|register:inst|RFC:inst5
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|BaiTap|Datapath:inst|AU1:inst|Register4x8:inst1|register:inst|RFC:inst9
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|BaiTap|Datapath:inst|AU1:inst|Register4x8:inst1|register:inst|RFC:inst13
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|BaiTap|Datapath:inst|AU1:inst|Register4x8:inst1|register:inst|RFC:inst17
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|BaiTap|Datapath:inst|AU1:inst|Register4x8:inst1|register:inst|RFC:inst6
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|BaiTap|Datapath:inst|AU1:inst|Register4x8:inst1|register:inst|RFC:inst10
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|BaiTap|Datapath:inst|AU1:inst|Register4x8:inst1|register:inst|RFC:inst14
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|BaiTap|Datapath:inst|AU1:inst|Register4x8:inst1|register:inst|RFC:inst18
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|BaiTap|Datapath:inst|AU1:inst|Register4x8:inst1|register:inst1
+A[0] <= A~3.DB_MAX_OUTPUT_PORT_TYPE
+A[1] <= A~2.DB_MAX_OUTPUT_PORT_TYPE
+A[2] <= A~1.DB_MAX_OUTPUT_PORT_TYPE
+A[3] <= A~0.DB_MAX_OUTPUT_PORT_TYPE
+RAA[0] => Decoder2_4:inst.A0
+RAA[1] => Decoder2_4:inst.A1
+REA => Decoder2_4:inst.E
+RAB[0] => Decoder2_4:inst19.A0
+RAB[1] => Decoder2_4:inst19.A1
+REB => Decoder2_4:inst19.E
+WA[0] => Decoder2_4:inst20.A0
+WA[1] => Decoder2_4:inst20.A1
+WE => Decoder2_4:inst20.E
+I[0] => RFC:inst6.input
+I[0] => RFC:inst10.input
+I[0] => RFC:inst14.input
+I[0] => RFC:inst18.input
+I[1] => RFC:inst5.input
+I[1] => RFC:inst9.input
+I[1] => RFC:inst13.input
+I[1] => RFC:inst17.input
+I[2] => RFC:inst4.input
+I[2] => RFC:inst16.input
+I[2] => RFC:inst12.input
+I[2] => RFC:inst8.input
+I[3] => RFC:inst3.input
+I[3] => RFC:inst7.input
+I[3] => RFC:inst11.input
+I[3] => RFC:inst15.input
+CLK => RFC:inst3.CLK
+CLK => RFC:inst7.CLK
+CLK => RFC:inst11.CLK
+CLK => RFC:inst15.CLK
+CLK => RFC:inst4.CLK
+CLK => RFC:inst16.CLK
+CLK => RFC:inst12.CLK
+CLK => RFC:inst8.CLK
+CLK => RFC:inst5.CLK
+CLK => RFC:inst9.CLK
+CLK => RFC:inst13.CLK
+CLK => RFC:inst17.CLK
+CLK => RFC:inst6.CLK
+CLK => RFC:inst10.CLK
+CLK => RFC:inst14.CLK
+CLK => RFC:inst18.CLK
+B[0] <= B~0.DB_MAX_OUTPUT_PORT_TYPE
+B[1] <= B~1.DB_MAX_OUTPUT_PORT_TYPE
+B[2] <= B~2.DB_MAX_OUTPUT_PORT_TYPE
+B[3] <= B~3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BaiTap|Datapath:inst|AU1:inst|Register4x8:inst1|register:inst1|RFC:inst3
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|BaiTap|Datapath:inst|AU1:inst|Register4x8:inst1|register:inst1|Decoder2_4:inst
+Q3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A1 => inst.IN0
+A1 => inst1.IN0
+A1 => inst4.IN0
+A0 => inst.IN1
+A0 => inst5.IN0
+A0 => inst2.IN1
+E => inst.IN2
+E => inst1.IN2
+E => inst2.IN2
+E => inst3.IN2
+Q2 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Q1 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Q0 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BaiTap|Datapath:inst|AU1:inst|Register4x8:inst1|register:inst1|Decoder2_4:inst19
+Q3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A1 => inst.IN0
+A1 => inst1.IN0
+A1 => inst4.IN0
+A0 => inst.IN1
+A0 => inst5.IN0
+A0 => inst2.IN1
+E => inst.IN2
+E => inst1.IN2
+E => inst2.IN2
+E => inst3.IN2
+Q2 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Q1 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Q0 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BaiTap|Datapath:inst|AU1:inst|Register4x8:inst1|register:inst1|Decoder2_4:inst20
+Q3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A1 => inst.IN0
+A1 => inst1.IN0
+A1 => inst4.IN0
+A0 => inst.IN1
+A0 => inst5.IN0
+A0 => inst2.IN1
+E => inst.IN2
+E => inst1.IN2
+E => inst2.IN2
+E => inst3.IN2
+Q2 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Q1 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Q0 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BaiTap|Datapath:inst|AU1:inst|Register4x8:inst1|register:inst1|RFC:inst7
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|BaiTap|Datapath:inst|AU1:inst|Register4x8:inst1|register:inst1|RFC:inst11
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|BaiTap|Datapath:inst|AU1:inst|Register4x8:inst1|register:inst1|RFC:inst15
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|BaiTap|Datapath:inst|AU1:inst|Register4x8:inst1|register:inst1|RFC:inst4
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|BaiTap|Datapath:inst|AU1:inst|Register4x8:inst1|register:inst1|RFC:inst16
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|BaiTap|Datapath:inst|AU1:inst|Register4x8:inst1|register:inst1|RFC:inst12
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|BaiTap|Datapath:inst|AU1:inst|Register4x8:inst1|register:inst1|RFC:inst8
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|BaiTap|Datapath:inst|AU1:inst|Register4x8:inst1|register:inst1|RFC:inst5
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|BaiTap|Datapath:inst|AU1:inst|Register4x8:inst1|register:inst1|RFC:inst9
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|BaiTap|Datapath:inst|AU1:inst|Register4x8:inst1|register:inst1|RFC:inst13
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|BaiTap|Datapath:inst|AU1:inst|Register4x8:inst1|register:inst1|RFC:inst17
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|BaiTap|Datapath:inst|AU1:inst|Register4x8:inst1|register:inst1|RFC:inst6
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|BaiTap|Datapath:inst|AU1:inst|Register4x8:inst1|register:inst1|RFC:inst10
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|BaiTap|Datapath:inst|AU1:inst|Register4x8:inst1|register:inst1|RFC:inst14
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|BaiTap|Datapath:inst|AU1:inst|Register4x8:inst1|register:inst1|RFC:inst18
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|BaiTap|Datapath:inst|AU1:inst|BUSMUX:inst8
+dataa[0] => lpm_mux:$00000.data[0][0]
+dataa[1] => lpm_mux:$00000.data[0][1]
+dataa[2] => lpm_mux:$00000.data[0][2]
+dataa[3] => lpm_mux:$00000.data[0][3]
+dataa[4] => lpm_mux:$00000.data[0][4]
+dataa[5] => lpm_mux:$00000.data[0][5]
+dataa[6] => lpm_mux:$00000.data[0][6]
+dataa[7] => lpm_mux:$00000.data[0][7]
+datab[0] => lpm_mux:$00000.data[1][0]
+datab[1] => lpm_mux:$00000.data[1][1]
+datab[2] => lpm_mux:$00000.data[1][2]
+datab[3] => lpm_mux:$00000.data[1][3]
+datab[4] => lpm_mux:$00000.data[1][4]
+datab[5] => lpm_mux:$00000.data[1][5]
+datab[6] => lpm_mux:$00000.data[1][6]
+datab[7] => lpm_mux:$00000.data[1][7]
+sel => lpm_mux:$00000.sel[0]
+result[0] <= lpm_mux:$00000.result[0]
+result[1] <= lpm_mux:$00000.result[1]
+result[2] <= lpm_mux:$00000.result[2]
+result[3] <= lpm_mux:$00000.result[3]
+result[4] <= lpm_mux:$00000.result[4]
+result[5] <= lpm_mux:$00000.result[5]
+result[6] <= lpm_mux:$00000.result[6]
+result[7] <= lpm_mux:$00000.result[7]
+
+
+|BaiTap|Datapath:inst|AU1:inst|BUSMUX:inst8|lpm_mux:$00000
+data[0][0] => mux_smc:auto_generated.data[0]
+data[0][1] => mux_smc:auto_generated.data[1]
+data[0][2] => mux_smc:auto_generated.data[2]
+data[0][3] => mux_smc:auto_generated.data[3]
+data[0][4] => mux_smc:auto_generated.data[4]
+data[0][5] => mux_smc:auto_generated.data[5]
+data[0][6] => mux_smc:auto_generated.data[6]
+data[0][7] => mux_smc:auto_generated.data[7]
+data[1][0] => mux_smc:auto_generated.data[8]
+data[1][1] => mux_smc:auto_generated.data[9]
+data[1][2] => mux_smc:auto_generated.data[10]
+data[1][3] => mux_smc:auto_generated.data[11]
+data[1][4] => mux_smc:auto_generated.data[12]
+data[1][5] => mux_smc:auto_generated.data[13]
+data[1][6] => mux_smc:auto_generated.data[14]
+data[1][7] => mux_smc:auto_generated.data[15]
+sel[0] => mux_smc:auto_generated.sel[0]
+clock => ~NO_FANOUT~
+aclr => ~NO_FANOUT~
+clken => ~NO_FANOUT~
+result[0] <= mux_smc:auto_generated.result[0]
+result[1] <= mux_smc:auto_generated.result[1]
+result[2] <= mux_smc:auto_generated.result[2]
+result[3] <= mux_smc:auto_generated.result[3]
+result[4] <= mux_smc:auto_generated.result[4]
+result[5] <= mux_smc:auto_generated.result[5]
+result[6] <= mux_smc:auto_generated.result[6]
+result[7] <= mux_smc:auto_generated.result[7]
+
+
+|BaiTap|Datapath:inst|AU1:inst|BUSMUX:inst8|lpm_mux:$00000|mux_smc:auto_generated
+data[0] => result_node[0]~15.IN1
+data[1] => result_node[1]~13.IN1
+data[2] => result_node[2]~11.IN1
+data[3] => result_node[3]~9.IN1
+data[4] => result_node[4]~7.IN1
+data[5] => result_node[5]~5.IN1
+data[6] => result_node[6]~3.IN1
+data[7] => result_node[7]~1.IN1
+data[8] => result_node[0]~14.IN1
+data[9] => result_node[1]~12.IN1
+data[10] => result_node[2]~10.IN1
+data[11] => result_node[3]~8.IN1
+data[12] => result_node[4]~6.IN1
+data[13] => result_node[5]~4.IN1
+data[14] => result_node[6]~2.IN1
+data[15] => result_node[7]~0.IN1
+result[0] <= result_node[0].DB_MAX_OUTPUT_PORT_TYPE
+result[1] <= result_node[1].DB_MAX_OUTPUT_PORT_TYPE
+result[2] <= result_node[2].DB_MAX_OUTPUT_PORT_TYPE
+result[3] <= result_node[3].DB_MAX_OUTPUT_PORT_TYPE
+result[4] <= result_node[4].DB_MAX_OUTPUT_PORT_TYPE
+result[5] <= result_node[5].DB_MAX_OUTPUT_PORT_TYPE
+result[6] <= result_node[6].DB_MAX_OUTPUT_PORT_TYPE
+result[7] <= result_node[7].DB_MAX_OUTPUT_PORT_TYPE
+sel[0] => result_node[7]~0.IN0
+sel[0] => _~0.IN0
+sel[0] => result_node[6]~2.IN0
+sel[0] => _~1.IN0
+sel[0] => result_node[5]~4.IN0
+sel[0] => _~2.IN0
+sel[0] => result_node[4]~6.IN0
+sel[0] => _~3.IN0
+sel[0] => result_node[3]~8.IN0
+sel[0] => _~4.IN0
+sel[0] => result_node[2]~10.IN0
+sel[0] => _~5.IN0
+sel[0] => result_node[1]~12.IN0
+sel[0] => _~6.IN0
+sel[0] => result_node[0]~14.IN0
+sel[0] => _~7.IN0
+
+
+|BaiTap|Datapath:inst|AU1:inst|Sum8Bit:inst
+Cnext <= Cnext7.DB_MAX_OUTPUT_PORT_TYPE
+A[0] => Sum:inst6.A
+A[1] => Sum:inst7.A
+A[2] => Sum:inst3.A
+A[3] => Sum:inst5.A
+A[4] => Sum:inst4.A
+A[5] => Sum:inst2.A
+A[6] => Sum:inst1.A
+A[7] => Sum:inst.A
+B[0] => Sum:inst6.B
+B[1] => Sum:inst7.B
+B[2] => Sum:inst3.B
+B[3] => Sum:inst5.B
+B[4] => Sum:inst4.B
+B[5] => Sum:inst2.B
+B[6] => Sum:inst1.B
+B[7] => Sum:inst.B
+C => Sum:inst6.C
+Y[0] <= Sum:inst6.Y
+Y[1] <= Sum:inst7.Y
+Y[2] <= Sum:inst3.Y
+Y[3] <= Sum:inst5.Y
+Y[4] <= Sum:inst4.Y
+Y[5] <= Sum:inst2.Y
+Y[6] <= Sum:inst1.Y
+Y[7] <= Sum:inst.Y
+
+
+|BaiTap|Datapath:inst|AU1:inst|Sum8Bit:inst|Sum:inst
+Y <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst5.IN1
+A => inst3.IN0
+B => inst.IN1
+B => inst4.IN0
+B => inst3.IN1
+C => inst1.IN1
+C => inst4.IN1
+C => inst5.IN0
+Cnext <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BaiTap|Datapath:inst|AU1:inst|Sum8Bit:inst|Sum:inst1
+Y <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst5.IN1
+A => inst3.IN0
+B => inst.IN1
+B => inst4.IN0
+B => inst3.IN1
+C => inst1.IN1
+C => inst4.IN1
+C => inst5.IN0
+Cnext <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BaiTap|Datapath:inst|AU1:inst|Sum8Bit:inst|Sum:inst2
+Y <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst5.IN1
+A => inst3.IN0
+B => inst.IN1
+B => inst4.IN0
+B => inst3.IN1
+C => inst1.IN1
+C => inst4.IN1
+C => inst5.IN0
+Cnext <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BaiTap|Datapath:inst|AU1:inst|Sum8Bit:inst|Sum:inst4
+Y <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst5.IN1
+A => inst3.IN0
+B => inst.IN1
+B => inst4.IN0
+B => inst3.IN1
+C => inst1.IN1
+C => inst4.IN1
+C => inst5.IN0
+Cnext <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BaiTap|Datapath:inst|AU1:inst|Sum8Bit:inst|Sum:inst5
+Y <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst5.IN1
+A => inst3.IN0
+B => inst.IN1
+B => inst4.IN0
+B => inst3.IN1
+C => inst1.IN1
+C => inst4.IN1
+C => inst5.IN0
+Cnext <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BaiTap|Datapath:inst|AU1:inst|Sum8Bit:inst|Sum:inst3
+Y <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst5.IN1
+A => inst3.IN0
+B => inst.IN1
+B => inst4.IN0
+B => inst3.IN1
+C => inst1.IN1
+C => inst4.IN1
+C => inst5.IN0
+Cnext <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BaiTap|Datapath:inst|AU1:inst|Sum8Bit:inst|Sum:inst7
+Y <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst5.IN1
+A => inst3.IN0
+B => inst.IN1
+B => inst4.IN0
+B => inst3.IN1
+C => inst1.IN1
+C => inst4.IN1
+C => inst5.IN0
+Cnext <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BaiTap|Datapath:inst|AU1:inst|Sum8Bit:inst|Sum:inst6
+Y <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst5.IN1
+A => inst3.IN0
+B => inst.IN1
+B => inst4.IN0
+B => inst3.IN1
+C => inst1.IN1
+C => inst4.IN1
+C => inst5.IN0
+Cnext <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BaiTap|Datapath:inst|AU1:inst|BUSMUX:inst7
+dataa[0] => lpm_mux:$00000.data[0][0]
+dataa[1] => lpm_mux:$00000.data[0][1]
+dataa[2] => lpm_mux:$00000.data[0][2]
+dataa[3] => lpm_mux:$00000.data[0][3]
+dataa[4] => lpm_mux:$00000.data[0][4]
+dataa[5] => lpm_mux:$00000.data[0][5]
+dataa[6] => lpm_mux:$00000.data[0][6]
+dataa[7] => lpm_mux:$00000.data[0][7]
+datab[0] => lpm_mux:$00000.data[1][0]
+datab[1] => lpm_mux:$00000.data[1][1]
+datab[2] => lpm_mux:$00000.data[1][2]
+datab[3] => lpm_mux:$00000.data[1][3]
+datab[4] => lpm_mux:$00000.data[1][4]
+datab[5] => lpm_mux:$00000.data[1][5]
+datab[6] => lpm_mux:$00000.data[1][6]
+datab[7] => lpm_mux:$00000.data[1][7]
+sel => lpm_mux:$00000.sel[0]
+result[0] <= lpm_mux:$00000.result[0]
+result[1] <= lpm_mux:$00000.result[1]
+result[2] <= lpm_mux:$00000.result[2]
+result[3] <= lpm_mux:$00000.result[3]
+result[4] <= lpm_mux:$00000.result[4]
+result[5] <= lpm_mux:$00000.result[5]
+result[6] <= lpm_mux:$00000.result[6]
+result[7] <= lpm_mux:$00000.result[7]
+
+
+|BaiTap|Datapath:inst|AU1:inst|BUSMUX:inst7|lpm_mux:$00000
+data[0][0] => mux_smc:auto_generated.data[0]
+data[0][1] => mux_smc:auto_generated.data[1]
+data[0][2] => mux_smc:auto_generated.data[2]
+data[0][3] => mux_smc:auto_generated.data[3]
+data[0][4] => mux_smc:auto_generated.data[4]
+data[0][5] => mux_smc:auto_generated.data[5]
+data[0][6] => mux_smc:auto_generated.data[6]
+data[0][7] => mux_smc:auto_generated.data[7]
+data[1][0] => mux_smc:auto_generated.data[8]
+data[1][1] => mux_smc:auto_generated.data[9]
+data[1][2] => mux_smc:auto_generated.data[10]
+data[1][3] => mux_smc:auto_generated.data[11]
+data[1][4] => mux_smc:auto_generated.data[12]
+data[1][5] => mux_smc:auto_generated.data[13]
+data[1][6] => mux_smc:auto_generated.data[14]
+data[1][7] => mux_smc:auto_generated.data[15]
+sel[0] => mux_smc:auto_generated.sel[0]
+clock => ~NO_FANOUT~
+aclr => ~NO_FANOUT~
+clken => ~NO_FANOUT~
+result[0] <= mux_smc:auto_generated.result[0]
+result[1] <= mux_smc:auto_generated.result[1]
+result[2] <= mux_smc:auto_generated.result[2]
+result[3] <= mux_smc:auto_generated.result[3]
+result[4] <= mux_smc:auto_generated.result[4]
+result[5] <= mux_smc:auto_generated.result[5]
+result[6] <= mux_smc:auto_generated.result[6]
+result[7] <= mux_smc:auto_generated.result[7]
+
+
+|BaiTap|Datapath:inst|AU1:inst|BUSMUX:inst7|lpm_mux:$00000|mux_smc:auto_generated
+data[0] => result_node[0]~15.IN1
+data[1] => result_node[1]~13.IN1
+data[2] => result_node[2]~11.IN1
+data[3] => result_node[3]~9.IN1
+data[4] => result_node[4]~7.IN1
+data[5] => result_node[5]~5.IN1
+data[6] => result_node[6]~3.IN1
+data[7] => result_node[7]~1.IN1
+data[8] => result_node[0]~14.IN1
+data[9] => result_node[1]~12.IN1
+data[10] => result_node[2]~10.IN1
+data[11] => result_node[3]~8.IN1
+data[12] => result_node[4]~6.IN1
+data[13] => result_node[5]~4.IN1
+data[14] => result_node[6]~2.IN1
+data[15] => result_node[7]~0.IN1
+result[0] <= result_node[0].DB_MAX_OUTPUT_PORT_TYPE
+result[1] <= result_node[1].DB_MAX_OUTPUT_PORT_TYPE
+result[2] <= result_node[2].DB_MAX_OUTPUT_PORT_TYPE
+result[3] <= result_node[3].DB_MAX_OUTPUT_PORT_TYPE
+result[4] <= result_node[4].DB_MAX_OUTPUT_PORT_TYPE
+result[5] <= result_node[5].DB_MAX_OUTPUT_PORT_TYPE
+result[6] <= result_node[6].DB_MAX_OUTPUT_PORT_TYPE
+result[7] <= result_node[7].DB_MAX_OUTPUT_PORT_TYPE
+sel[0] => result_node[7]~0.IN0
+sel[0] => _~0.IN0
+sel[0] => result_node[6]~2.IN0
+sel[0] => _~1.IN0
+sel[0] => result_node[5]~4.IN0
+sel[0] => _~2.IN0
+sel[0] => result_node[4]~6.IN0
+sel[0] => _~3.IN0
+sel[0] => result_node[3]~8.IN0
+sel[0] => _~4.IN0
+sel[0] => result_node[2]~10.IN0
+sel[0] => _~5.IN0
+sel[0] => result_node[1]~12.IN0
+sel[0] => _~6.IN0
+sel[0] => result_node[0]~14.IN0
+sel[0] => _~7.IN0
+
+
+|BaiTap|Datapath:inst|Register2x8:inst23
+OA[0] <= OA~4.DB_MAX_OUTPUT_PORT_TYPE
+OA[1] <= OA~7.DB_MAX_OUTPUT_PORT_TYPE
+OA[2] <= OA~3.DB_MAX_OUTPUT_PORT_TYPE
+OA[3] <= OA~6.DB_MAX_OUTPUT_PORT_TYPE
+OA[4] <= OA~2.DB_MAX_OUTPUT_PORT_TYPE
+OA[5] <= OA~1.DB_MAX_OUTPUT_PORT_TYPE
+OA[6] <= OA~5.DB_MAX_OUTPUT_PORT_TYPE
+OA[7] <= OA~0.DB_MAX_OUTPUT_PORT_TYPE
+REA => Decoder1_2:inst.WE
+RAA => Decoder1_2:inst.ADR
+REB => Decoder1_2:inst2.WE
+RAB => Decoder1_2:inst2.ADR
+WE => Decoder1_2:inst1.WE
+WA => Decoder1_2:inst1.ADR
+I[0] => RFC:inst16.input
+I[0] => RFC:inst18.input
+I[1] => RFC:inst15.input
+I[1] => RFC:inst17.input
+I[2] => RFC:inst12.input
+I[2] => RFC:inst14.input
+I[3] => RFC:inst11.input
+I[3] => RFC:inst13.input
+I[4] => RFC:inst6.input
+I[4] => RFC:inst10.input
+I[5] => RFC:inst5.input
+I[5] => RFC:inst9.input
+I[6] => RFC:inst4.input
+I[6] => RFC:inst8.input
+I[7] => RFC:inst3.input
+I[7] => RFC:inst7.input
+CLK => RFC:inst3.CLK
+CLK => RFC:inst7.CLK
+CLK => RFC:inst5.CLK
+CLK => RFC:inst9.CLK
+CLK => RFC:inst6.CLK
+CLK => RFC:inst10.CLK
+CLK => RFC:inst12.CLK
+CLK => RFC:inst14.CLK
+CLK => RFC:inst16.CLK
+CLK => RFC:inst18.CLK
+CLK => RFC:inst4.CLK
+CLK => RFC:inst8.CLK
+CLK => RFC:inst11.CLK
+CLK => RFC:inst13.CLK
+CLK => RFC:inst15.CLK
+CLK => RFC:inst17.CLK
+OB[0] <= OB~7.DB_MAX_OUTPUT_PORT_TYPE
+OB[1] <= OB~6.DB_MAX_OUTPUT_PORT_TYPE
+OB[2] <= OB~5.DB_MAX_OUTPUT_PORT_TYPE
+OB[3] <= OB~4.DB_MAX_OUTPUT_PORT_TYPE
+OB[4] <= OB~3.DB_MAX_OUTPUT_PORT_TYPE
+OB[5] <= OB~2.DB_MAX_OUTPUT_PORT_TYPE
+OB[6] <= OB~1.DB_MAX_OUTPUT_PORT_TYPE
+OB[7] <= OB~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BaiTap|Datapath:inst|Register2x8:inst23|RFC:inst3
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|BaiTap|Datapath:inst|Register2x8:inst23|Decoder1_2:inst
+O1 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+WE => inst1.IN0
+WE => inst2.IN0
+ADR => inst1.IN1
+ADR => inst.IN0
+O0 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BaiTap|Datapath:inst|Register2x8:inst23|Decoder1_2:inst2
+O1 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+WE => inst1.IN0
+WE => inst2.IN0
+ADR => inst1.IN1
+ADR => inst.IN0
+O0 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BaiTap|Datapath:inst|Register2x8:inst23|Decoder1_2:inst1
+O1 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+WE => inst1.IN0
+WE => inst2.IN0
+ADR => inst1.IN1
+ADR => inst.IN0
+O0 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BaiTap|Datapath:inst|Register2x8:inst23|RFC:inst7
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|BaiTap|Datapath:inst|Register2x8:inst23|RFC:inst5
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|BaiTap|Datapath:inst|Register2x8:inst23|RFC:inst9
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|BaiTap|Datapath:inst|Register2x8:inst23|RFC:inst6
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|BaiTap|Datapath:inst|Register2x8:inst23|RFC:inst10
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|BaiTap|Datapath:inst|Register2x8:inst23|RFC:inst12
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|BaiTap|Datapath:inst|Register2x8:inst23|RFC:inst14
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|BaiTap|Datapath:inst|Register2x8:inst23|RFC:inst16
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|BaiTap|Datapath:inst|Register2x8:inst23|RFC:inst18
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|BaiTap|Datapath:inst|Register2x8:inst23|RFC:inst4
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|BaiTap|Datapath:inst|Register2x8:inst23|RFC:inst8
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|BaiTap|Datapath:inst|Register2x8:inst23|RFC:inst11
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|BaiTap|Datapath:inst|Register2x8:inst23|RFC:inst13
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|BaiTap|Datapath:inst|Register2x8:inst23|RFC:inst15
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|BaiTap|Datapath:inst|Register2x8:inst23|RFC:inst17
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|BaiTap|Datapath:inst|Register1x8:inst25
+OA[0] <= RFC:inst12.OutA
+OA[1] <= RFC:inst11.OutA
+OA[2] <= RFC:inst10.OutA
+OA[3] <= RFC:inst9.OutA
+OA[4] <= RFC:inst8.OutA
+OA[5] <= RFC:inst7.OutA
+OA[6] <= RFC:inst4.OutA
+OA[7] <= RFC:inst3.OutA
+RE => RFC:inst3.RSA
+RE => RFC:inst7.RSA
+RE => RFC:inst8.RSA
+RE => RFC:inst12.RSA
+RE => RFC:inst4.RSA
+RE => RFC:inst9.RSA
+RE => RFC:inst11.RSA
+RE => RFC:inst10.RSA
+WE => RFC:inst3.WS
+WE => RFC:inst7.WS
+WE => RFC:inst8.WS
+WE => RFC:inst12.WS
+WE => RFC:inst4.WS
+WE => RFC:inst9.WS
+WE => RFC:inst11.WS
+WE => RFC:inst10.WS
+I[0] => RFC:inst12.input
+I[1] => RFC:inst11.input
+I[2] => RFC:inst10.input
+I[3] => RFC:inst9.input
+I[4] => RFC:inst8.input
+I[5] => RFC:inst7.input
+I[6] => RFC:inst4.input
+I[7] => RFC:inst3.input
+CLK => RFC:inst3.CLK
+CLK => RFC:inst7.CLK
+CLK => RFC:inst8.CLK
+CLK => RFC:inst12.CLK
+CLK => RFC:inst4.CLK
+CLK => RFC:inst9.CLK
+CLK => RFC:inst11.CLK
+CLK => RFC:inst10.CLK
+
+
+|BaiTap|Datapath:inst|Register1x8:inst25|RFC:inst3
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|BaiTap|Datapath:inst|Register1x8:inst25|RFC:inst7
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|BaiTap|Datapath:inst|Register1x8:inst25|RFC:inst8
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|BaiTap|Datapath:inst|Register1x8:inst25|RFC:inst12
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|BaiTap|Datapath:inst|Register1x8:inst25|RFC:inst4
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|BaiTap|Datapath:inst|Register1x8:inst25|RFC:inst9
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|BaiTap|Datapath:inst|Register1x8:inst25|RFC:inst11
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|BaiTap|Datapath:inst|Register1x8:inst25|RFC:inst10
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|BaiTap|Datapath:inst|Register1x8:inst24
+OA[0] <= RFC:inst12.OutA
+OA[1] <= RFC:inst11.OutA
+OA[2] <= RFC:inst10.OutA
+OA[3] <= RFC:inst9.OutA
+OA[4] <= RFC:inst8.OutA
+OA[5] <= RFC:inst7.OutA
+OA[6] <= RFC:inst4.OutA
+OA[7] <= RFC:inst3.OutA
+RE => RFC:inst3.RSA
+RE => RFC:inst7.RSA
+RE => RFC:inst8.RSA
+RE => RFC:inst12.RSA
+RE => RFC:inst4.RSA
+RE => RFC:inst9.RSA
+RE => RFC:inst11.RSA
+RE => RFC:inst10.RSA
+WE => RFC:inst3.WS
+WE => RFC:inst7.WS
+WE => RFC:inst8.WS
+WE => RFC:inst12.WS
+WE => RFC:inst4.WS
+WE => RFC:inst9.WS
+WE => RFC:inst11.WS
+WE => RFC:inst10.WS
+I[0] => RFC:inst12.input
+I[1] => RFC:inst11.input
+I[2] => RFC:inst10.input
+I[3] => RFC:inst9.input
+I[4] => RFC:inst8.input
+I[5] => RFC:inst7.input
+I[6] => RFC:inst4.input
+I[7] => RFC:inst3.input
+CLK => RFC:inst3.CLK
+CLK => RFC:inst7.CLK
+CLK => RFC:inst8.CLK
+CLK => RFC:inst12.CLK
+CLK => RFC:inst4.CLK
+CLK => RFC:inst9.CLK
+CLK => RFC:inst11.CLK
+CLK => RFC:inst10.CLK
+
+
+|BaiTap|Datapath:inst|Register1x8:inst24|RFC:inst3
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|BaiTap|Datapath:inst|Register1x8:inst24|RFC:inst7
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|BaiTap|Datapath:inst|Register1x8:inst24|RFC:inst8
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|BaiTap|Datapath:inst|Register1x8:inst24|RFC:inst12
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|BaiTap|Datapath:inst|Register1x8:inst24|RFC:inst4
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|BaiTap|Datapath:inst|Register1x8:inst24|RFC:inst9
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|BaiTap|Datapath:inst|Register1x8:inst24|RFC:inst11
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|BaiTap|Datapath:inst|Register1x8:inst24|RFC:inst10
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|BaiTap|Datapath:inst|1BitRigthShift:inst4
+Y[0] <= A[1].DB_MAX_OUTPUT_PORT_TYPE
+Y[1] <= A[2].DB_MAX_OUTPUT_PORT_TYPE
+Y[2] <= A[3].DB_MAX_OUTPUT_PORT_TYPE
+Y[3] <= A[4].DB_MAX_OUTPUT_PORT_TYPE
+Y[4] <= A[5].DB_MAX_OUTPUT_PORT_TYPE
+Y[5] <= A[6].DB_MAX_OUTPUT_PORT_TYPE
+Y[6] <= A[7].DB_MAX_OUTPUT_PORT_TYPE
+Y[7] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+A[0] => ~NO_FANOUT~
+A[1] => Y[0].DATAIN
+A[2] => Y[1].DATAIN
+A[3] => Y[2].DATAIN
+A[4] => Y[3].DATAIN
+A[5] => Y[4].DATAIN
+A[6] => Y[5].DATAIN
+A[7] => Y[6].DATAIN
+
+
+|BaiTap|Datapath:inst|Register4x8:inst14
+Y[0] <= register:inst1.A[0]
+Y[1] <= register:inst1.A[1]
+Y[2] <= register:inst1.A[2]
+Y[3] <= register:inst1.A[3]
+Y[4] <= register:inst.A[0]
+Y[5] <= register:inst.A[1]
+Y[6] <= register:inst.A[2]
+Y[7] <= register:inst.A[3]
+WE => register:inst.WE
+WE => register:inst1.WE
+REA => register:inst.REA
+REA => register:inst1.REA
+CLk => register:inst.CLK
+CLk => register:inst1.CLK
+In[0] => register:inst1.I[0]
+In[1] => register:inst1.I[1]
+In[2] => register:inst1.I[2]
+In[3] => register:inst1.I[3]
+In[4] => register:inst.I[0]
+In[5] => register:inst.I[1]
+In[6] => register:inst.I[2]
+In[7] => register:inst.I[3]
+RAA[0] => register:inst.RAA[0]
+RAA[0] => register:inst1.RAA[0]
+RAA[1] => register:inst.RAA[1]
+RAA[1] => register:inst1.RAA[1]
+WA[0] => register:inst.WA[0]
+WA[0] => register:inst1.WA[0]
+WA[1] => register:inst.WA[1]
+WA[1] => register:inst1.WA[1]
+
+
+|BaiTap|Datapath:inst|Register4x8:inst14|register:inst
+A[0] <= A~3.DB_MAX_OUTPUT_PORT_TYPE
+A[1] <= A~2.DB_MAX_OUTPUT_PORT_TYPE
+A[2] <= A~1.DB_MAX_OUTPUT_PORT_TYPE
+A[3] <= A~0.DB_MAX_OUTPUT_PORT_TYPE
+RAA[0] => Decoder2_4:inst.A0
+RAA[1] => Decoder2_4:inst.A1
+REA => Decoder2_4:inst.E
+RAB[0] => Decoder2_4:inst19.A0
+RAB[1] => Decoder2_4:inst19.A1
+REB => Decoder2_4:inst19.E
+WA[0] => Decoder2_4:inst20.A0
+WA[1] => Decoder2_4:inst20.A1
+WE => Decoder2_4:inst20.E
+I[0] => RFC:inst6.input
+I[0] => RFC:inst10.input
+I[0] => RFC:inst14.input
+I[0] => RFC:inst18.input
+I[1] => RFC:inst5.input
+I[1] => RFC:inst9.input
+I[1] => RFC:inst13.input
+I[1] => RFC:inst17.input
+I[2] => RFC:inst4.input
+I[2] => RFC:inst16.input
+I[2] => RFC:inst12.input
+I[2] => RFC:inst8.input
+I[3] => RFC:inst3.input
+I[3] => RFC:inst7.input
+I[3] => RFC:inst11.input
+I[3] => RFC:inst15.input
+CLK => RFC:inst3.CLK
+CLK => RFC:inst7.CLK
+CLK => RFC:inst11.CLK
+CLK => RFC:inst15.CLK
+CLK => RFC:inst4.CLK
+CLK => RFC:inst16.CLK
+CLK => RFC:inst12.CLK
+CLK => RFC:inst8.CLK
+CLK => RFC:inst5.CLK
+CLK => RFC:inst9.CLK
+CLK => RFC:inst13.CLK
+CLK => RFC:inst17.CLK
+CLK => RFC:inst6.CLK
+CLK => RFC:inst10.CLK
+CLK => RFC:inst14.CLK
+CLK => RFC:inst18.CLK
+B[0] <= B~0.DB_MAX_OUTPUT_PORT_TYPE
+B[1] <= B~1.DB_MAX_OUTPUT_PORT_TYPE
+B[2] <= B~2.DB_MAX_OUTPUT_PORT_TYPE
+B[3] <= B~3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BaiTap|Datapath:inst|Register4x8:inst14|register:inst|RFC:inst3
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|BaiTap|Datapath:inst|Register4x8:inst14|register:inst|Decoder2_4:inst
+Q3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A1 => inst.IN0
+A1 => inst1.IN0
+A1 => inst4.IN0
+A0 => inst.IN1
+A0 => inst5.IN0
+A0 => inst2.IN1
+E => inst.IN2
+E => inst1.IN2
+E => inst2.IN2
+E => inst3.IN2
+Q2 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Q1 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Q0 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BaiTap|Datapath:inst|Register4x8:inst14|register:inst|Decoder2_4:inst19
+Q3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A1 => inst.IN0
+A1 => inst1.IN0
+A1 => inst4.IN0
+A0 => inst.IN1
+A0 => inst5.IN0
+A0 => inst2.IN1
+E => inst.IN2
+E => inst1.IN2
+E => inst2.IN2
+E => inst3.IN2
+Q2 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Q1 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Q0 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BaiTap|Datapath:inst|Register4x8:inst14|register:inst|Decoder2_4:inst20
+Q3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A1 => inst.IN0
+A1 => inst1.IN0
+A1 => inst4.IN0
+A0 => inst.IN1
+A0 => inst5.IN0
+A0 => inst2.IN1
+E => inst.IN2
+E => inst1.IN2
+E => inst2.IN2
+E => inst3.IN2
+Q2 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Q1 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Q0 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BaiTap|Datapath:inst|Register4x8:inst14|register:inst|RFC:inst7
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|BaiTap|Datapath:inst|Register4x8:inst14|register:inst|RFC:inst11
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|BaiTap|Datapath:inst|Register4x8:inst14|register:inst|RFC:inst15
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|BaiTap|Datapath:inst|Register4x8:inst14|register:inst|RFC:inst4
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|BaiTap|Datapath:inst|Register4x8:inst14|register:inst|RFC:inst16
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|BaiTap|Datapath:inst|Register4x8:inst14|register:inst|RFC:inst12
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|BaiTap|Datapath:inst|Register4x8:inst14|register:inst|RFC:inst8
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|BaiTap|Datapath:inst|Register4x8:inst14|register:inst|RFC:inst5
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|BaiTap|Datapath:inst|Register4x8:inst14|register:inst|RFC:inst9
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|BaiTap|Datapath:inst|Register4x8:inst14|register:inst|RFC:inst13
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|BaiTap|Datapath:inst|Register4x8:inst14|register:inst|RFC:inst17
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|BaiTap|Datapath:inst|Register4x8:inst14|register:inst|RFC:inst6
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|BaiTap|Datapath:inst|Register4x8:inst14|register:inst|RFC:inst10
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|BaiTap|Datapath:inst|Register4x8:inst14|register:inst|RFC:inst14
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|BaiTap|Datapath:inst|Register4x8:inst14|register:inst|RFC:inst18
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|BaiTap|Datapath:inst|Register4x8:inst14|register:inst1
+A[0] <= A~3.DB_MAX_OUTPUT_PORT_TYPE
+A[1] <= A~2.DB_MAX_OUTPUT_PORT_TYPE
+A[2] <= A~1.DB_MAX_OUTPUT_PORT_TYPE
+A[3] <= A~0.DB_MAX_OUTPUT_PORT_TYPE
+RAA[0] => Decoder2_4:inst.A0
+RAA[1] => Decoder2_4:inst.A1
+REA => Decoder2_4:inst.E
+RAB[0] => Decoder2_4:inst19.A0
+RAB[1] => Decoder2_4:inst19.A1
+REB => Decoder2_4:inst19.E
+WA[0] => Decoder2_4:inst20.A0
+WA[1] => Decoder2_4:inst20.A1
+WE => Decoder2_4:inst20.E
+I[0] => RFC:inst6.input
+I[0] => RFC:inst10.input
+I[0] => RFC:inst14.input
+I[0] => RFC:inst18.input
+I[1] => RFC:inst5.input
+I[1] => RFC:inst9.input
+I[1] => RFC:inst13.input
+I[1] => RFC:inst17.input
+I[2] => RFC:inst4.input
+I[2] => RFC:inst16.input
+I[2] => RFC:inst12.input
+I[2] => RFC:inst8.input
+I[3] => RFC:inst3.input
+I[3] => RFC:inst7.input
+I[3] => RFC:inst11.input
+I[3] => RFC:inst15.input
+CLK => RFC:inst3.CLK
+CLK => RFC:inst7.CLK
+CLK => RFC:inst11.CLK
+CLK => RFC:inst15.CLK
+CLK => RFC:inst4.CLK
+CLK => RFC:inst16.CLK
+CLK => RFC:inst12.CLK
+CLK => RFC:inst8.CLK
+CLK => RFC:inst5.CLK
+CLK => RFC:inst9.CLK
+CLK => RFC:inst13.CLK
+CLK => RFC:inst17.CLK
+CLK => RFC:inst6.CLK
+CLK => RFC:inst10.CLK
+CLK => RFC:inst14.CLK
+CLK => RFC:inst18.CLK
+B[0] <= B~0.DB_MAX_OUTPUT_PORT_TYPE
+B[1] <= B~1.DB_MAX_OUTPUT_PORT_TYPE
+B[2] <= B~2.DB_MAX_OUTPUT_PORT_TYPE
+B[3] <= B~3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BaiTap|Datapath:inst|Register4x8:inst14|register:inst1|RFC:inst3
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|BaiTap|Datapath:inst|Register4x8:inst14|register:inst1|Decoder2_4:inst
+Q3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A1 => inst.IN0
+A1 => inst1.IN0
+A1 => inst4.IN0
+A0 => inst.IN1
+A0 => inst5.IN0
+A0 => inst2.IN1
+E => inst.IN2
+E => inst1.IN2
+E => inst2.IN2
+E => inst3.IN2
+Q2 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Q1 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Q0 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BaiTap|Datapath:inst|Register4x8:inst14|register:inst1|Decoder2_4:inst19
+Q3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A1 => inst.IN0
+A1 => inst1.IN0
+A1 => inst4.IN0
+A0 => inst.IN1
+A0 => inst5.IN0
+A0 => inst2.IN1
+E => inst.IN2
+E => inst1.IN2
+E => inst2.IN2
+E => inst3.IN2
+Q2 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Q1 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Q0 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BaiTap|Datapath:inst|Register4x8:inst14|register:inst1|Decoder2_4:inst20
+Q3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A1 => inst.IN0
+A1 => inst1.IN0
+A1 => inst4.IN0
+A0 => inst.IN1
+A0 => inst5.IN0
+A0 => inst2.IN1
+E => inst.IN2
+E => inst1.IN2
+E => inst2.IN2
+E => inst3.IN2
+Q2 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Q1 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Q0 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BaiTap|Datapath:inst|Register4x8:inst14|register:inst1|RFC:inst7
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|BaiTap|Datapath:inst|Register4x8:inst14|register:inst1|RFC:inst11
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|BaiTap|Datapath:inst|Register4x8:inst14|register:inst1|RFC:inst15
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|BaiTap|Datapath:inst|Register4x8:inst14|register:inst1|RFC:inst4
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|BaiTap|Datapath:inst|Register4x8:inst14|register:inst1|RFC:inst16
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|BaiTap|Datapath:inst|Register4x8:inst14|register:inst1|RFC:inst12
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|BaiTap|Datapath:inst|Register4x8:inst14|register:inst1|RFC:inst8
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|BaiTap|Datapath:inst|Register4x8:inst14|register:inst1|RFC:inst5
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|BaiTap|Datapath:inst|Register4x8:inst14|register:inst1|RFC:inst9
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|BaiTap|Datapath:inst|Register4x8:inst14|register:inst1|RFC:inst13
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|BaiTap|Datapath:inst|Register4x8:inst14|register:inst1|RFC:inst17
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|BaiTap|Datapath:inst|Register4x8:inst14|register:inst1|RFC:inst6
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|BaiTap|Datapath:inst|Register4x8:inst14|register:inst1|RFC:inst10
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|BaiTap|Datapath:inst|Register4x8:inst14|register:inst1|RFC:inst14
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|BaiTap|Datapath:inst|Register4x8:inst14|register:inst1|RFC:inst18
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|BaiTap|Datapath:inst|3BitRigthShift:inst5
+Y[0] <= A[3].DB_MAX_OUTPUT_PORT_TYPE
+Y[1] <= A[4].DB_MAX_OUTPUT_PORT_TYPE
+Y[2] <= A[5].DB_MAX_OUTPUT_PORT_TYPE
+Y[3] <= A[6].DB_MAX_OUTPUT_PORT_TYPE
+Y[4] <= A[7].DB_MAX_OUTPUT_PORT_TYPE
+Y[5] <= inst1[0].DB_MAX_OUTPUT_PORT_TYPE
+Y[6] <= inst1[1].DB_MAX_OUTPUT_PORT_TYPE
+Y[7] <= inst1[2].DB_MAX_OUTPUT_PORT_TYPE
+A[0] => ~NO_FANOUT~
+A[1] => ~NO_FANOUT~
+A[2] => ~NO_FANOUT~
+A[3] => Y[0].DATAIN
+A[4] => Y[1].DATAIN
+A[5] => Y[2].DATAIN
+A[6] => Y[3].DATAIN
+A[7] => Y[4].DATAIN
+
+
+|BaiTap|Datapath:inst|AU2:inst1
+Y[0] <= Register4x8:inst4.Y[0]
+Y[1] <= Register4x8:inst4.Y[1]
+Y[2] <= Register4x8:inst4.Y[2]
+Y[3] <= Register4x8:inst4.Y[3]
+Y[4] <= Register4x8:inst4.Y[4]
+Y[5] <= Register4x8:inst4.Y[5]
+Y[6] <= Register4x8:inst4.Y[6]
+Y[7] <= Register4x8:inst4.Y[7]
+WE => Register4x8:inst4.WE
+CLK => Register4x8:inst4.CLk
+S[0] => Sum8Bit:inst.C
+S[0] => inst1[7].IN0
+S[0] => inst1[6].IN0
+S[0] => inst1[5].IN0
+S[0] => inst1[4].IN0
+S[0] => inst1[3].IN0
+S[0] => inst1[2].IN0
+S[0] => inst1[1].IN0
+S[0] => inst1[0].IN0
+S[1] => BUSMUX:inst2.sel
+A[0] => Sum8Bit:inst.A[0]
+A[0] => BUSMUX:inst3.dataa[0]
+A[1] => Sum8Bit:inst.A[1]
+A[1] => BUSMUX:inst3.dataa[1]
+A[2] => Sum8Bit:inst.A[2]
+A[2] => BUSMUX:inst3.dataa[2]
+A[3] => Sum8Bit:inst.A[3]
+A[3] => BUSMUX:inst3.dataa[3]
+A[4] => Sum8Bit:inst.A[4]
+A[4] => BUSMUX:inst3.dataa[4]
+A[5] => Sum8Bit:inst.A[5]
+A[5] => BUSMUX:inst3.dataa[5]
+A[6] => Sum8Bit:inst.A[6]
+A[6] => BUSMUX:inst3.dataa[6]
+A[7] => Sum8Bit:inst.A[7]
+A[7] => BUSMUX:inst3.dataa[7]
+B[0] => inst1[0].IN1
+B[0] => BUSMUX:inst3.datab[0]
+B[1] => inst1[1].IN1
+B[1] => BUSMUX:inst3.datab[1]
+B[2] => inst1[2].IN1
+B[2] => BUSMUX:inst3.datab[2]
+B[3] => inst1[3].IN1
+B[3] => BUSMUX:inst3.datab[3]
+B[4] => inst1[4].IN1
+B[4] => BUSMUX:inst3.datab[4]
+B[5] => inst1[5].IN1
+B[5] => BUSMUX:inst3.datab[5]
+B[6] => inst1[6].IN1
+B[6] => BUSMUX:inst3.datab[6]
+B[7] => inst1[7].IN1
+B[7] => BUSMUX:inst3.datab[7]
+RAA[0] => Register4x8:inst4.RAA[0]
+RAA[1] => Register4x8:inst4.RAA[1]
+WA[0] => Register4x8:inst4.WA[0]
+WA[1] => Register4x8:inst4.WA[1]
+
+
+|BaiTap|Datapath:inst|AU2:inst1|Register4x8:inst4
+Y[0] <= register:inst1.A[0]
+Y[1] <= register:inst1.A[1]
+Y[2] <= register:inst1.A[2]
+Y[3] <= register:inst1.A[3]
+Y[4] <= register:inst.A[0]
+Y[5] <= register:inst.A[1]
+Y[6] <= register:inst.A[2]
+Y[7] <= register:inst.A[3]
+WE => register:inst.WE
+WE => register:inst1.WE
+REA => register:inst.REA
+REA => register:inst1.REA
+CLk => register:inst.CLK
+CLk => register:inst1.CLK
+In[0] => register:inst1.I[0]
+In[1] => register:inst1.I[1]
+In[2] => register:inst1.I[2]
+In[3] => register:inst1.I[3]
+In[4] => register:inst.I[0]
+In[5] => register:inst.I[1]
+In[6] => register:inst.I[2]
+In[7] => register:inst.I[3]
+RAA[0] => register:inst.RAA[0]
+RAA[0] => register:inst1.RAA[0]
+RAA[1] => register:inst.RAA[1]
+RAA[1] => register:inst1.RAA[1]
+WA[0] => register:inst.WA[0]
+WA[0] => register:inst1.WA[0]
+WA[1] => register:inst.WA[1]
+WA[1] => register:inst1.WA[1]
+
+
+|BaiTap|Datapath:inst|AU2:inst1|Register4x8:inst4|register:inst
+A[0] <= A~3.DB_MAX_OUTPUT_PORT_TYPE
+A[1] <= A~2.DB_MAX_OUTPUT_PORT_TYPE
+A[2] <= A~1.DB_MAX_OUTPUT_PORT_TYPE
+A[3] <= A~0.DB_MAX_OUTPUT_PORT_TYPE
+RAA[0] => Decoder2_4:inst.A0
+RAA[1] => Decoder2_4:inst.A1
+REA => Decoder2_4:inst.E
+RAB[0] => Decoder2_4:inst19.A0
+RAB[1] => Decoder2_4:inst19.A1
+REB => Decoder2_4:inst19.E
+WA[0] => Decoder2_4:inst20.A0
+WA[1] => Decoder2_4:inst20.A1
+WE => Decoder2_4:inst20.E
+I[0] => RFC:inst6.input
+I[0] => RFC:inst10.input
+I[0] => RFC:inst14.input
+I[0] => RFC:inst18.input
+I[1] => RFC:inst5.input
+I[1] => RFC:inst9.input
+I[1] => RFC:inst13.input
+I[1] => RFC:inst17.input
+I[2] => RFC:inst4.input
+I[2] => RFC:inst16.input
+I[2] => RFC:inst12.input
+I[2] => RFC:inst8.input
+I[3] => RFC:inst3.input
+I[3] => RFC:inst7.input
+I[3] => RFC:inst11.input
+I[3] => RFC:inst15.input
+CLK => RFC:inst3.CLK
+CLK => RFC:inst7.CLK
+CLK => RFC:inst11.CLK
+CLK => RFC:inst15.CLK
+CLK => RFC:inst4.CLK
+CLK => RFC:inst16.CLK
+CLK => RFC:inst12.CLK
+CLK => RFC:inst8.CLK
+CLK => RFC:inst5.CLK
+CLK => RFC:inst9.CLK
+CLK => RFC:inst13.CLK
+CLK => RFC:inst17.CLK
+CLK => RFC:inst6.CLK
+CLK => RFC:inst10.CLK
+CLK => RFC:inst14.CLK
+CLK => RFC:inst18.CLK
+B[0] <= B~0.DB_MAX_OUTPUT_PORT_TYPE
+B[1] <= B~1.DB_MAX_OUTPUT_PORT_TYPE
+B[2] <= B~2.DB_MAX_OUTPUT_PORT_TYPE
+B[3] <= B~3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BaiTap|Datapath:inst|AU2:inst1|Register4x8:inst4|register:inst|RFC:inst3
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|BaiTap|Datapath:inst|AU2:inst1|Register4x8:inst4|register:inst|Decoder2_4:inst
+Q3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A1 => inst.IN0
+A1 => inst1.IN0
+A1 => inst4.IN0
+A0 => inst.IN1
+A0 => inst5.IN0
+A0 => inst2.IN1
+E => inst.IN2
+E => inst1.IN2
+E => inst2.IN2
+E => inst3.IN2
+Q2 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Q1 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Q0 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BaiTap|Datapath:inst|AU2:inst1|Register4x8:inst4|register:inst|Decoder2_4:inst19
+Q3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A1 => inst.IN0
+A1 => inst1.IN0
+A1 => inst4.IN0
+A0 => inst.IN1
+A0 => inst5.IN0
+A0 => inst2.IN1
+E => inst.IN2
+E => inst1.IN2
+E => inst2.IN2
+E => inst3.IN2
+Q2 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Q1 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Q0 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BaiTap|Datapath:inst|AU2:inst1|Register4x8:inst4|register:inst|Decoder2_4:inst20
+Q3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A1 => inst.IN0
+A1 => inst1.IN0
+A1 => inst4.IN0
+A0 => inst.IN1
+A0 => inst5.IN0
+A0 => inst2.IN1
+E => inst.IN2
+E => inst1.IN2
+E => inst2.IN2
+E => inst3.IN2
+Q2 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Q1 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Q0 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BaiTap|Datapath:inst|AU2:inst1|Register4x8:inst4|register:inst|RFC:inst7
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|BaiTap|Datapath:inst|AU2:inst1|Register4x8:inst4|register:inst|RFC:inst11
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|BaiTap|Datapath:inst|AU2:inst1|Register4x8:inst4|register:inst|RFC:inst15
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|BaiTap|Datapath:inst|AU2:inst1|Register4x8:inst4|register:inst|RFC:inst4
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|BaiTap|Datapath:inst|AU2:inst1|Register4x8:inst4|register:inst|RFC:inst16
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|BaiTap|Datapath:inst|AU2:inst1|Register4x8:inst4|register:inst|RFC:inst12
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|BaiTap|Datapath:inst|AU2:inst1|Register4x8:inst4|register:inst|RFC:inst8
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|BaiTap|Datapath:inst|AU2:inst1|Register4x8:inst4|register:inst|RFC:inst5
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|BaiTap|Datapath:inst|AU2:inst1|Register4x8:inst4|register:inst|RFC:inst9
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|BaiTap|Datapath:inst|AU2:inst1|Register4x8:inst4|register:inst|RFC:inst13
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|BaiTap|Datapath:inst|AU2:inst1|Register4x8:inst4|register:inst|RFC:inst17
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|BaiTap|Datapath:inst|AU2:inst1|Register4x8:inst4|register:inst|RFC:inst6
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|BaiTap|Datapath:inst|AU2:inst1|Register4x8:inst4|register:inst|RFC:inst10
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|BaiTap|Datapath:inst|AU2:inst1|Register4x8:inst4|register:inst|RFC:inst14
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|BaiTap|Datapath:inst|AU2:inst1|Register4x8:inst4|register:inst|RFC:inst18
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|BaiTap|Datapath:inst|AU2:inst1|Register4x8:inst4|register:inst1
+A[0] <= A~3.DB_MAX_OUTPUT_PORT_TYPE
+A[1] <= A~2.DB_MAX_OUTPUT_PORT_TYPE
+A[2] <= A~1.DB_MAX_OUTPUT_PORT_TYPE
+A[3] <= A~0.DB_MAX_OUTPUT_PORT_TYPE
+RAA[0] => Decoder2_4:inst.A0
+RAA[1] => Decoder2_4:inst.A1
+REA => Decoder2_4:inst.E
+RAB[0] => Decoder2_4:inst19.A0
+RAB[1] => Decoder2_4:inst19.A1
+REB => Decoder2_4:inst19.E
+WA[0] => Decoder2_4:inst20.A0
+WA[1] => Decoder2_4:inst20.A1
+WE => Decoder2_4:inst20.E
+I[0] => RFC:inst6.input
+I[0] => RFC:inst10.input
+I[0] => RFC:inst14.input
+I[0] => RFC:inst18.input
+I[1] => RFC:inst5.input
+I[1] => RFC:inst9.input
+I[1] => RFC:inst13.input
+I[1] => RFC:inst17.input
+I[2] => RFC:inst4.input
+I[2] => RFC:inst16.input
+I[2] => RFC:inst12.input
+I[2] => RFC:inst8.input
+I[3] => RFC:inst3.input
+I[3] => RFC:inst7.input
+I[3] => RFC:inst11.input
+I[3] => RFC:inst15.input
+CLK => RFC:inst3.CLK
+CLK => RFC:inst7.CLK
+CLK => RFC:inst11.CLK
+CLK => RFC:inst15.CLK
+CLK => RFC:inst4.CLK
+CLK => RFC:inst16.CLK
+CLK => RFC:inst12.CLK
+CLK => RFC:inst8.CLK
+CLK => RFC:inst5.CLK
+CLK => RFC:inst9.CLK
+CLK => RFC:inst13.CLK
+CLK => RFC:inst17.CLK
+CLK => RFC:inst6.CLK
+CLK => RFC:inst10.CLK
+CLK => RFC:inst14.CLK
+CLK => RFC:inst18.CLK
+B[0] <= B~0.DB_MAX_OUTPUT_PORT_TYPE
+B[1] <= B~1.DB_MAX_OUTPUT_PORT_TYPE
+B[2] <= B~2.DB_MAX_OUTPUT_PORT_TYPE
+B[3] <= B~3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BaiTap|Datapath:inst|AU2:inst1|Register4x8:inst4|register:inst1|RFC:inst3
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|BaiTap|Datapath:inst|AU2:inst1|Register4x8:inst4|register:inst1|Decoder2_4:inst
+Q3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A1 => inst.IN0
+A1 => inst1.IN0
+A1 => inst4.IN0
+A0 => inst.IN1
+A0 => inst5.IN0
+A0 => inst2.IN1
+E => inst.IN2
+E => inst1.IN2
+E => inst2.IN2
+E => inst3.IN2
+Q2 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Q1 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Q0 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BaiTap|Datapath:inst|AU2:inst1|Register4x8:inst4|register:inst1|Decoder2_4:inst19
+Q3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A1 => inst.IN0
+A1 => inst1.IN0
+A1 => inst4.IN0
+A0 => inst.IN1
+A0 => inst5.IN0
+A0 => inst2.IN1
+E => inst.IN2
+E => inst1.IN2
+E => inst2.IN2
+E => inst3.IN2
+Q2 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Q1 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Q0 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BaiTap|Datapath:inst|AU2:inst1|Register4x8:inst4|register:inst1|Decoder2_4:inst20
+Q3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A1 => inst.IN0
+A1 => inst1.IN0
+A1 => inst4.IN0
+A0 => inst.IN1
+A0 => inst5.IN0
+A0 => inst2.IN1
+E => inst.IN2
+E => inst1.IN2
+E => inst2.IN2
+E => inst3.IN2
+Q2 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Q1 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Q0 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BaiTap|Datapath:inst|AU2:inst1|Register4x8:inst4|register:inst1|RFC:inst7
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|BaiTap|Datapath:inst|AU2:inst1|Register4x8:inst4|register:inst1|RFC:inst11
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|BaiTap|Datapath:inst|AU2:inst1|Register4x8:inst4|register:inst1|RFC:inst15
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|BaiTap|Datapath:inst|AU2:inst1|Register4x8:inst4|register:inst1|RFC:inst4
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|BaiTap|Datapath:inst|AU2:inst1|Register4x8:inst4|register:inst1|RFC:inst16
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|BaiTap|Datapath:inst|AU2:inst1|Register4x8:inst4|register:inst1|RFC:inst12
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|BaiTap|Datapath:inst|AU2:inst1|Register4x8:inst4|register:inst1|RFC:inst8
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|BaiTap|Datapath:inst|AU2:inst1|Register4x8:inst4|register:inst1|RFC:inst5
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|BaiTap|Datapath:inst|AU2:inst1|Register4x8:inst4|register:inst1|RFC:inst9
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|BaiTap|Datapath:inst|AU2:inst1|Register4x8:inst4|register:inst1|RFC:inst13
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|BaiTap|Datapath:inst|AU2:inst1|Register4x8:inst4|register:inst1|RFC:inst17
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|BaiTap|Datapath:inst|AU2:inst1|Register4x8:inst4|register:inst1|RFC:inst6
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|BaiTap|Datapath:inst|AU2:inst1|Register4x8:inst4|register:inst1|RFC:inst10
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|BaiTap|Datapath:inst|AU2:inst1|Register4x8:inst4|register:inst1|RFC:inst14
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|BaiTap|Datapath:inst|AU2:inst1|Register4x8:inst4|register:inst1|RFC:inst18
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|BaiTap|Datapath:inst|AU2:inst1|BUSMUX:inst2
+dataa[0] => lpm_mux:$00000.data[0][0]
+dataa[1] => lpm_mux:$00000.data[0][1]
+dataa[2] => lpm_mux:$00000.data[0][2]
+dataa[3] => lpm_mux:$00000.data[0][3]
+dataa[4] => lpm_mux:$00000.data[0][4]
+dataa[5] => lpm_mux:$00000.data[0][5]
+dataa[6] => lpm_mux:$00000.data[0][6]
+dataa[7] => lpm_mux:$00000.data[0][7]
+datab[0] => lpm_mux:$00000.data[1][0]
+datab[1] => lpm_mux:$00000.data[1][1]
+datab[2] => lpm_mux:$00000.data[1][2]
+datab[3] => lpm_mux:$00000.data[1][3]
+datab[4] => lpm_mux:$00000.data[1][4]
+datab[5] => lpm_mux:$00000.data[1][5]
+datab[6] => lpm_mux:$00000.data[1][6]
+datab[7] => lpm_mux:$00000.data[1][7]
+sel => lpm_mux:$00000.sel[0]
+result[0] <= lpm_mux:$00000.result[0]
+result[1] <= lpm_mux:$00000.result[1]
+result[2] <= lpm_mux:$00000.result[2]
+result[3] <= lpm_mux:$00000.result[3]
+result[4] <= lpm_mux:$00000.result[4]
+result[5] <= lpm_mux:$00000.result[5]
+result[6] <= lpm_mux:$00000.result[6]
+result[7] <= lpm_mux:$00000.result[7]
+
+
+|BaiTap|Datapath:inst|AU2:inst1|BUSMUX:inst2|lpm_mux:$00000
+data[0][0] => mux_smc:auto_generated.data[0]
+data[0][1] => mux_smc:auto_generated.data[1]
+data[0][2] => mux_smc:auto_generated.data[2]
+data[0][3] => mux_smc:auto_generated.data[3]
+data[0][4] => mux_smc:auto_generated.data[4]
+data[0][5] => mux_smc:auto_generated.data[5]
+data[0][6] => mux_smc:auto_generated.data[6]
+data[0][7] => mux_smc:auto_generated.data[7]
+data[1][0] => mux_smc:auto_generated.data[8]
+data[1][1] => mux_smc:auto_generated.data[9]
+data[1][2] => mux_smc:auto_generated.data[10]
+data[1][3] => mux_smc:auto_generated.data[11]
+data[1][4] => mux_smc:auto_generated.data[12]
+data[1][5] => mux_smc:auto_generated.data[13]
+data[1][6] => mux_smc:auto_generated.data[14]
+data[1][7] => mux_smc:auto_generated.data[15]
+sel[0] => mux_smc:auto_generated.sel[0]
+clock => ~NO_FANOUT~
+aclr => ~NO_FANOUT~
+clken => ~NO_FANOUT~
+result[0] <= mux_smc:auto_generated.result[0]
+result[1] <= mux_smc:auto_generated.result[1]
+result[2] <= mux_smc:auto_generated.result[2]
+result[3] <= mux_smc:auto_generated.result[3]
+result[4] <= mux_smc:auto_generated.result[4]
+result[5] <= mux_smc:auto_generated.result[5]
+result[6] <= mux_smc:auto_generated.result[6]
+result[7] <= mux_smc:auto_generated.result[7]
+
+
+|BaiTap|Datapath:inst|AU2:inst1|BUSMUX:inst2|lpm_mux:$00000|mux_smc:auto_generated
+data[0] => result_node[0]~15.IN1
+data[1] => result_node[1]~13.IN1
+data[2] => result_node[2]~11.IN1
+data[3] => result_node[3]~9.IN1
+data[4] => result_node[4]~7.IN1
+data[5] => result_node[5]~5.IN1
+data[6] => result_node[6]~3.IN1
+data[7] => result_node[7]~1.IN1
+data[8] => result_node[0]~14.IN1
+data[9] => result_node[1]~12.IN1
+data[10] => result_node[2]~10.IN1
+data[11] => result_node[3]~8.IN1
+data[12] => result_node[4]~6.IN1
+data[13] => result_node[5]~4.IN1
+data[14] => result_node[6]~2.IN1
+data[15] => result_node[7]~0.IN1
+result[0] <= result_node[0].DB_MAX_OUTPUT_PORT_TYPE
+result[1] <= result_node[1].DB_MAX_OUTPUT_PORT_TYPE
+result[2] <= result_node[2].DB_MAX_OUTPUT_PORT_TYPE
+result[3] <= result_node[3].DB_MAX_OUTPUT_PORT_TYPE
+result[4] <= result_node[4].DB_MAX_OUTPUT_PORT_TYPE
+result[5] <= result_node[5].DB_MAX_OUTPUT_PORT_TYPE
+result[6] <= result_node[6].DB_MAX_OUTPUT_PORT_TYPE
+result[7] <= result_node[7].DB_MAX_OUTPUT_PORT_TYPE
+sel[0] => result_node[7]~0.IN0
+sel[0] => _~0.IN0
+sel[0] => result_node[6]~2.IN0
+sel[0] => _~1.IN0
+sel[0] => result_node[5]~4.IN0
+sel[0] => _~2.IN0
+sel[0] => result_node[4]~6.IN0
+sel[0] => _~3.IN0
+sel[0] => result_node[3]~8.IN0
+sel[0] => _~4.IN0
+sel[0] => result_node[2]~10.IN0
+sel[0] => _~5.IN0
+sel[0] => result_node[1]~12.IN0
+sel[0] => _~6.IN0
+sel[0] => result_node[0]~14.IN0
+sel[0] => _~7.IN0
+
+
+|BaiTap|Datapath:inst|AU2:inst1|BUSMUX:inst3
+dataa[0] => lpm_mux:$00000.data[0][0]
+dataa[1] => lpm_mux:$00000.data[0][1]
+dataa[2] => lpm_mux:$00000.data[0][2]
+dataa[3] => lpm_mux:$00000.data[0][3]
+dataa[4] => lpm_mux:$00000.data[0][4]
+dataa[5] => lpm_mux:$00000.data[0][5]
+dataa[6] => lpm_mux:$00000.data[0][6]
+dataa[7] => lpm_mux:$00000.data[0][7]
+datab[0] => lpm_mux:$00000.data[1][0]
+datab[1] => lpm_mux:$00000.data[1][1]
+datab[2] => lpm_mux:$00000.data[1][2]
+datab[3] => lpm_mux:$00000.data[1][3]
+datab[4] => lpm_mux:$00000.data[1][4]
+datab[5] => lpm_mux:$00000.data[1][5]
+datab[6] => lpm_mux:$00000.data[1][6]
+datab[7] => lpm_mux:$00000.data[1][7]
+sel => lpm_mux:$00000.sel[0]
+result[0] <= lpm_mux:$00000.result[0]
+result[1] <= lpm_mux:$00000.result[1]
+result[2] <= lpm_mux:$00000.result[2]
+result[3] <= lpm_mux:$00000.result[3]
+result[4] <= lpm_mux:$00000.result[4]
+result[5] <= lpm_mux:$00000.result[5]
+result[6] <= lpm_mux:$00000.result[6]
+result[7] <= lpm_mux:$00000.result[7]
+
+
+|BaiTap|Datapath:inst|AU2:inst1|BUSMUX:inst3|lpm_mux:$00000
+data[0][0] => mux_smc:auto_generated.data[0]
+data[0][1] => mux_smc:auto_generated.data[1]
+data[0][2] => mux_smc:auto_generated.data[2]
+data[0][3] => mux_smc:auto_generated.data[3]
+data[0][4] => mux_smc:auto_generated.data[4]
+data[0][5] => mux_smc:auto_generated.data[5]
+data[0][6] => mux_smc:auto_generated.data[6]
+data[0][7] => mux_smc:auto_generated.data[7]
+data[1][0] => mux_smc:auto_generated.data[8]
+data[1][1] => mux_smc:auto_generated.data[9]
+data[1][2] => mux_smc:auto_generated.data[10]
+data[1][3] => mux_smc:auto_generated.data[11]
+data[1][4] => mux_smc:auto_generated.data[12]
+data[1][5] => mux_smc:auto_generated.data[13]
+data[1][6] => mux_smc:auto_generated.data[14]
+data[1][7] => mux_smc:auto_generated.data[15]
+sel[0] => mux_smc:auto_generated.sel[0]
+clock => ~NO_FANOUT~
+aclr => ~NO_FANOUT~
+clken => ~NO_FANOUT~
+result[0] <= mux_smc:auto_generated.result[0]
+result[1] <= mux_smc:auto_generated.result[1]
+result[2] <= mux_smc:auto_generated.result[2]
+result[3] <= mux_smc:auto_generated.result[3]
+result[4] <= mux_smc:auto_generated.result[4]
+result[5] <= mux_smc:auto_generated.result[5]
+result[6] <= mux_smc:auto_generated.result[6]
+result[7] <= mux_smc:auto_generated.result[7]
+
+
+|BaiTap|Datapath:inst|AU2:inst1|BUSMUX:inst3|lpm_mux:$00000|mux_smc:auto_generated
+data[0] => result_node[0]~15.IN1
+data[1] => result_node[1]~13.IN1
+data[2] => result_node[2]~11.IN1
+data[3] => result_node[3]~9.IN1
+data[4] => result_node[4]~7.IN1
+data[5] => result_node[5]~5.IN1
+data[6] => result_node[6]~3.IN1
+data[7] => result_node[7]~1.IN1
+data[8] => result_node[0]~14.IN1
+data[9] => result_node[1]~12.IN1
+data[10] => result_node[2]~10.IN1
+data[11] => result_node[3]~8.IN1
+data[12] => result_node[4]~6.IN1
+data[13] => result_node[5]~4.IN1
+data[14] => result_node[6]~2.IN1
+data[15] => result_node[7]~0.IN1
+result[0] <= result_node[0].DB_MAX_OUTPUT_PORT_TYPE
+result[1] <= result_node[1].DB_MAX_OUTPUT_PORT_TYPE
+result[2] <= result_node[2].DB_MAX_OUTPUT_PORT_TYPE
+result[3] <= result_node[3].DB_MAX_OUTPUT_PORT_TYPE
+result[4] <= result_node[4].DB_MAX_OUTPUT_PORT_TYPE
+result[5] <= result_node[5].DB_MAX_OUTPUT_PORT_TYPE
+result[6] <= result_node[6].DB_MAX_OUTPUT_PORT_TYPE
+result[7] <= result_node[7].DB_MAX_OUTPUT_PORT_TYPE
+sel[0] => result_node[7]~0.IN0
+sel[0] => _~0.IN0
+sel[0] => result_node[6]~2.IN0
+sel[0] => _~1.IN0
+sel[0] => result_node[5]~4.IN0
+sel[0] => _~2.IN0
+sel[0] => result_node[4]~6.IN0
+sel[0] => _~3.IN0
+sel[0] => result_node[3]~8.IN0
+sel[0] => _~4.IN0
+sel[0] => result_node[2]~10.IN0
+sel[0] => _~5.IN0
+sel[0] => result_node[1]~12.IN0
+sel[0] => _~6.IN0
+sel[0] => result_node[0]~14.IN0
+sel[0] => _~7.IN0
+
+
+|BaiTap|Datapath:inst|AU2:inst1|Sum8Bit:inst
+Cnext <= Cnext7.DB_MAX_OUTPUT_PORT_TYPE
+A[0] => Sum:inst6.A
+A[1] => Sum:inst7.A
+A[2] => Sum:inst3.A
+A[3] => Sum:inst5.A
+A[4] => Sum:inst4.A
+A[5] => Sum:inst2.A
+A[6] => Sum:inst1.A
+A[7] => Sum:inst.A
+B[0] => Sum:inst6.B
+B[1] => Sum:inst7.B
+B[2] => Sum:inst3.B
+B[3] => Sum:inst5.B
+B[4] => Sum:inst4.B
+B[5] => Sum:inst2.B
+B[6] => Sum:inst1.B
+B[7] => Sum:inst.B
+C => Sum:inst6.C
+Y[0] <= Sum:inst6.Y
+Y[1] <= Sum:inst7.Y
+Y[2] <= Sum:inst3.Y
+Y[3] <= Sum:inst5.Y
+Y[4] <= Sum:inst4.Y
+Y[5] <= Sum:inst2.Y
+Y[6] <= Sum:inst1.Y
+Y[7] <= Sum:inst.Y
+
+
+|BaiTap|Datapath:inst|AU2:inst1|Sum8Bit:inst|Sum:inst
+Y <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst5.IN1
+A => inst3.IN0
+B => inst.IN1
+B => inst4.IN0
+B => inst3.IN1
+C => inst1.IN1
+C => inst4.IN1
+C => inst5.IN0
+Cnext <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BaiTap|Datapath:inst|AU2:inst1|Sum8Bit:inst|Sum:inst1
+Y <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst5.IN1
+A => inst3.IN0
+B => inst.IN1
+B => inst4.IN0
+B => inst3.IN1
+C => inst1.IN1
+C => inst4.IN1
+C => inst5.IN0
+Cnext <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BaiTap|Datapath:inst|AU2:inst1|Sum8Bit:inst|Sum:inst2
+Y <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst5.IN1
+A => inst3.IN0
+B => inst.IN1
+B => inst4.IN0
+B => inst3.IN1
+C => inst1.IN1
+C => inst4.IN1
+C => inst5.IN0
+Cnext <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BaiTap|Datapath:inst|AU2:inst1|Sum8Bit:inst|Sum:inst4
+Y <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst5.IN1
+A => inst3.IN0
+B => inst.IN1
+B => inst4.IN0
+B => inst3.IN1
+C => inst1.IN1
+C => inst4.IN1
+C => inst5.IN0
+Cnext <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BaiTap|Datapath:inst|AU2:inst1|Sum8Bit:inst|Sum:inst5
+Y <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst5.IN1
+A => inst3.IN0
+B => inst.IN1
+B => inst4.IN0
+B => inst3.IN1
+C => inst1.IN1
+C => inst4.IN1
+C => inst5.IN0
+Cnext <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BaiTap|Datapath:inst|AU2:inst1|Sum8Bit:inst|Sum:inst3
+Y <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst5.IN1
+A => inst3.IN0
+B => inst.IN1
+B => inst4.IN0
+B => inst3.IN1
+C => inst1.IN1
+C => inst4.IN1
+C => inst5.IN0
+Cnext <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BaiTap|Datapath:inst|AU2:inst1|Sum8Bit:inst|Sum:inst7
+Y <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst5.IN1
+A => inst3.IN0
+B => inst.IN1
+B => inst4.IN0
+B => inst3.IN1
+C => inst1.IN1
+C => inst4.IN1
+C => inst5.IN0
+Cnext <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BaiTap|Datapath:inst|AU2:inst1|Sum8Bit:inst|Sum:inst6
+Y <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst5.IN1
+A => inst3.IN0
+B => inst.IN1
+B => inst4.IN0
+B => inst3.IN1
+C => inst1.IN1
+C => inst4.IN1
+C => inst5.IN0
+Cnext <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BaiTap|Control:inst1
+WA1 <= OutputBlock2:inst1.WA1
+CLK => CurrentState:inst2.CLK
+CLR => CurrentState:inst2.CLR
+RAA1 <= OutputBlock2:inst1.RAA1
+WE1 <= OutputBlock2:inst1.WE1
+REA1 <= OutputBlock2:inst1.REA1
+WA2 <= OutputBlock2:inst1.WA2
+RAA2 <= OutputBlock2:inst1.RAA2
+WE2 <= OutputBlock2:inst1.WE2
+REA2 <= OutputBlock2:inst1.REA2
+WE3 <= OutputBlock2:inst1.WE3
+REA3 <= OutputBlock2:inst1.REA3
+WE4 <= OutputBlock2:inst1.WE4
+REA4 <= OutputBlock2:inst1.REA4
+WE5 <= OutputBlock2:inst1.WE5
+REA5 <= OutputBlock2:inst1.REA5
+WE6 <= OutputBlock2:inst1.WE6
+WE7 <= OutputBlock2:inst1.WE7
+TO <= OutputBlock2:inst1.TO
+Q[0] <= CurrentState:inst2.Q[0]
+Q[1] <= CurrentState:inst2.Q[1]
+Q[2] <= CurrentState:inst2.Q[2]
+Q[3] <= CurrentState:inst2.Q[3]
+RAA3[0] <= OutputBlock2:inst1.RAA3[0]
+RAA3[1] <= OutputBlock2:inst1.RAA3[1]
+RAA6[0] <= OutputBlock2:inst1.RAA6[0]
+RAA6[1] <= OutputBlock2:inst1.RAA6[1]
+RAA7[0] <= OutputBlock2:inst1.RAA7[0]
+RAA7[1] <= OutputBlock2:inst1.RAA7[1]
+S1[0] <= OutputBlock2:inst1.S1[0]
+S1[1] <= OutputBlock2:inst1.S1[1]
+S2[0] <= OutputBlock2:inst1.S2[0]
+S2[1] <= OutputBlock2:inst1.S2[1]
+TB2[0] <= OutputBlock2:inst1.TB2[0]
+TB2[1] <= OutputBlock2:inst1.TB2[1]
+TB3[0] <= OutputBlock2:inst1.TB3[0]
+TB3[1] <= OutputBlock2:inst1.TB3[1]
+TB4[0] <= OutputBlock2:inst1.TB4[0]
+TB4[1] <= OutputBlock2:inst1.TB4[1]
+TB5[0] <= OutputBlock2:inst1.TB5[0]
+TB5[1] <= OutputBlock2:inst1.TB5[1]
+TB7[0] <= OutputBlock2:inst1.TB7[0]
+TB7[1] <= OutputBlock2:inst1.TB7[1]
+WA3[0] <= OutputBlock2:inst1.WA3[0]
+WA3[1] <= OutputBlock2:inst1.WA3[1]
+WA6[0] <= OutputBlock2:inst1.WA6[0]
+WA6[1] <= OutputBlock2:inst1.WA6[1]
+WA7[0] <= OutputBlock2:inst1.WA7[0]
+WA7[1] <= OutputBlock2:inst1.WA7[1]
+
+
+|BaiTap|Control:inst1|OutputBlock2:inst1
+WA1 <= inst33.DB_MAX_OUTPUT_PORT_TYPE
+Q[0] => inst22.IN1
+Q[0] => inst3.IN0
+Q[0] => inst34.IN1
+Q[0] => inst24.IN1
+Q[0] => inst57.IN3
+Q[0] => inst27.IN1
+Q[0] => inst40.IN1
+Q[0] => inst45.IN1
+Q[0] => inst50.IN2
+Q[0] => inst54.IN1
+Q[0] => inst75.IN1
+Q[0] => inst85.IN1
+Q[0] => inst106.IN1
+Q[0] => inst126.IN1
+Q[0] => inst152.IN2
+Q[0] => inst155.IN1
+Q[0] => inst64.IN1
+Q[0] => inst103.IN1
+Q[0] => inst89.IN1
+Q[0] => inst115.IN1
+Q[0] => inst133.IN1
+Q[0] => inst142.IN2
+Q[0] => inst146.IN1
+Q[0] => inst99.IN1
+Q[0] => inst118.IN1
+Q[1] => inst31.IN0
+Q[1] => inst2.IN0
+Q[1] => inst57.IN2
+Q[1] => inst20.IN1
+Q[1] => inst50.IN1
+Q[1] => inst47.IN1
+Q[1] => inst74.IN1
+Q[1] => inst112.IN1
+Q[1] => inst146.IN0
+Q[2] => inst1.IN0
+Q[2] => inst23.IN0
+Q[2] => inst57.IN1
+Q[2] => inst30.IN1
+Q[2] => inst103.IN0
+Q[2] => inst147.IN0
+Q[2] => inst99.IN0
+Q[3] => inst.IN0
+Q[3] => inst21.IN0
+Q[3] => inst27.IN0
+Q[3] => inst40.IN0
+Q[3] => inst47.IN0
+Q[3] => inst72.IN1
+Q[3] => inst76.IN1
+Q[3] => inst85.IN0
+Q[3] => inst109.IN1
+Q[3] => inst152.IN1
+Q[3] => inst155.IN0
+Q[3] => inst91.IN0
+Q[3] => inst145.IN1
+Q[3] => inst147.IN1
+Q[3] => inst95.IN1
+Q[3] => inst94.IN1
+RAA1 <= inst35.DB_MAX_OUTPUT_PORT_TYPE
+WE1 <= inst38.DB_MAX_OUTPUT_PORT_TYPE
+REA1 <= inst43.DB_MAX_OUTPUT_PORT_TYPE
+WA2 <= inst20.DB_MAX_OUTPUT_PORT_TYPE
+RAA2 <= inst46.DB_MAX_OUTPUT_PORT_TYPE
+WE2 <= inst51.DB_MAX_OUTPUT_PORT_TYPE
+REA2 <= inst56.DB_MAX_OUTPUT_PORT_TYPE
+WE3 <= inst73.DB_MAX_OUTPUT_PORT_TYPE
+REA3 <= inst77.DB_MAX_OUTPUT_PORT_TYPE
+WE4 <= inst80.DB_MAX_OUTPUT_PORT_TYPE
+REA4 <= inst83.DB_MAX_OUTPUT_PORT_TYPE
+WE5 <= inst84.DB_MAX_OUTPUT_PORT_TYPE
+REA5 <= inst88.DB_MAX_OUTPUT_PORT_TYPE
+WE6 <= inst110.DB_MAX_OUTPUT_PORT_TYPE
+WE7 <= inst127.DB_MAX_OUTPUT_PORT_TYPE
+TO <= inst154.DB_MAX_OUTPUT_PORT_TYPE
+TB7[0] <= inst156.DB_MAX_OUTPUT_PORT_TYPE
+TB7[1] <= inst154.DB_MAX_OUTPUT_PORT_TYPE
+RAA3[0] <= inst67.DB_MAX_OUTPUT_PORT_TYPE
+RAA3[1] <= inst65.DB_MAX_OUTPUT_PORT_TYPE
+RAA6[0] <= inst104.DB_MAX_OUTPUT_PORT_TYPE
+RAA6[1] <= inst100.DB_MAX_OUTPUT_PORT_TYPE
+RAA7[0] <= inst20.DB_MAX_OUTPUT_PORT_TYPE
+RAA7[1] <= inst23.DB_MAX_OUTPUT_PORT_TYPE
+S1[0] <= inst92.DB_MAX_OUTPUT_PORT_TYPE
+S1[1] <= inst90.DB_MAX_OUTPUT_PORT_TYPE
+S2[0] <= inst116.DB_MAX_OUTPUT_PORT_TYPE
+S2[1] <= inst113.DB_MAX_OUTPUT_PORT_TYPE
+TB2[0] <= inst135.DB_MAX_OUTPUT_PORT_TYPE
+TB2[1] <= inst130.DB_MAX_OUTPUT_PORT_TYPE
+TB3[0] <= inst140.DB_MAX_OUTPUT_PORT_TYPE
+TB3[1] <= inst137.DB_MAX_OUTPUT_PORT_TYPE
+TB4[0] <= inst144.DB_MAX_OUTPUT_PORT_TYPE
+TB4[1] <= inst137.DB_MAX_OUTPUT_PORT_TYPE
+TB5[0] <= inst151.DB_MAX_OUTPUT_PORT_TYPE
+TB5[1] <= inst148.DB_MAX_OUTPUT_PORT_TYPE
+WA3[0] <= inst62.DB_MAX_OUTPUT_PORT_TYPE
+WA3[1] <= inst60.DB_MAX_OUTPUT_PORT_TYPE
+WA6[0] <= inst98.DB_MAX_OUTPUT_PORT_TYPE
+WA6[1] <= inst90.DB_MAX_OUTPUT_PORT_TYPE
+WA7[0] <= inst121.DB_MAX_OUTPUT_PORT_TYPE
+WA7[1] <= inst119.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BaiTap|Control:inst1|CurrentState:inst2
+Q[0] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+CLR => inst3.ACLR
+CLR => inst.ACLR
+CLR => inst1.ACLR
+CLR => inst2.ACLR
+CLK => inst3.CLK
+CLK => inst.CLK
+CLK => inst1.CLK
+CLK => inst2.CLK
+D[0] => inst2.DATAIN
+D[1] => inst1.DATAIN
+D[2] => inst.DATAIN
+D[3] => inst3.DATAIN
+
+
+|BaiTap|Control:inst1|NextState:inst
+D[0] <= inst17.DB_MAX_OUTPUT_PORT_TYPE
+D[1] <= inst15.DB_MAX_OUTPUT_PORT_TYPE
+D[2] <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+D[3] <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+Q[0] => inst13.IN1
+Q[0] => inst19.IN0
+Q[0] => inst1.IN3
+Q[0] => inst17.IN1
+Q[0] => inst3.IN2
+Q[1] => inst13.IN0
+Q[1] => inst18.IN0
+Q[1] => inst1.IN2
+Q[1] => inst16.IN2
+Q[1] => inst3.IN1
+Q[2] => inst14.IN0
+Q[2] => inst6.IN0
+Q[2] => inst1.IN1
+Q[2] => inst16.IN1
+Q[2] => inst12.IN1
+Q[2] => inst4.IN0
+Q[2] => inst11.IN1
+Q[3] => inst14.IN1
+Q[3] => inst2.IN0
+Q[3] => inst5.IN0
+Q[3] => inst.IN0
+Q[3] => inst16.IN0
+
+

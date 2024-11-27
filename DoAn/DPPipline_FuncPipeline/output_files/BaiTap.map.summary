@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Wed Nov 27 02:57:35 2024
+Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
+Revision Name : BaiTap
+Top-level Entity Name : BaiTap
+Family : Cyclone II
+Total logic elements : 300
+    Total combinational functions : 213
+    Dedicated logic registers : 139
+Total registers : 139
+Total pins : 26
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

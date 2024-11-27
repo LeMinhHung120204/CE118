@@ -1,0 +1,267 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "symbol" (version "1.2"))
+(symbol
+	(rect 16 16 168 592)
+	(text "Datapath" (rect 5 0 55 14)(font "Arial" (font_size 8)))
+	(text "inst" (rect 8 560 25 572)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "In1[7..0]" (rect 0 0 44 14)(font "Arial" (font_size 8)))
+		(text "In1[7..0]" (rect 21 27 65 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "In2[7..0]" (rect 0 0 44 14)(font "Arial" (font_size 8)))
+		(text "In2[7..0]" (rect 21 43 65 57)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48)(line_width 3))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "WA1" (rect 0 0 28 14)(font "Arial" (font_size 8)))
+		(text "WA1" (rect 21 59 49 73)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "RAA1" (rect 0 0 34 14)(font "Arial" (font_size 8)))
+		(text "RAA1" (rect 21 75 55 89)(font "Arial" (font_size 8)))
+		(line (pt 0 80)(pt 16 80))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "WE1" (rect 0 0 25 14)(font "Arial" (font_size 8)))
+		(text "WE1" (rect 21 91 46 105)(font "Arial" (font_size 8)))
+		(line (pt 0 96)(pt 16 96))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "REA1" (rect 0 0 31 14)(font "Arial" (font_size 8)))
+		(text "REA1" (rect 21 107 52 121)(font "Arial" (font_size 8)))
+		(line (pt 0 112)(pt 16 112))
+	)
+	(port
+		(pt 0 128)
+		(input)
+		(text "WA2" (rect 0 0 28 14)(font "Arial" (font_size 8)))
+		(text "WA2" (rect 21 123 49 137)(font "Arial" (font_size 8)))
+		(line (pt 0 128)(pt 16 128))
+	)
+	(port
+		(pt 0 144)
+		(input)
+		(text "RAA2" (rect 0 0 34 14)(font "Arial" (font_size 8)))
+		(text "RAA2" (rect 21 139 55 153)(font "Arial" (font_size 8)))
+		(line (pt 0 144)(pt 16 144))
+	)
+	(port
+		(pt 0 160)
+		(input)
+		(text "WE2" (rect 0 0 25 14)(font "Arial" (font_size 8)))
+		(text "WE2" (rect 21 155 46 169)(font "Arial" (font_size 8)))
+		(line (pt 0 160)(pt 16 160))
+	)
+	(port
+		(pt 0 176)
+		(input)
+		(text "REA2" (rect 0 0 31 14)(font "Arial" (font_size 8)))
+		(text "REA2" (rect 21 171 52 185)(font "Arial" (font_size 8)))
+		(line (pt 0 176)(pt 16 176))
+	)
+	(port
+		(pt 0 192)
+		(input)
+		(text "WA3[1..0]" (rect 0 0 56 14)(font "Arial" (font_size 8)))
+		(text "WA3[1..0]" (rect 21 187 77 201)(font "Arial" (font_size 8)))
+		(line (pt 0 192)(pt 16 192)(line_width 3))
+	)
+	(port
+		(pt 0 208)
+		(input)
+		(text "RAA3[1..0]" (rect 0 0 62 14)(font "Arial" (font_size 8)))
+		(text "RAA3[1..0]" (rect 21 203 83 217)(font "Arial" (font_size 8)))
+		(line (pt 0 208)(pt 16 208)(line_width 3))
+	)
+	(port
+		(pt 0 224)
+		(input)
+		(text "WE3" (rect 0 0 25 14)(font "Arial" (font_size 8)))
+		(text "WE3" (rect 21 219 46 233)(font "Arial" (font_size 8)))
+		(line (pt 0 224)(pt 16 224))
+	)
+	(port
+		(pt 0 240)
+		(input)
+		(text "REA3" (rect 0 0 31 14)(font "Arial" (font_size 8)))
+		(text "REA3" (rect 21 235 52 249)(font "Arial" (font_size 8)))
+		(line (pt 0 240)(pt 16 240))
+	)
+	(port
+		(pt 0 256)
+		(input)
+		(text "WE4" (rect 0 0 25 14)(font "Arial" (font_size 8)))
+		(text "WE4" (rect 21 251 46 265)(font "Arial" (font_size 8)))
+		(line (pt 0 256)(pt 16 256))
+	)
+	(port
+		(pt 0 272)
+		(input)
+		(text "REA4" (rect 0 0 31 14)(font "Arial" (font_size 8)))
+		(text "REA4" (rect 21 267 52 281)(font "Arial" (font_size 8)))
+		(line (pt 0 272)(pt 16 272))
+	)
+	(port
+		(pt 0 288)
+		(input)
+		(text "WE5" (rect 0 0 25 14)(font "Arial" (font_size 8)))
+		(text "WE5" (rect 21 283 46 297)(font "Arial" (font_size 8)))
+		(line (pt 0 288)(pt 16 288))
+	)
+	(port
+		(pt 0 304)
+		(input)
+		(text "REA5" (rect 0 0 31 14)(font "Arial" (font_size 8)))
+		(text "REA5" (rect 21 299 52 313)(font "Arial" (font_size 8)))
+		(line (pt 0 304)(pt 16 304))
+	)
+	(port
+		(pt 0 320)
+		(input)
+		(text "S1[1..0]" (rect 0 0 43 14)(font "Arial" (font_size 8)))
+		(text "S1[1..0]" (rect 21 315 64 329)(font "Arial" (font_size 8)))
+		(line (pt 0 320)(pt 16 320)(line_width 3))
+	)
+	(port
+		(pt 0 336)
+		(input)
+		(text "WA6[1..0]" (rect 0 0 56 14)(font "Arial" (font_size 8)))
+		(text "WA6[1..0]" (rect 21 331 77 345)(font "Arial" (font_size 8)))
+		(line (pt 0 336)(pt 16 336)(line_width 3))
+	)
+	(port
+		(pt 0 352)
+		(input)
+		(text "RAA6[1..0]" (rect 0 0 62 14)(font "Arial" (font_size 8)))
+		(text "RAA6[1..0]" (rect 21 347 83 361)(font "Arial" (font_size 8)))
+		(line (pt 0 352)(pt 16 352)(line_width 3))
+	)
+	(port
+		(pt 0 368)
+		(input)
+		(text "WE6" (rect 0 0 25 14)(font "Arial" (font_size 8)))
+		(text "WE6" (rect 21 363 46 377)(font "Arial" (font_size 8)))
+		(line (pt 0 368)(pt 16 368))
+	)
+	(port
+		(pt 0 384)
+		(input)
+		(text "S2[1..0]" (rect 0 0 43 14)(font "Arial" (font_size 8)))
+		(text "S2[1..0]" (rect 21 379 64 393)(font "Arial" (font_size 8)))
+		(line (pt 0 384)(pt 16 384)(line_width 3))
+	)
+	(port
+		(pt 0 400)
+		(input)
+		(text "WA7[1..0]" (rect 0 0 56 14)(font "Arial" (font_size 8)))
+		(text "WA7[1..0]" (rect 21 395 77 409)(font "Arial" (font_size 8)))
+		(line (pt 0 400)(pt 16 400)(line_width 3))
+	)
+	(port
+		(pt 0 416)
+		(input)
+		(text "RAA7[1..0]" (rect 0 0 62 14)(font "Arial" (font_size 8)))
+		(text "RAA7[1..0]" (rect 21 411 83 425)(font "Arial" (font_size 8)))
+		(line (pt 0 416)(pt 16 416)(line_width 3))
+	)
+	(port
+		(pt 0 432)
+		(input)
+		(text "WE7" (rect 0 0 25 14)(font "Arial" (font_size 8)))
+		(text "WE7" (rect 21 427 46 441)(font "Arial" (font_size 8)))
+		(line (pt 0 432)(pt 16 432))
+	)
+	(port
+		(pt 0 448)
+		(input)
+		(text "TB2[1..0]" (rect 0 0 50 14)(font "Arial" (font_size 8)))
+		(text "TB2[1..0]" (rect 21 443 71 457)(font "Arial" (font_size 8)))
+		(line (pt 0 448)(pt 16 448)(line_width 3))
+	)
+	(port
+		(pt 0 464)
+		(input)
+		(text "TB3[1..0]" (rect 0 0 50 14)(font "Arial" (font_size 8)))
+		(text "TB3[1..0]" (rect 21 459 71 473)(font "Arial" (font_size 8)))
+		(line (pt 0 464)(pt 16 464)(line_width 3))
+	)
+	(port
+		(pt 0 480)
+		(input)
+		(text "TB4[1..0]" (rect 0 0 50 14)(font "Arial" (font_size 8)))
+		(text "TB4[1..0]" (rect 21 475 71 489)(font "Arial" (font_size 8)))
+		(line (pt 0 480)(pt 16 480)(line_width 3))
+	)
+	(port
+		(pt 0 496)
+		(input)
+		(text "TB5[1..0]" (rect 0 0 50 14)(font "Arial" (font_size 8)))
+		(text "TB5[1..0]" (rect 21 491 71 505)(font "Arial" (font_size 8)))
+		(line (pt 0 496)(pt 16 496)(line_width 3))
+	)
+	(port
+		(pt 0 512)
+		(input)
+		(text "TB7[1..0]" (rect 0 0 50 14)(font "Arial" (font_size 8)))
+		(text "TB7[1..0]" (rect 21 507 71 521)(font "Arial" (font_size 8)))
+		(line (pt 0 512)(pt 16 512)(line_width 3))
+	)
+	(port
+		(pt 0 528)
+		(input)
+		(text "TO" (rect 0 0 16 14)(font "Arial" (font_size 8)))
+		(text "TO" (rect 21 523 37 537)(font "Arial" (font_size 8)))
+		(line (pt 0 528)(pt 16 528))
+	)
+	(port
+		(pt 0 544)
+		(input)
+		(text "CLK" (rect 0 0 23 14)(font "Arial" (font_size 8)))
+		(text "CLK" (rect 21 539 44 553)(font "Arial" (font_size 8)))
+		(line (pt 0 544)(pt 16 544))
+	)
+	(port
+		(pt 152 32)
+		(output)
+		(text "Y[7..0]" (rect 0 0 37 14)(font "Arial" (font_size 8)))
+		(text "Y[7..0]" (rect 94 27 131 41)(font "Arial" (font_size 8)))
+		(line (pt 152 32)(pt 136 32)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 136 560))
+	)
+)

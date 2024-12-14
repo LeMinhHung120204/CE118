@@ -1,0 +1,46 @@
+library verilog;
+use verilog.vl_types.all;
+entity Datapath is
+    port(
+        Bus1            : out    vl_logic_vector(7 downto 0);
+        WE1             : in     vl_logic;
+        WA1             : in     vl_logic;
+        RAA1            : in     vl_logic;
+        CLK             : in     vl_logic;
+        In1             : in     vl_logic_vector(7 downto 0);
+        TB3             : in     vl_logic;
+        WE6             : in     vl_logic;
+        WA6             : in     vl_logic;
+        RAA6            : in     vl_logic;
+        WE2             : in     vl_logic;
+        WA2             : in     vl_logic;
+        RAA2            : in     vl_logic;
+        In2             : in     vl_logic_vector(7 downto 0);
+        TB4             : in     vl_logic;
+        TB2             : in     vl_logic;
+        S1              : in     vl_logic_vector(1 downto 0);
+        Bus2            : out    vl_logic_vector(7 downto 0);
+        Bus3            : out    vl_logic_vector(7 downto 0);
+        Bus4            : out    vl_logic_vector(7 downto 0);
+        Bus5            : out    vl_logic_vector(7 downto 0);
+        WE4             : in     vl_logic;
+        TB5             : in     vl_logic;
+        WE5             : in     vl_logic;
+        Bus7            : out    vl_logic_vector(7 downto 0);
+        WE3             : in     vl_logic;
+        TB7             : in     vl_logic;
+        RAA3            : in     vl_logic_vector(1 downto 0);
+        WA3             : in     vl_logic_vector(1 downto 0);
+        S2              : in     vl_logic_vector(1 downto 0);
+        O               : out    vl_logic_vector(7 downto 0);
+        Q               : out    vl_logic_vector(3 downto 0);
+        R1              : out    vl_logic_vector(7 downto 0);
+        R2              : out    vl_logic_vector(7 downto 0);
+        R3              : out    vl_logic_vector(7 downto 0);
+        R4              : out    vl_logic_vector(7 downto 0);
+        R5              : out    vl_logic_vector(7 downto 0);
+        Y               : out    vl_logic_vector(7 downto 0);
+        \TO\            : in     vl_logic;
+        WE7             : in     vl_logic
+    );
+end Datapath;

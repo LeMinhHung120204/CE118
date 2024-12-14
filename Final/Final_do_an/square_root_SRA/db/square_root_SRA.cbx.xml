@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="square_root_SRA">
+		<CBX_INST_ENTRY INSTANCE_NAME="|DC_FINAL|DATAPATH_DC:inst1|AbsMin:inst5|BUSMUX:inst12|lpm_mux:$00000" CBX_FILE_NAME="mux_smc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|DC_FINAL|DATAPATH_DC:inst1|mux41_8bit:inst1|BUSMUX:inst|lpm_mux:$00000" CBX_FILE_NAME="mux_smc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|DC_FINAL|DATAPATH_DC:inst1|mux41_8bit:inst|BUSMUX:inst1|lpm_mux:$00000" CBX_FILE_NAME="mux_smc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|DC_FINAL|DATAPATH_DC:inst1|AddAbsSubMax:inst6|BUSMUX:inst24|lpm_mux:$00000" CBX_FILE_NAME="mux_smc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|DC_FINAL|DATAPATH_DC:inst1|BUSMUX:inst7|lpm_mux:$00000" CBX_FILE_NAME="mux_smc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|DC_FINAL|DATAPATH_DC:inst1|mux41_8bit:inst1|BUSMUX:inst1|lpm_mux:$00000" CBX_FILE_NAME="mux_smc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|DC_FINAL|DATAPATH_DC:inst1|mux41_8bit:inst|BUSMUX:inst2|lpm_mux:$00000" CBX_FILE_NAME="mux_smc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|DC_FINAL|DATAPATH_DC:inst1|mux41_8bit:inst|BUSMUX:inst|lpm_mux:$00000" CBX_FILE_NAME="mux_smc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|DC_FINAL|DATAPATH_DC:inst1|AbsMin:inst5|BUSMUX:inst10|lpm_mux:$00000" CBX_FILE_NAME="mux_smc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|DC_FINAL|DATAPATH_DC:inst1|AddAbsSubMax:inst6|BUSMUX:inst25|lpm_mux:$00000" CBX_FILE_NAME="mux_smc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|DC_FINAL|DATAPATH_DC:inst1|mux41_8bit:inst1|BUSMUX:inst2|lpm_mux:$00000" CBX_FILE_NAME="mux_smc.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

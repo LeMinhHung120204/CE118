@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\MinzHung\Downloads\Final_do_an\4bitUpDownCounterParallerLoad_and_BCD_counter\simulation\qsim
+vTest
+Z1 IA]FIA4YZPKgzPV6oa7>HW0
+Z2 V_TTifemfi0OjI18:`J:_c3
+Z3 dC:\Users\MinzHung\Downloads\Final_do_an\4bitUpDownCounterParallerLoad_and_BCD_counter\simulation\qsim
+Z4 w1732697361
+Z5 8counter.vo
+Z6 Fcounter.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 o-work work -O0
+Z9 n@test
+!i10b 1
+Z10 !s100 SKl>^lW]4z3?62TQ09dDn2
+!s85 0
+Z11 !s108 1732697363.123000
+Z12 !s107 counter.vo|
+Z13 !s90 -work|work|counter.vo|
+!s101 -O0
+vTest_vlg_check_tst
+!i10b 1
+!s100 5BWDB<c7QBabLI9WBa``o2
+IX2U4NU5kYCfDRVeM_2<Rg1
+VgmbFNVjBe55kTVz_XlI]B3
+R3
+R4
+Z14 8counter.vt
+Z15 Fcounter.vt
+L0 61
+R7
+r1
+!s85 0
+31
+Z16 !s108 1732697363.183000
+Z17 !s107 counter.vt|
+Z18 !s90 -work|work|counter.vt|
+!s101 -O0
+R8
+n@test_vlg_check_tst
+vTest_vlg_sample_tst
+!i10b 1
+!s100 cW@H>S_AZbFg3=mghB;l62
+IZN5C?NfSU7Ehlm_:Rh9oJ0
+V34>m@`ZB;A^o_EF0=F<[C1
+R3
+R4
+R14
+R15
+L0 29
+R7
+r1
+!s85 0
+31
+R16
+R17
+R18
+!s101 -O0
+R8
+n@test_vlg_sample_tst
+vTest_vlg_vec_tst
+!i10b 1
+!s100 J0J8_X2U^QESXOJUXZK;z0
+Il2UbA;7LV8LmXnUUn1@j91
+VJ1LVEd7WnK2?TQ=X_OoK61
+R3
+R4
+R14
+R15
+L0 156
+R7
+r1
+!s85 0
+31
+R16
+R17
+R18
+!s101 -O0
+R8
+n@test_vlg_vec_tst

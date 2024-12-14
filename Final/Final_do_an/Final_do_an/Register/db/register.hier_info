@@ -1,0 +1,279 @@
+|Register4x4
+A[0] <= A~2.DB_MAX_OUTPUT_PORT_TYPE
+A[1] <= A~1.DB_MAX_OUTPUT_PORT_TYPE
+A[2] <= A~0.DB_MAX_OUTPUT_PORT_TYPE
+A[3] <= A~3.DB_MAX_OUTPUT_PORT_TYPE
+RAA[0] => Decoder2_4:inst.A0
+RAA[1] => Decoder2_4:inst.A1
+REA => Decoder2_4:inst.E
+RAB[0] => Decoder2_4:inst19.A0
+RAB[1] => Decoder2_4:inst19.A1
+REB => Decoder2_4:inst19.E
+WA[0] => Decoder2_4:inst20.A0
+WA[1] => Decoder2_4:inst20.A1
+WE => Decoder2_4:inst20.E
+I[0] => RFC:inst6.input
+I[0] => RFC:inst10.input
+I[0] => RFC:inst14.input
+I[0] => RFC:inst18.input
+I[1] => RFC:inst5.input
+I[1] => RFC:inst9.input
+I[1] => RFC:inst13.input
+I[1] => RFC:inst17.input
+I[2] => RFC:inst4.input
+I[2] => RFC:inst8.input
+I[2] => RFC:inst12.input
+I[2] => RFC:inst16.input
+I[3] => RFC:inst3.input
+I[3] => RFC:inst7.input
+I[3] => RFC:inst11.input
+I[3] => RFC:inst15.input
+CLK => RFC:inst4.CLK
+CLK => RFC:inst8.CLK
+CLK => RFC:inst12.CLK
+CLK => RFC:inst16.CLK
+CLK => RFC:inst5.CLK
+CLK => RFC:inst9.CLK
+CLK => RFC:inst13.CLK
+CLK => RFC:inst17.CLK
+CLK => RFC:inst6.CLK
+CLK => RFC:inst10.CLK
+CLK => RFC:inst14.CLK
+CLK => RFC:inst18.CLK
+CLK => RFC:inst3.CLK
+CLK => RFC:inst7.CLK
+CLK => RFC:inst11.CLK
+CLK => RFC:inst15.CLK
+B[0] <= B~3.DB_MAX_OUTPUT_PORT_TYPE
+B[1] <= B~2.DB_MAX_OUTPUT_PORT_TYPE
+B[2] <= B~1.DB_MAX_OUTPUT_PORT_TYPE
+B[3] <= B~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Register4x4|RFC:inst4
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|Register4x4|Decoder2_4:inst
+Q3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A1 => inst.IN0
+A1 => inst1.IN0
+A1 => inst4.IN0
+A0 => inst.IN1
+A0 => inst5.IN0
+A0 => inst2.IN1
+E => inst.IN2
+E => inst1.IN2
+E => inst2.IN2
+E => inst3.IN2
+Q2 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Q1 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Q0 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Register4x4|Decoder2_4:inst19
+Q3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A1 => inst.IN0
+A1 => inst1.IN0
+A1 => inst4.IN0
+A0 => inst.IN1
+A0 => inst5.IN0
+A0 => inst2.IN1
+E => inst.IN2
+E => inst1.IN2
+E => inst2.IN2
+E => inst3.IN2
+Q2 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Q1 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Q0 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Register4x4|Decoder2_4:inst20
+Q3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A1 => inst.IN0
+A1 => inst1.IN0
+A1 => inst4.IN0
+A0 => inst.IN1
+A0 => inst5.IN0
+A0 => inst2.IN1
+E => inst.IN2
+E => inst1.IN2
+E => inst2.IN2
+E => inst3.IN2
+Q2 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Q1 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Q0 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Register4x4|RFC:inst8
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|Register4x4|RFC:inst12
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|Register4x4|RFC:inst16
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|Register4x4|RFC:inst5
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|Register4x4|RFC:inst9
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|Register4x4|RFC:inst13
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|Register4x4|RFC:inst17
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|Register4x4|RFC:inst6
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|Register4x4|RFC:inst10
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|Register4x4|RFC:inst14
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|Register4x4|RFC:inst18
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|Register4x4|RFC:inst3
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|Register4x4|RFC:inst7
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|Register4x4|RFC:inst11
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+
+|Register4x4|RFC:inst15
+OutA <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+input => inst3.IN0
+WS => inst3.IN1
+WS => inst5.IN0
+RSA => inst1.OE
+OutB <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+RSB => inst6.OE
+
+

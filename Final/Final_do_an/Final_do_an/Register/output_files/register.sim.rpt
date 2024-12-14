@@ -1,0 +1,362 @@
+Simulator report for register
+Sun Dec 01 14:57:50 2024
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 138 nodes    ;
+; Simulation Coverage         ;      36.96 % ;
+; Total Number of Transitions ; 388          ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone II   ;
++-----------------------------+--------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                                                                                   ;
++--------------------------------------------------------------------------------------------+-------------------------------------------------------------------------+---------------+
+; Option                                                                                     ; Setting                                                                 ; Default Value ;
++--------------------------------------------------------------------------------------------+-------------------------------------------------------------------------+---------------+
+; Simulation mode                                                                            ; Functional                                                              ; Timing        ;
+; Start time                                                                                 ; 0 ns                                                                    ; 0 ns          ;
+; Simulation results format                                                                  ; VWF                                                                     ;               ;
+; Vector input source                                                                        ; D:/Documents/HK5/Thiet_Ke_Luan_Ly_So/Final_do_an/Register/Waveform1.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On                                                                      ; On            ;
+; Check outputs                                                                              ; Off                                                                     ; Off           ;
+; Report simulation coverage                                                                 ; On                                                                      ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On                                                                      ; On            ;
+; Display missing 1-value coverage report                                                    ; On                                                                      ; On            ;
+; Display missing 0-value coverage report                                                    ; On                                                                      ; On            ;
+; Detect setup and hold time violations                                                      ; Off                                                                     ; Off           ;
+; Detect glitches                                                                            ; Off                                                                     ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off                                                                     ; Off           ;
+; Generate Signal Activity File                                                              ; Off                                                                     ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off                                                                     ; Off           ;
+; Group bus channels in simulation results                                                   ; Off                                                                     ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On                                                                      ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE                                                              ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off                                                                     ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off                                                                     ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto                                                                    ; Auto          ;
++--------------------------------------------------------------------------------------------+-------------------------------------------------------------------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II 64-Bit to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      36.96 % ;
+; Total nodes checked                                 ; 138          ;
+; Total output ports checked                          ; 138          ;
+; Total output ports with complete 1/0-value coverage ; 51           ;
+; Total output ports with no 1/0-value coverage       ; 53           ;
+; Total output ports with no 1-value coverage         ; 63           ;
+; Total output ports with no 0-value coverage         ; 77           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                    ;
++--------------------------------------+--------------------------------------+------------------+
+; Node Name                            ; Output Port Name                     ; Output Port Type ;
++--------------------------------------+--------------------------------------+------------------+
+; |Register4x4|A[3]                    ; |Register4x4|A[3]                    ; pin_out          ;
+; |Register4x4|A[2]                    ; |Register4x4|A[2]                    ; pin_out          ;
+; |Register4x4|A~0                     ; |Register4x4|A~0                     ; out0             ;
+; |Register4x4|RAA[1]                  ; |Register4x4|RAA[1]                  ; out              ;
+; |Register4x4|RAA[0]                  ; |Register4x4|RAA[0]                  ; out              ;
+; |Register4x4|REA                     ; |Register4x4|REA                     ; out              ;
+; |Register4x4|RAB[1]                  ; |Register4x4|RAB[1]                  ; out              ;
+; |Register4x4|RAB[0]                  ; |Register4x4|RAB[0]                  ; out              ;
+; |Register4x4|REB                     ; |Register4x4|REB                     ; out              ;
+; |Register4x4|WA[1]                   ; |Register4x4|WA[1]                   ; out              ;
+; |Register4x4|WA[0]                   ; |Register4x4|WA[0]                   ; out              ;
+; |Register4x4|WE                      ; |Register4x4|WE                      ; out              ;
+; |Register4x4|I[3]                    ; |Register4x4|I[3]                    ; out              ;
+; |Register4x4|I[2]                    ; |Register4x4|I[2]                    ; out              ;
+; |Register4x4|I[1]                    ; |Register4x4|I[1]                    ; out              ;
+; |Register4x4|I[0]                    ; |Register4x4|I[0]                    ; out              ;
+; |Register4x4|CLK                     ; |Register4x4|CLK                     ; out              ;
+; |Register4x4|A~3                     ; |Register4x4|A~3                     ; out0             ;
+; |Register4x4|B[3]                    ; |Register4x4|B[3]                    ; pin_out          ;
+; |Register4x4|B[2]                    ; |Register4x4|B[2]                    ; pin_out          ;
+; |Register4x4|B[1]                    ; |Register4x4|B[1]                    ; pin_out          ;
+; |Register4x4|B[0]                    ; |Register4x4|B[0]                    ; pin_out          ;
+; |Register4x4|B~0                     ; |Register4x4|B~0                     ; out0             ;
+; |Register4x4|B~1                     ; |Register4x4|B~1                     ; out0             ;
+; |Register4x4|B~2                     ; |Register4x4|B~2                     ; out0             ;
+; |Register4x4|B~3                     ; |Register4x4|B~3                     ; out0             ;
+; |Register4x4|RFC:inst7|inst3         ; |Register4x4|RFC:inst7|inst3         ; out0             ;
+; |Register4x4|RFC:inst7|inst6         ; |Register4x4|RFC:inst7|inst6         ; out              ;
+; |Register4x4|RFC:inst3|inst1         ; |Register4x4|RFC:inst3|inst1         ; out              ;
+; |Register4x4|RFC:inst3|inst3         ; |Register4x4|RFC:inst3|inst3         ; out0             ;
+; |Register4x4|RFC:inst18|inst3        ; |Register4x4|RFC:inst18|inst3        ; out0             ;
+; |Register4x4|RFC:inst10|inst3        ; |Register4x4|RFC:inst10|inst3        ; out0             ;
+; |Register4x4|RFC:inst10|inst6        ; |Register4x4|RFC:inst10|inst6        ; out              ;
+; |Register4x4|RFC:inst17|inst3        ; |Register4x4|RFC:inst17|inst3        ; out0             ;
+; |Register4x4|RFC:inst13|inst3        ; |Register4x4|RFC:inst13|inst3        ; out0             ;
+; |Register4x4|RFC:inst13|inst6        ; |Register4x4|RFC:inst13|inst6        ; out              ;
+; |Register4x4|RFC:inst16|inst3        ; |Register4x4|RFC:inst16|inst3        ; out0             ;
+; |Register4x4|RFC:inst12|inst3        ; |Register4x4|RFC:inst12|inst3        ; out0             ;
+; |Register4x4|RFC:inst12|inst6        ; |Register4x4|RFC:inst12|inst6        ; out              ;
+; |Register4x4|Decoder2_4:inst20|inst  ; |Register4x4|Decoder2_4:inst20|inst  ; out0             ;
+; |Register4x4|Decoder2_4:inst20|inst1 ; |Register4x4|Decoder2_4:inst20|inst1 ; out0             ;
+; |Register4x4|Decoder2_4:inst20|inst2 ; |Register4x4|Decoder2_4:inst20|inst2 ; out0             ;
+; |Register4x4|Decoder2_4:inst20|inst3 ; |Register4x4|Decoder2_4:inst20|inst3 ; out0             ;
+; |Register4x4|Decoder2_4:inst19|inst1 ; |Register4x4|Decoder2_4:inst19|inst1 ; out0             ;
+; |Register4x4|Decoder2_4:inst19|inst2 ; |Register4x4|Decoder2_4:inst19|inst2 ; out0             ;
+; |Register4x4|Decoder2_4:inst|inst3   ; |Register4x4|Decoder2_4:inst|inst3   ; out0             ;
+; |Register4x4|RFC:inst4|inst1         ; |Register4x4|RFC:inst4|inst1         ; out              ;
+; |Register4x4|RFC:inst4|inst          ; |Register4x4|RFC:inst4|inst          ; regout           ;
+; |Register4x4|RFC:inst4|inst4         ; |Register4x4|RFC:inst4|inst4         ; out0             ;
+; |Register4x4|RFC:inst4|inst3         ; |Register4x4|RFC:inst4|inst3         ; out0             ;
+; |Register4x4|RFC:inst4|inst2         ; |Register4x4|RFC:inst4|inst2         ; out0             ;
++--------------------------------------+--------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                       ;
++--------------------------------------+--------------------------------------+------------------+
+; Node Name                            ; Output Port Name                     ; Output Port Type ;
++--------------------------------------+--------------------------------------+------------------+
+; |Register4x4|A[1]                    ; |Register4x4|A[1]                    ; pin_out          ;
+; |Register4x4|A[0]                    ; |Register4x4|A[0]                    ; pin_out          ;
+; |Register4x4|A~1                     ; |Register4x4|A~1                     ; out0             ;
+; |Register4x4|A~2                     ; |Register4x4|A~2                     ; out0             ;
+; |Register4x4|RFC:inst15|inst1        ; |Register4x4|RFC:inst15|inst1        ; out              ;
+; |Register4x4|RFC:inst15|inst         ; |Register4x4|RFC:inst15|inst         ; regout           ;
+; |Register4x4|RFC:inst15|inst4        ; |Register4x4|RFC:inst15|inst4        ; out0             ;
+; |Register4x4|RFC:inst15|inst3        ; |Register4x4|RFC:inst15|inst3        ; out0             ;
+; |Register4x4|RFC:inst15|inst2        ; |Register4x4|RFC:inst15|inst2        ; out0             ;
+; |Register4x4|RFC:inst15|inst6        ; |Register4x4|RFC:inst15|inst6        ; out              ;
+; |Register4x4|RFC:inst11|inst1        ; |Register4x4|RFC:inst11|inst1        ; out              ;
+; |Register4x4|RFC:inst11|inst         ; |Register4x4|RFC:inst11|inst         ; regout           ;
+; |Register4x4|RFC:inst11|inst4        ; |Register4x4|RFC:inst11|inst4        ; out0             ;
+; |Register4x4|RFC:inst11|inst3        ; |Register4x4|RFC:inst11|inst3        ; out0             ;
+; |Register4x4|RFC:inst11|inst2        ; |Register4x4|RFC:inst11|inst2        ; out0             ;
+; |Register4x4|RFC:inst11|inst6        ; |Register4x4|RFC:inst11|inst6        ; out              ;
+; |Register4x4|RFC:inst7|inst1         ; |Register4x4|RFC:inst7|inst1         ; out              ;
+; |Register4x4|RFC:inst3|inst6         ; |Register4x4|RFC:inst3|inst6         ; out              ;
+; |Register4x4|RFC:inst18|inst1        ; |Register4x4|RFC:inst18|inst1        ; out              ;
+; |Register4x4|RFC:inst18|inst6        ; |Register4x4|RFC:inst18|inst6        ; out              ;
+; |Register4x4|RFC:inst14|inst1        ; |Register4x4|RFC:inst14|inst1        ; out              ;
+; |Register4x4|RFC:inst14|inst         ; |Register4x4|RFC:inst14|inst         ; regout           ;
+; |Register4x4|RFC:inst14|inst4        ; |Register4x4|RFC:inst14|inst4        ; out0             ;
+; |Register4x4|RFC:inst14|inst3        ; |Register4x4|RFC:inst14|inst3        ; out0             ;
+; |Register4x4|RFC:inst14|inst2        ; |Register4x4|RFC:inst14|inst2        ; out0             ;
+; |Register4x4|RFC:inst14|inst6        ; |Register4x4|RFC:inst14|inst6        ; out              ;
+; |Register4x4|RFC:inst10|inst1        ; |Register4x4|RFC:inst10|inst1        ; out              ;
+; |Register4x4|RFC:inst6|inst1         ; |Register4x4|RFC:inst6|inst1         ; out              ;
+; |Register4x4|RFC:inst6|inst          ; |Register4x4|RFC:inst6|inst          ; regout           ;
+; |Register4x4|RFC:inst6|inst4         ; |Register4x4|RFC:inst6|inst4         ; out0             ;
+; |Register4x4|RFC:inst6|inst3         ; |Register4x4|RFC:inst6|inst3         ; out0             ;
+; |Register4x4|RFC:inst6|inst2         ; |Register4x4|RFC:inst6|inst2         ; out0             ;
+; |Register4x4|RFC:inst6|inst6         ; |Register4x4|RFC:inst6|inst6         ; out              ;
+; |Register4x4|RFC:inst17|inst1        ; |Register4x4|RFC:inst17|inst1        ; out              ;
+; |Register4x4|RFC:inst17|inst6        ; |Register4x4|RFC:inst17|inst6        ; out              ;
+; |Register4x4|RFC:inst13|inst1        ; |Register4x4|RFC:inst13|inst1        ; out              ;
+; |Register4x4|RFC:inst9|inst1         ; |Register4x4|RFC:inst9|inst1         ; out              ;
+; |Register4x4|RFC:inst9|inst          ; |Register4x4|RFC:inst9|inst          ; regout           ;
+; |Register4x4|RFC:inst9|inst4         ; |Register4x4|RFC:inst9|inst4         ; out0             ;
+; |Register4x4|RFC:inst9|inst3         ; |Register4x4|RFC:inst9|inst3         ; out0             ;
+; |Register4x4|RFC:inst9|inst2         ; |Register4x4|RFC:inst9|inst2         ; out0             ;
+; |Register4x4|RFC:inst9|inst6         ; |Register4x4|RFC:inst9|inst6         ; out              ;
+; |Register4x4|RFC:inst5|inst1         ; |Register4x4|RFC:inst5|inst1         ; out              ;
+; |Register4x4|RFC:inst5|inst          ; |Register4x4|RFC:inst5|inst          ; regout           ;
+; |Register4x4|RFC:inst5|inst4         ; |Register4x4|RFC:inst5|inst4         ; out0             ;
+; |Register4x4|RFC:inst5|inst3         ; |Register4x4|RFC:inst5|inst3         ; out0             ;
+; |Register4x4|RFC:inst5|inst2         ; |Register4x4|RFC:inst5|inst2         ; out0             ;
+; |Register4x4|RFC:inst5|inst6         ; |Register4x4|RFC:inst5|inst6         ; out              ;
+; |Register4x4|RFC:inst16|inst1        ; |Register4x4|RFC:inst16|inst1        ; out              ;
+; |Register4x4|RFC:inst16|inst6        ; |Register4x4|RFC:inst16|inst6        ; out              ;
+; |Register4x4|RFC:inst12|inst1        ; |Register4x4|RFC:inst12|inst1        ; out              ;
+; |Register4x4|RFC:inst8|inst1         ; |Register4x4|RFC:inst8|inst1         ; out              ;
+; |Register4x4|RFC:inst8|inst          ; |Register4x4|RFC:inst8|inst          ; regout           ;
+; |Register4x4|RFC:inst8|inst4         ; |Register4x4|RFC:inst8|inst4         ; out0             ;
+; |Register4x4|RFC:inst8|inst3         ; |Register4x4|RFC:inst8|inst3         ; out0             ;
+; |Register4x4|RFC:inst8|inst2         ; |Register4x4|RFC:inst8|inst2         ; out0             ;
+; |Register4x4|RFC:inst8|inst6         ; |Register4x4|RFC:inst8|inst6         ; out              ;
+; |Register4x4|Decoder2_4:inst19|inst  ; |Register4x4|Decoder2_4:inst19|inst  ; out0             ;
+; |Register4x4|Decoder2_4:inst19|inst3 ; |Register4x4|Decoder2_4:inst19|inst3 ; out0             ;
+; |Register4x4|Decoder2_4:inst|inst    ; |Register4x4|Decoder2_4:inst|inst    ; out0             ;
+; |Register4x4|Decoder2_4:inst|inst1   ; |Register4x4|Decoder2_4:inst|inst1   ; out0             ;
+; |Register4x4|Decoder2_4:inst|inst2   ; |Register4x4|Decoder2_4:inst|inst2   ; out0             ;
+; |Register4x4|RFC:inst4|inst6         ; |Register4x4|RFC:inst4|inst6         ; out              ;
++--------------------------------------+--------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                       ;
++--------------------------------------+--------------------------------------+------------------+
+; Node Name                            ; Output Port Name                     ; Output Port Type ;
++--------------------------------------+--------------------------------------+------------------+
+; |Register4x4|RFC:inst15|inst1        ; |Register4x4|RFC:inst15|inst1        ; out              ;
+; |Register4x4|RFC:inst15|inst         ; |Register4x4|RFC:inst15|inst         ; regout           ;
+; |Register4x4|RFC:inst15|inst4        ; |Register4x4|RFC:inst15|inst4        ; out0             ;
+; |Register4x4|RFC:inst15|inst3        ; |Register4x4|RFC:inst15|inst3        ; out0             ;
+; |Register4x4|RFC:inst15|inst2        ; |Register4x4|RFC:inst15|inst2        ; out0             ;
+; |Register4x4|RFC:inst15|inst6        ; |Register4x4|RFC:inst15|inst6        ; out              ;
+; |Register4x4|RFC:inst11|inst1        ; |Register4x4|RFC:inst11|inst1        ; out              ;
+; |Register4x4|RFC:inst11|inst         ; |Register4x4|RFC:inst11|inst         ; regout           ;
+; |Register4x4|RFC:inst11|inst4        ; |Register4x4|RFC:inst11|inst4        ; out0             ;
+; |Register4x4|RFC:inst11|inst3        ; |Register4x4|RFC:inst11|inst3        ; out0             ;
+; |Register4x4|RFC:inst11|inst2        ; |Register4x4|RFC:inst11|inst2        ; out0             ;
+; |Register4x4|RFC:inst7|inst1         ; |Register4x4|RFC:inst7|inst1         ; out              ;
+; |Register4x4|RFC:inst7|inst          ; |Register4x4|RFC:inst7|inst          ; regout           ;
+; |Register4x4|RFC:inst7|inst4         ; |Register4x4|RFC:inst7|inst4         ; out0             ;
+; |Register4x4|RFC:inst7|inst2         ; |Register4x4|RFC:inst7|inst2         ; out0             ;
+; |Register4x4|RFC:inst3|inst          ; |Register4x4|RFC:inst3|inst          ; regout           ;
+; |Register4x4|RFC:inst3|inst4         ; |Register4x4|RFC:inst3|inst4         ; out0             ;
+; |Register4x4|RFC:inst3|inst2         ; |Register4x4|RFC:inst3|inst2         ; out0             ;
+; |Register4x4|RFC:inst3|inst6         ; |Register4x4|RFC:inst3|inst6         ; out              ;
+; |Register4x4|RFC:inst18|inst1        ; |Register4x4|RFC:inst18|inst1        ; out              ;
+; |Register4x4|RFC:inst18|inst         ; |Register4x4|RFC:inst18|inst         ; regout           ;
+; |Register4x4|RFC:inst18|inst4        ; |Register4x4|RFC:inst18|inst4        ; out0             ;
+; |Register4x4|RFC:inst18|inst2        ; |Register4x4|RFC:inst18|inst2        ; out0             ;
+; |Register4x4|RFC:inst18|inst6        ; |Register4x4|RFC:inst18|inst6        ; out              ;
+; |Register4x4|RFC:inst14|inst1        ; |Register4x4|RFC:inst14|inst1        ; out              ;
+; |Register4x4|RFC:inst14|inst         ; |Register4x4|RFC:inst14|inst         ; regout           ;
+; |Register4x4|RFC:inst14|inst4        ; |Register4x4|RFC:inst14|inst4        ; out0             ;
+; |Register4x4|RFC:inst14|inst3        ; |Register4x4|RFC:inst14|inst3        ; out0             ;
+; |Register4x4|RFC:inst14|inst2        ; |Register4x4|RFC:inst14|inst2        ; out0             ;
+; |Register4x4|RFC:inst10|inst1        ; |Register4x4|RFC:inst10|inst1        ; out              ;
+; |Register4x4|RFC:inst10|inst         ; |Register4x4|RFC:inst10|inst         ; regout           ;
+; |Register4x4|RFC:inst10|inst4        ; |Register4x4|RFC:inst10|inst4        ; out0             ;
+; |Register4x4|RFC:inst10|inst2        ; |Register4x4|RFC:inst10|inst2        ; out0             ;
+; |Register4x4|RFC:inst6|inst          ; |Register4x4|RFC:inst6|inst          ; regout           ;
+; |Register4x4|RFC:inst6|inst4         ; |Register4x4|RFC:inst6|inst4         ; out0             ;
+; |Register4x4|RFC:inst6|inst3         ; |Register4x4|RFC:inst6|inst3         ; out0             ;
+; |Register4x4|RFC:inst6|inst2         ; |Register4x4|RFC:inst6|inst2         ; out0             ;
+; |Register4x4|RFC:inst6|inst6         ; |Register4x4|RFC:inst6|inst6         ; out              ;
+; |Register4x4|RFC:inst17|inst1        ; |Register4x4|RFC:inst17|inst1        ; out              ;
+; |Register4x4|RFC:inst17|inst         ; |Register4x4|RFC:inst17|inst         ; regout           ;
+; |Register4x4|RFC:inst17|inst4        ; |Register4x4|RFC:inst17|inst4        ; out0             ;
+; |Register4x4|RFC:inst17|inst2        ; |Register4x4|RFC:inst17|inst2        ; out0             ;
+; |Register4x4|RFC:inst17|inst6        ; |Register4x4|RFC:inst17|inst6        ; out              ;
+; |Register4x4|RFC:inst13|inst1        ; |Register4x4|RFC:inst13|inst1        ; out              ;
+; |Register4x4|RFC:inst13|inst         ; |Register4x4|RFC:inst13|inst         ; regout           ;
+; |Register4x4|RFC:inst13|inst4        ; |Register4x4|RFC:inst13|inst4        ; out0             ;
+; |Register4x4|RFC:inst13|inst2        ; |Register4x4|RFC:inst13|inst2        ; out0             ;
+; |Register4x4|RFC:inst9|inst1         ; |Register4x4|RFC:inst9|inst1         ; out              ;
+; |Register4x4|RFC:inst9|inst          ; |Register4x4|RFC:inst9|inst          ; regout           ;
+; |Register4x4|RFC:inst9|inst4         ; |Register4x4|RFC:inst9|inst4         ; out0             ;
+; |Register4x4|RFC:inst9|inst3         ; |Register4x4|RFC:inst9|inst3         ; out0             ;
+; |Register4x4|RFC:inst9|inst2         ; |Register4x4|RFC:inst9|inst2         ; out0             ;
+; |Register4x4|RFC:inst5|inst          ; |Register4x4|RFC:inst5|inst          ; regout           ;
+; |Register4x4|RFC:inst5|inst4         ; |Register4x4|RFC:inst5|inst4         ; out0             ;
+; |Register4x4|RFC:inst5|inst3         ; |Register4x4|RFC:inst5|inst3         ; out0             ;
+; |Register4x4|RFC:inst5|inst2         ; |Register4x4|RFC:inst5|inst2         ; out0             ;
+; |Register4x4|RFC:inst5|inst6         ; |Register4x4|RFC:inst5|inst6         ; out              ;
+; |Register4x4|RFC:inst16|inst1        ; |Register4x4|RFC:inst16|inst1        ; out              ;
+; |Register4x4|RFC:inst16|inst         ; |Register4x4|RFC:inst16|inst         ; regout           ;
+; |Register4x4|RFC:inst16|inst4        ; |Register4x4|RFC:inst16|inst4        ; out0             ;
+; |Register4x4|RFC:inst16|inst2        ; |Register4x4|RFC:inst16|inst2        ; out0             ;
+; |Register4x4|RFC:inst16|inst6        ; |Register4x4|RFC:inst16|inst6        ; out              ;
+; |Register4x4|RFC:inst12|inst1        ; |Register4x4|RFC:inst12|inst1        ; out              ;
+; |Register4x4|RFC:inst12|inst         ; |Register4x4|RFC:inst12|inst         ; regout           ;
+; |Register4x4|RFC:inst12|inst4        ; |Register4x4|RFC:inst12|inst4        ; out0             ;
+; |Register4x4|RFC:inst12|inst2        ; |Register4x4|RFC:inst12|inst2        ; out0             ;
+; |Register4x4|RFC:inst8|inst1         ; |Register4x4|RFC:inst8|inst1         ; out              ;
+; |Register4x4|RFC:inst8|inst          ; |Register4x4|RFC:inst8|inst          ; regout           ;
+; |Register4x4|RFC:inst8|inst4         ; |Register4x4|RFC:inst8|inst4         ; out0             ;
+; |Register4x4|RFC:inst8|inst3         ; |Register4x4|RFC:inst8|inst3         ; out0             ;
+; |Register4x4|RFC:inst8|inst2         ; |Register4x4|RFC:inst8|inst2         ; out0             ;
+; |Register4x4|Decoder2_4:inst19|inst  ; |Register4x4|Decoder2_4:inst19|inst  ; out0             ;
+; |Register4x4|Decoder2_4:inst19|inst3 ; |Register4x4|Decoder2_4:inst19|inst3 ; out0             ;
+; |Register4x4|Decoder2_4:inst|inst    ; |Register4x4|Decoder2_4:inst|inst    ; out0             ;
+; |Register4x4|Decoder2_4:inst|inst1   ; |Register4x4|Decoder2_4:inst|inst1   ; out0             ;
+; |Register4x4|Decoder2_4:inst|inst2   ; |Register4x4|Decoder2_4:inst|inst2   ; out0             ;
+; |Register4x4|RFC:inst4|inst6         ; |Register4x4|RFC:inst4|inst6         ; out              ;
++--------------------------------------+--------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Simulator
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Sun Dec 01 14:57:50 2024
+Info: Command: quartus_sim --simulation_results_format=VWF register -c register
+Info (324025): Using vector source file "D:/Documents/HK5/Thiet_Ke_Luan_Ly_So/Final_do_an/Register/Waveform1.vwf"
+Info (310003): Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info (310004): Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Warning (324036): Found clock-sensitive change during active clock edge at time 20.0 ns on register "|Register4x4|RFC:inst4|inst"
+Warning (324036): Found clock-sensitive change during active clock edge at time 100.0 ns on register "|Register4x4|RFC:inst13|inst"
+Warning (324036): Found clock-sensitive change during active clock edge at time 100.0 ns on register "|Register4x4|RFC:inst12|inst"
+Warning (324036): Found clock-sensitive change during active clock edge at time 140.0 ns on register "|Register4x4|RFC:inst18|inst"
+Warning (324036): Found clock-sensitive change during active clock edge at time 140.0 ns on register "|Register4x4|RFC:inst17|inst"
+Warning (324036): Found clock-sensitive change during active clock edge at time 140.0 ns on register "|Register4x4|RFC:inst16|inst"
+Warning (324036): Found clock-sensitive change during active clock edge at time 180.0 ns on register "|Register4x4|RFC:inst3|inst"
+Warning (324036): Found clock-sensitive change during active clock edge at time 220.0 ns on register "|Register4x4|RFC:inst7|inst"
+Warning (324036): Found clock-sensitive change during active clock edge at time 220.0 ns on register "|Register4x4|RFC:inst10|inst"
+Info (310002): Simulation partitioned into 1 sub-simulations
+Info (328053): Simulation coverage is      36.96 %
+Info (328052): Number of transitions in simulation is 388
+Info (324045): Vector file register.sim.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
+Info: Quartus II 64-Bit Simulator was successful. 0 errors, 9 warnings
+    Info: Peak virtual memory: 4445 megabytes
+    Info: Processing ended: Sun Dec 01 14:57:50 2024
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:00
+
+
